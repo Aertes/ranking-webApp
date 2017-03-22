@@ -1,5 +1,7 @@
 @charset "utf-8";
 
+
+/*数据分析指标*/
 .graphic-analysis .title h1{
 	color: #3d71b2;
 	text-align: center;
@@ -9,7 +11,6 @@
 	position: relative;
 	overflow: hidden;
 }
-
 
 .graphic-analysis .svg div{
 	width: 30px;
@@ -36,6 +37,89 @@
 }
 
 
+/*模块数据分析*/
 
+#first-module{
+	background-color: #f4f4f4;
+	// display: none;
+}
+
+#first-module .top{
+	padding: 6.0rem 0 3rem 0;
+}
+#first-module .bottom{
+	padding: 3rem 0 6.0rem 0;
+}
+
+#first-module .people i{
+	color: #c97345;
+}
+
+#first-module .num, .people{
+	// padding: 0 1.0rem;
+	text-align: left;
+}
+
+#first-module .num i{
+	display: inline-block;
+	background-color: #ccc;
+	height: 0.8rem;
+	width: 70%;
+	border-radius: 0.4rem;
+	position: relative;
+}
+
+
+#first-module .num em{
+	display: block;
+	width: 7.0rem;
+	height: 4.0rem;
+	background-color: #c97345;
+	position: absolute;
+	top: -4.0rem;
+	left: 8.0rem;
+	border-radius: 1rem;
+	line-height: 4.0rem;
+	text-indent: 0;
+	color: #fff;
+	text-align: center;
+}
+
+
+#first-module .top .num em{
+	display: block;
+	width: 7.0rem;
+	height: 4.0rem;
+	background-color: #c97345;
+	position: absolute;
+	top: -4.0rem;
+	left: 7.0rem;
+	border-radius: 1rem;
+	line-height: 4.0rem;
+}
+
+.littler::before{
+	content: '';
+	width: 0;
+	height: 0;
+	border-left: 0.5rem solid transparent;
+    border-right: 0.5rem solid transparent;
+    border-top: 1.0rem solid #c97345;
+    position: absolute;
+	top: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.littler::after{
+	content: '';
+	width: 0.8rem;
+	height: 0.8rem;
+    position: absolute;
+	top: 120%;
+	left: 50%;
+	transform: translateX(-50%);
+	border-radius: 50%;
+	background-color: #c97345;
+}
 
 
