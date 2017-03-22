@@ -10,6 +10,7 @@
 .graphic-analysis .svg{
 	position: relative;
 	overflow: hidden;
+	border: 1px solid red;
 }
 
 .graphic-analysis .svg div{
@@ -19,8 +20,8 @@
 	border-radius: 50%;
 	position: absolute;
 	top: 50%;
-	left: 0;
 	transform: translateY(-15px);
+	margin: 0 0.25rem
 }
 
 .graphic-analysis .svg .click-right{
@@ -32,8 +33,12 @@
 
 .graphic-analysis .svg div a{
 	display: block;
+	font-size: 2rem;
+	text-align: center;
 	top: 50%;
 	left: 50%;
+	transform: translateY(-10%);
+	color: #ccc;
 }
 
 
@@ -119,6 +124,18 @@
 	left: 50%;
 	transform: translateX(-50%);
 	border-radius: 50%;
+	background-color: #c97345;
+}
+
+.length::after{
+	content: '';
+	width: 2rem;
+	height: 0.8rem;
+    position: absolute;
+	top: 120%;
+	left: 50%;
+	transform: translateX(-50%);
+	border-radius: 0.4rem;
 	background-color: #c97345;
 }
 
