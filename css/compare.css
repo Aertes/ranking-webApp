@@ -1,0 +1,65 @@
+@charset "utf-8";
+
+
+
+/*指标*/
+
+
+.graphic-analysis .title h1{
+	color: #3d71b2;
+	text-align: center;
+	font-size: 0.9rem;
+}
+
+.graphic-analysis .svg{
+	position: relative;
+	overflow: hidden;
+}
+
+.graphic-analysis .university{
+	margin: 0 auto;
+	text-align: center;
+}
+.graphic-analysis .university div{
+	background-color: #f4f4f4;
+}
+
+.graphic-analysis .university a{
+	display: block;
+	font-size: 0.7rem;
+	color: #808080;
+}
+
+
+/*模块*/
+
+.list-module table{
+	text-align: center;
+	margin: 0 auto;
+	table-layout: fixed;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.list-module table tbody th, td{
+	padding: 0.5rem;
+	width: 100%;
+	white-space: nowrap;
+	/*word-break: keep-all;*/
+}
+
+.list-module table th{
+	text-align: center;
+	padding: 0 0.5rem;
+	background-color: #d2e6ff;
+	color: #3d71b2;
+}
+
+.list-module table tbody td:nth-child(1){
+	text-align: left;
+	text-indent: 0.5rem;
+}
+
+.list-module table tbody td i{
+	position: relative;
+}

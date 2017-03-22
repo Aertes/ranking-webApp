@@ -1,0 +1,1632 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>上海软科360数据平台 - 上海软科教育信息咨询有限公司</title>
+    <link rel="shortcut icon" href="./images/icon/favion.png">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./libs/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./libs/mui/mui.min.css">
+    <link rel="stylesheet" href="./css/comment.css">
+    <link rel="stylesheet" href="./css/compare.css">
+
+</head>
+
+<body>
+    <div id="offCanvasWrapper" class="mui-off-canvas-wrap mui-draggable">
+        <!--侧滑菜单部分-->
+        <aside id="offCanvasSide" class="mui-off-canvas-left">
+            <div id="offCanvasSideScroll" class="mui-scroll-wrapper">
+                <div class="mui-scroll">
+                    <div class="title"></div>
+                    <div class="content">
+                        <span class="android-only"></span>
+                        <p id="offCanvasHide" style="margin: 10px 15px;">
+                            上海交通大学
+                        </p>
+                    </div>
+                    <ul class="mui-table-view mui-table-view-chevron mui-table-view-inverted">
+                        <li class="mui-table-view-cell">
+                            <a class="mui-navigate-right">
+									自定义
+								</a>
+                        </li>
+                        <li class="mui-table-view-cell">
+                            <a class="mui-navigate-right">
+									数据年份
+								</a>
+                        </li>
+                        <li class="mui-table-view-cell">
+                            <a class="mui-navigate-right">
+									关键指标
+								</a>
+                        </li>
+                        <li class="mui-table-view-cell">
+                            <a class="mui-navigate-right">
+									指标权重
+								</a>
+                        </li>
+                        <li class="mui-table-view-cell">
+                            <a class="mui-navigate-right">
+									通知
+								</a>
+                        </li>
+                    </ul>
+                    <ul class="table-time">
+                        <li>
+                            <ol class="table-time-cell">
+                                <li>更新时间：2017.01.03</li>
+                                <li>更新内容：xx数据更新至</li>
+                                <li>2016年底</li>
+                            </ol>
+                        </li>
+                        <li>
+                            <ol class="table-time-cell">
+                                <li>更新时间：2017.01.03</li>
+                                <li>更新内容：xx数据更新至</li>
+                                <li>2016年底</li>
+                            </ol>
+                        </li>
+                        <li>
+                            <ol class="table-time-cell">
+                                <li>更新时间：2017.01.03</li>
+                                <li>更新内容：xx数据更新至</li>
+                                <li>2016年底</li>
+                            </ol>
+                        </li>
+                        <li>
+                            <a href="#">
+                                查看更多>>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+
+        <!--主界面部分-->
+        <div class="mui-inner-wrap">
+            <header class="mui-bar mui-bar-nav">
+                <a href="#offCanvasSide" class="mui-icon mui-action-menu mui-icon-bars mui-pull-left">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </a>
+                <a href="#" class="mui-btn mui-btn-link mui-pull-right  mui-person"></a>
+                <h1 class="mui-title">
+                    <a href="#">
+                        <img src="./images/icon/srcdata2.png" alt="软科数据平台">
+                    </a>
+                </h1>
+            </header>
+            <div id="offCanvasContentScroll" class="mui-content mui-scroll-wrapper">
+                <div class="mui-scroll">
+                    <!-- 指标 -->
+                    <div class="graphic-analysis">
+                        <div class="title">
+                            <h1>贵校与标杆学校数据对比</h1>
+                        </div>
+                        <div class="university mui-row">
+                            <div class="click-left mui-col-xs-3 col-xs-offset-3 ">
+                                <a href="javascript:;">  清华大学 </a>
+                            </div>
+                            <div class="click-right mui-col-xs-3">
+                                <a href="javascript:;">  浙江大学 </a>
+                            </div>
+                        </div>
+                        <div class="svg">
+                            <svg width="350" height="160" font-family="sans-serif" font-size="10" text-anchor="middle"></svg>
+                        </div>
+                    </div>
+
+                    <!-- 模块总揽 -->
+                    <div id="panel3" class="panel panel-white panel-custom">
+                        <div class="panel-body">
+                            <div class="tab-content">
+                                <div class="tab-pane active">
+                                    <table class="table-custom table" id="modulescore-table">
+                                        <thead class="modulescoretablehead">
+                                            <tr>
+                                                <th>模块</th>
+                                                <th class="ourmodulescore">
+                                                    贵校得分
+                                                </th>
+                                                <th class="comparemodulescore">
+                                                    电子科技大学得分
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="modulescoretablebody1">模块一：办学规模与层次</td>
+                                                <td class="modulescoretablebody2">48.9</td>
+                                                <td class="modulescoretablebody3">100</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="modulescoretablebody1">模块二：学科布局与水平</td>
+                                                <td class="modulescoretablebody2">40.8</td>
+                                                <td class="modulescoretablebody3">100</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="modulescoretablebody1">模块三：办学资源</td>
+                                                <td class="modulescoretablebody2">0</td>
+                                                <td class="modulescoretablebody3">100</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="modulescoretablebody1">模块四：师资规模与结构</td>
+                                                <td class="modulescoretablebody2">40.9</td>
+                                                <td class="modulescoretablebody3">100</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="modulescoretablebody1">模块五：人才培养能力</td>
+                                                <td class="modulescoretablebody2">90.7</td>
+                                                <td class="modulescoretablebody3">100</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="modulescoretablebody1">模块六：科学研究能力</td>
+                                                <td class="modulescoretablebody2">35.4</td>
+                                                <td class="modulescoretablebody3">100</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="modulescoretablebody1">模块七：服务社会能力</td>
+                                                <td class="modulescoretablebody2">100</td>
+                                                <td class="modulescoretablebody3">90.6</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="modulescoretablebody1">模块八：高端人才</td>
+                                                <td class="modulescoretablebody2">4.9</td>
+                                                <td class="modulescoretablebody3">100</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="modulescoretablebody1">模块九：重大项目与成果</td>
+                                                <td class="modulescoretablebody2">8.8</td>
+                                                <td class="modulescoretablebody3">100</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="modulescoretablebody1">模块十：国际竞争力</td>
+                                                <td class="modulescoretablebody2">51.9</td>
+                                                <td class="modulescoretablebody3">100</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <!-- 分块模块 -->
+                    <div id="panel4" class="panel panel-white">
+                        <div class="panel-body">
+                            <div class="panel-group panel-group-control panel-group-control-right content-group-lg">
+                                <div class="panel panel-white">
+                                    <div class="panel-heading heading-control" id="heading-control1">
+                                        <h6 class="panel-title" id="panel0">
+                                            <a data-toggle="collapse" href="#collapsible-control-right-group1">模块一：办学规模与层次</a>
+                                        </h6>
+                                    </div>
+                                    <div id="collapsible-control-right-group1" class="panel-collapse collapse in">
+                                        <div class="panel-body third-panel">
+                                            <div class="table-responsive">
+                                                <table class="table-custom table" id="module1-nestedtable">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>维度</th>
+                                                            <th>指标</th>
+                                                            <th class="ourrank">
+                                                                <span>排名</span>
+                                                            </th>
+                                                            <th class="ourvalue">
+                                                                <span>贵校</span>
+                                                            </th>
+                                                            <th class="comparevalue">
+                                                                <span>电子科技大学</span>
+                                                            </th>
+                                                            <th>比例</th>
+                                                            <th>权重</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="tr-head11" rowspan="5">办学规模</td>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：学生总数=本科生数+硕士生数+博士生数+学历留学生数。数据来源：《中国高等学校大全》（2015年版）" align="left">1. 学生总数（人） <i class="icon-question3 star"></i>
+                                                                </div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">288</span></td>
+                                                            <td class="tr-head14">19556</td>
+                                                            <td class="tr-head16">34875</td>
+                                                            <td class="td-p1">56.1%</td>
+                                                            <td>50.0%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：指攻读各种学士学位的全日制在校生数，不包括学历留学生。数据来源：《中国高等学校大全》（2015年版）" align="left">2. 本科生数（人） <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">322</span></td>
+                                                            <td class="tr-head14">16571</td>
+                                                            <td class="tr-head16">21878</td>
+                                                            <td class="td-p1 tag">75.7%
+                                                            </td>
+                                                            <td>/</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：指攻读各种硕士学位的全日制在校生数，不包括学历留学生。数据来源：《中国高等学校大全》（2015年版）" align="left">3. 硕士生数（人） <i class="icon-question3 Active"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">171</span></td>
+                                                            <td class="tr-head14">2930</td>
+                                                            <td class="tr-head16">10706</td>
+                                                            <td class="td-p1">27.4%</td>
+                                                            <td>/</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：指攻读各种博士学位的全日制在校生数，不包括学历留学生。数据来源：《中国高等学校大全》（2015年版）" align="left">4. 博士生数（人） <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">283</span></td>
+                                                            <td class="tr-head14">9</td>
+                                                            <td class="tr-head16">1899</td>
+                                                            <td class="td-p1">0.5%</td>
+                                                            <td>/</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：指攻读各种学士学位、硕士学位、博士学位的在校生中拥有其他国家国籍或持有我国香港、澳门、台湾永久性居民身份证的学生数。数据来源：《中国高等学校大全》（2015年版）" align="left">5. 学历留学生数（人） <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">377</span></td>
+                                                            <td class="tr-head14">46</td>
+                                                            <td class="tr-head16">392</td>
+                                                            <td class="td-p1">11.7%</td>
+                                                            <td>/</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tr-head11" rowspan="1">办学层次</td>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：研究生比例=（硕士生数+博士生数）/学生总数。
+数据来源：《中国高等学校大全》（2015年版），软科加工整理" align="left">6. 研究生比例 <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">181</span></td>
+                                                            <td class="tr-head14">15.0%</td>
+                                                            <td class="tr-head16">36.1%</td>
+                                                            <td class="td-p1">41.6%</td>
+                                                            <td>50.0%</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-white">
+                                    <div class="panel-heading heading-control" id="heading-control2">
+                                        <h6 class="panel-title" id="panel1">
+                                            <a class="collapsed" data-toggle="collapse" href="#collapsible-control-right-group2">模块二：学科布局与水平</a>
+                                        </h6>
+                                    </div>
+                                    <div id="collapsible-control-right-group2" class="panel-collapse collapse">
+                                        <div class="panel-body third-panel">
+                                            <div class="table-responsive" style="padding-top:30px;">
+                                                <table class="table-custom table" id="module2-nestedtable">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>维度</th>
+                                                            <th>指标</th>
+                                                            <th class="ourrank">排名</th>
+                                                            <th class="ourvalue">贵校</th>
+                                                            <th class="comparevalue">电子科技大学</th>
+                                                            <th>比例</th>
+                                                            <th>权重</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="tr-head11" rowspan="1">学科布局</td>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：指本科生学科门类分布中减去占比最多门类后剩余门类所占比例。
+数据来源：阳光高考网，软科加工整理" align="left">1. 本科生的学科门类分布 <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">832</span></td>
+                                                            <td class="tr-head14">32.1%</td>
+                                                            <td class="tr-head16">14.4%</td>
+                                                            <td class="td-p1">223.2%</td>
+                                                            <td>33.3%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tr-head11" rowspan="5">学科水平</td>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：指博士点（含一级、二级）覆盖的一级学科数。
+数据来源：" align="left">2. 在建博士点学科数（个） <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">205</span></td>
+                                                            <td class="tr-head14">3</td>
+                                                            <td class="tr-head16">17</td>
+                                                            <td class="td-p1">17.6%</td>
+                                                            <td>/</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：指拥有一级学科博士学位授予权的一级学科数。
+数据来源：" align="left">3. 一级学科博士点数（个） <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">177</span></td>
+                                                            <td class="tr-head14">3</td>
+                                                            <td class="tr-head16">14</td>
+                                                            <td class="td-p1">21.4%</td>
+                                                            <td>/</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：指学校在教育部学位与研究生教育发展中心2012年组织开展的一级学科评估中排名第一位的学科数。
+数据来源：教育部学位与研究生教育发展中心" align="left">4. 第一名学科数（个） <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">/</span></td>
+                                                            <td class="tr-head14">0</td>
+                                                            <td class="tr-head16">1</td>
+                                                            <td class="td-p1">0.0%</td>
+                                                            <td>11.1%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：指学校在教育部学位与研究生教育发展中心2012年组织开展的一级学科评估中排名前三位的学科数。
+数据来源：教育部学位与研究生教育发展中心" align="left">5. 前三名学科数（个） <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">/</span></td>
+                                                            <td class="tr-head14">0</td>
+                                                            <td class="tr-head16">2</td>
+                                                            <td class="td-p1">0.0%</td>
+                                                            <td>11.1%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：指学校在教育部学位与研究生教育发展中心2012年组织开展的一级学科评估中排名前十位的学科数。
+数据来源：教育部学位与研究生教育发展中心" align="left">6. 前十名学科数（个） <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">/</span></td>
+                                                            <td class="tr-head14">0</td>
+                                                            <td class="tr-head16">5</td>
+                                                            <td class="td-p1">0.0%</td>
+                                                            <td>11.1%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tr-head11" rowspan="1">学科精度</td>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：前十名学科比例=前十名学科数/在建博士点学科数
+数据来源：" align="left">7. 前十名学科比例 <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">/</span></td>
+                                                            <td class="tr-head14">0.0%</td>
+                                                            <td class="tr-head16">29.4%</td>
+                                                            <td class="td-p1">0.0%</td>
+                                                            <td>33.3%</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-white">
+                                    <div class="panel-heading heading-control" id="heading-control3">
+                                        <h6 class="panel-title" id="panel2">
+                                            <a class="collapsed" data-toggle="collapse" href="#collapsible-control-right-group3">模块三：办学资源</a>
+                                        </h6>
+                                    </div>
+                                    <div id="collapsible-control-right-group3" class="panel-collapse collapse">
+                                        <div class="panel-body third-panel">
+                                            <div class="table-responsive" style="padding-top:30px;">
+                                                <table class="table-custom table" id="module3-nestedtable">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>维度</th>
+                                                            <th>指标</th>
+                                                            <th class="ourrank">排名</th>
+                                                            <th class="ourvalue">贵校</th>
+                                                            <th class="comparevalue">电子科技大学</th>
+                                                            <th>比例</th>
+                                                            <th>权重</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="tr-head11" rowspan="2">收入水平</td>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：指学校当年各项收入的合计，不包括上年结余。
+数据来源：高校财务处网站，软科加工整理" align="left">1. 学校总收入（亿元） <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">/</span></td>
+                                                            <td class="tr-head14">暂无数据</td>
+                                                            <td class="tr-head16">27.8</td>
+                                                            <td class="td-p1">/</td>
+                                                            <td>50.0%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：生均收入=学校总收入/学生总数
+数据来源：高校财务处网站，《中国高等学校大全》（2015年版），软科加工整理" align="left">2. 生均收入（万元） <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">/</span></td>
+                                                            <td class="tr-head14">暂无数据</td>
+                                                            <td class="tr-head16">8.1</td>
+                                                            <td class="td-p1">/</td>
+                                                            <td>50.0%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tr-head11" rowspan="2">收入结构</td>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：指学校从中央政府和地方政府获得的财政拨款，包括财政拨款收入与上级补助收入。其中财政拨款收入是指学校从财政部门获得的各类事业经费，上级补助收入是指学校从主管部门和上级单位取得的非财政补助收入。
+数据来源：高校财务处网站，软科加工整理" align="left">3. 政府拨款收入（亿元） <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">/</span></td>
+                                                            <td class="tr-head14">暂无数据</td>
+                                                            <td class="tr-head16">13.9</td>
+                                                            <td class="td-p1">/</td>
+                                                            <td>/</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：其他渠道收入=学校总收入-政府拨款收入
+数据来源：高校财务处网站，软科加工整理" align="left">4. 其他渠道收入（亿元） <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">/</span></td>
+                                                            <td class="tr-head14">暂无数据</td>
+                                                            <td class="tr-head16">13.9</td>
+                                                            <td class="td-p1">/</td>
+                                                            <td>/</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-white">
+                                    <div class="panel-heading heading-control" id="heading-control4">
+                                        <h6 class="panel-title" id="panel3">
+                                            <a class="collapsed" data-toggle="collapse" href="#collapsible-control-right-group4">模块四：师资规模与结构</a>
+                                        </h6>
+                                    </div>
+                                    <div id="collapsible-control-right-group4" class="panel-collapse collapse">
+                                        <div class="panel-body third-panel">
+                                            <div class="table-responsive" style="padding-top:30px;">
+                                                <table class="table-custom table" id="module4-nestedtable">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>维度</th>
+                                                            <th>指标</th>
+                                                            <th class="ourrank">排名</th>
+                                                            <th class="ourvalue">贵校</th>
+                                                            <th class="comparevalue">电子科技大学</th>
+                                                            <th>比例</th>
+                                                            <th>权重</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="tr-head11" rowspan="2">师资规模</td>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：指具有教师资格，专职从事教学工作的人员。
+数据来源：《中国高等学校大全》（2015年版）" align="left">1. 专任教师数（人） <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">195</span></td>
+                                                            <td class="tr-head14">1436</td>
+                                                            <td class="tr-head16">2370</td>
+                                                            <td class="td-p1">60.6%</td>
+                                                            <td>25.0%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：直接生师比=学生总数（统计本科生、硕士生、博士生和学历留学生)/专任教师数
+数据来源：《中国高等学校大全》（2015年版），软科加工整理" align="left">2. 直接师生比 <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">282</span></td>
+                                                            <td class="tr-head14">0.07</td>
+                                                            <td class="tr-head16">0.07</td>
+                                                            <td class="td-p1">108.1%</td>
+                                                            <td>25.0%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tr-head11" rowspan="3">师资结构</td>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：博士学位教师比例=博士学位专任教师数/专任教师数。
+数据来源：《教育部直属高校2014年基本情况统计资料汇编》" align="left">3. 博士学位教师比例 <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">/</span></td>
+                                                            <td class="tr-head14">暂无数据</td>
+                                                            <td class="tr-head16">65.1%</td>
+                                                            <td class="td-p1">/</td>
+                                                            <td>50.0%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：正高职称教师比例=正高职称专任教师数/专任教师数。
+数据来源：《中国高等学校大全》（2015年版），软科加工整理" align="left">4. 正高职称教师比例 <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">352</span></td>
+                                                            <td class="tr-head14">15.1%</td>
+                                                            <td class="tr-head16">19.7%</td>
+                                                            <td class="td-p1">76.7%</td>
+                                                            <td>/</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：副高职称教师比例=副高职称专任教师数/专任教师数。
+数据来源：《中国高等学校大全》（2015年版），软科加工整理" align="left">5. 副高职称教师比例 <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">612</span></td>
+                                                            <td class="tr-head14">29.2%</td>
+                                                            <td class="tr-head16">43.5%</td>
+                                                            <td class="td-p1">67.3%</td>
+                                                            <td>/</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-white">
+                                    <div class="panel-heading heading-control" id="heading-control5">
+                                        <h6 class="panel-title" id="panel4">
+                                            <a class="collapsed" data-toggle="collapse" href="#collapsible-control-right-group5">模块五：人才培养能力</a>
+                                        </h6>
+                                    </div>
+                                    <div id="collapsible-control-right-group5" class="panel-collapse collapse">
+                                        <div class="panel-body third-panel">
+                                            <div class="table-responsive" style="padding-top:30px;">
+                                                <table class="table-custom table" id="module5-nestedtable">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>维度</th>
+                                                            <th>指标</th>
+                                                            <th class="ourrank">排名</th>
+                                                            <th class="ourvalue">贵校</th>
+                                                            <th class="comparevalue">电子科技大学</th>
+                                                            <th>比例</th>
+                                                            <th>权重</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="tr-head11" rowspan="1">新生质量</td>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：指录取的文史、理工类本科新生的高考成绩排名。详细排名方法可参照上海软科发布的中国最好大学排名中生源质量的计算方法：http://www.zuihaodaxue.com/zuihaodaxuepaiming-methodology-2017.html。
+数据来源：阳光高考网" align="left">1. 录取新生平均分（分） <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">127</span></td>
+                                                            <td class="tr-head14">58.7</td>
+                                                            <td class="tr-head16">73.3</td>
+                                                            <td class="td-p1">80.1%</td>
+                                                            <td>33.3%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tr-head11" rowspan="2">培养条件</td>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：
+数据来源：" align="left">2. 本科生课程总门数（门） <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">/</span></td>
+                                                            <td class="tr-head14">暂无数据</td>
+                                                            <td class="tr-head16">暂无数据</td>
+                                                            <td class="td-p1">/</td>
+                                                            <td>16.7%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：
+数据来源：" align="left">3. 本科生课程生均门数（门） <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">/</span></td>
+                                                            <td class="tr-head14">暂无数据</td>
+                                                            <td class="tr-head16">暂无数据</td>
+                                                            <td class="td-p1">/</td>
+                                                            <td>16.7%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tr-head11" rowspan="1">培养结果</td>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：指本科毕业生中落实就业单位的比例，包括签订就业协议和劳动合同、考取研究生、出国留学及出国工作、自主创业、灵活就业等。一般统计2015年的年终就业率（数据截止日期2015年12月31日），当没有相关信息时也采用2015年其他日期的就业率数据。未公布就业率的高校，按所有参加排名高校中毕业生就业率的最小值计算。
+数据来源：各高校发布的《2015年毕业生就业质量报告》、各高校通过其他权威渠道（如《本科教学质量报告》）发布的就业率数据、省级教育主管部门发布的各高校就业率数据。" align="left">4. 本科毕业生就业率 <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">207</span></td>
+                                                            <td class="tr-head14">97.2%</td>
+                                                            <td class="tr-head16">95.7%</td>
+                                                            <td class="td-p1">101.5%</td>
+                                                            <td>33.3%</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-white">
+                                    <div class="panel-heading heading-control" id="heading-control6">
+                                        <h6 class="panel-title" id="panel5">
+                                            <a class="collapsed" data-toggle="collapse" href="#collapsible-control-right-group6">模块六：科学研究能力</a>
+                                        </h6>
+                                    </div>
+                                    <div id="collapsible-control-right-group6" class="panel-collapse collapse">
+                                        <div class="panel-body third-panel">
+                                            <div class="table-responsive" style="padding-top:30px;">
+                                                <table class="table-custom table" id="module6-nestedtable">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>维度</th>
+                                                            <th>指标</th>
+                                                            <th class="ourrank">排名</th>
+                                                            <th class="ourvalue">贵校</th>
+                                                            <th class="comparevalue">电子科技大学</th>
+                                                            <th>比例</th>
+                                                            <th>权重</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="tr-head11" rowspan="1">科研人力</td>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：专任教师数和博士生数=专任教师数+博士生数
+数据来源：《中国高等学校大全》（2015年版），软科加工整理" align="left">1. 专任教师数和博士生数（人） <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">237</span></td>
+                                                            <td class="tr-head14">1445</td>
+                                                            <td class="tr-head16">4269</td>
+                                                            <td class="td-p1">33.8%</td>
+                                                            <td>25.0%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tr-head11" rowspan="2">科研经费</td>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：指政府拨入资金、企事业委托资金和其他经费的总和。
+数据来源：《2015年高等学校科技统计资料汇编》" align="left">2. 科研经费总额（亿元） <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">104</span></td>
+                                                            <td class="tr-head14">2.5</td>
+                                                            <td class="tr-head16">11.0</td>
+                                                            <td class="td-p1">22.7%</td>
+                                                            <td>12.5%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：科研经费师均数=科研经费总数/专任教师数
+数据来源：《2015年高等学校科技统计资料汇编》，《中国高等学校大全》（2015年版），软科加工整理" align="left">3. 师均科研经费（万元） <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">109</span></td>
+                                                            <td class="tr-head14">17.4</td>
+                                                            <td class="tr-head16">46.3</td>
+                                                            <td class="td-p1">37.4%</td>
+                                                            <td>12.5%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tr-head11" rowspan="12">科研项目</td>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：指学校承担的自然科学基金项目中面上项目的数量。
+
+数据来源：国家自然科学基金委员会网站" align="left">4. 自然科学基金面上项目数（项） <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">123</span></td>
+                                                            <td class="tr-head14">123</td>
+                                                            <td class="tr-head16">386</td>
+                                                            <td class="td-p1">31.9%</td>
+                                                            <td>/</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：指学校承担的自然科学基金项目中青年项目的数量。
+
+数据来源：国家自然科学基金委员会网站" align="left">5. 自然科学基金青年项目数（项） <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">92</span></td>
+                                                            <td class="tr-head14">182</td>
+                                                            <td class="tr-head16">423</td>
+                                                            <td class="td-p1">43.0%</td>
+                                                            <td>/</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：自科面上与青年项目数=自然科学基金面上项目数+自然科学基金青年项目数
+数据来源：国家自然科学基金委员会网站，软科加工整理" align="left">6. 自科面上与青年项目数（项） <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">108</span></td>
+                                                            <td class="tr-head14">305</td>
+                                                            <td class="tr-head16">809</td>
+                                                            <td class="td-p1">37.7%</td>
+                                                            <td>/</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：自然科学基金面上项目师均数=自然科学基金面上项目数/专任教师数
+数据来源：国家自然科学基金委员会网站，《中国高等学校大全》（2015年版），软科加工整理" align="left">7. 自然科学基金面上项目师均数（项） <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">115</span></td>
+                                                            <td class="tr-head14">0.09</td>
+                                                            <td class="tr-head16">0.16</td>
+                                                            <td class="td-p1">52.6%</td>
+                                                            <td>/</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：自然科学基金青年项目师均数=自然科学基金青年项目数/专任教师数
+数据来源：国家自然科学基金委员会网站，《中国高等学校大全》（2015年版），软科加工整理" align="left">8. 自然科学基金青年项目师均数（项） <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">77</span></td>
+                                                            <td class="tr-head14">0.13</td>
+                                                            <td class="tr-head16">0.18</td>
+                                                            <td class="td-p1">71.0%</td>
+                                                            <td>/</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：指学校承担的社会科学基金项目中一般项目的数量，包括教育学和艺术学项目。
+数据来源：全国哲学社会科学规划办公室网站" align="left">9. 社会科学基金一般项目数（项） <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">249</span></td>
+                                                            <td class="tr-head14">10</td>
+                                                            <td class="tr-head16">12</td>
+                                                            <td class="td-p1">83.3%</td>
+                                                            <td>/</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：指学校承担的社会科学基金项目中青年项目的数量，包括教育学和艺术学项目。
+数据来源：全国哲学社会科学规划办公室网站" align="left">10. 社会科学基金青年项目数（项） <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">143</span></td>
+                                                            <td class="tr-head14">12</td>
+                                                            <td class="tr-head16">14</td>
+                                                            <td class="td-p1">85.7%</td>
+                                                            <td>/</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：社科一般与青年项目数=社会科学基金一般项目数+社会科学基金青年项目数
+数据来源：全国哲学社会科学规划办公室网站，软科加工整理" align="left">11. 社科一般与青年项目数（项） <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">200</span></td>
+                                                            <td class="tr-head14">22</td>
+                                                            <td class="tr-head16">26</td>
+                                                            <td class="td-p1">84.6%</td>
+                                                            <td>/</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：社会科学基金一般项目师均数=社会科学基金一般项目数/专任教师数
+数据来源：全国哲学社会科学规划办公室网站，《中国高等学校大全》（2015年版），软科加工整理" align="left">12. 社会科学基金一般项目师均数（项） <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">327</span></td>
+                                                            <td class="tr-head14">0.007</td>
+                                                            <td class="tr-head16">0.005</td>
+                                                            <td class="td-p1">137.6%</td>
+                                                            <td>/</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：社会科学基金青年项目师均数=社会科学基金青年项目数/专任教师数
+数据来源：全国哲学社会科学规划办公室网站，《中国高等学校大全》（2015年版），软科加工整理" align="left">13. 社会科学基金青年项目师均数（项） <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">161</span></td>
+                                                            <td class="tr-head14">0.008</td>
+                                                            <td class="tr-head16">0.006</td>
+                                                            <td class="td-p1">141.4%</td>
+                                                            <td>/</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：国家级科研项目总数=自然科学基金面上项目数+自然科学基金青年项目数+社会科学基金一般项目数+社会科学基金青年项目数
+数据来源：国家自然科学基金委员会网站，全国哲学社会科学规划办公室网站，软科加工整理" align="left">14. 国家级科研项目总数（项） <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">114</span></td>
+                                                            <td class="tr-head14">327</td>
+                                                            <td class="tr-head16">835</td>
+                                                            <td class="td-p1">39.2%</td>
+                                                            <td>12.5%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：国家级科研项目师均数=国家级科研项目总数/专任教师数
+数据来源：国家自然科学基金委员会网站，全国哲学社会科学规划办公室网站，《中国高等学校大全》（2015年版），软科加工整理" align="left">15. 国家级科研项目师均数（项） <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">107</span></td>
+                                                            <td class="tr-head14">0.23</td>
+                                                            <td class="tr-head16">0.35</td>
+                                                            <td class="td-p1">64.6%</td>
+                                                            <td>12.5%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tr-head11" rowspan="5">科研成果</td>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：指可被Incites数据库检索到的文献总数，仅统计类型为Article文献，不统计Review和Letter等其他类型文献。
+数据来源：Clarivate Analytics（原汤森路透知识产权与科技事业部）" align="left">16. 国际论文数（篇） <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">149</span></td>
+                                                            <td class="tr-head14">1670</td>
+                                                            <td class="tr-head16">9280</td>
+                                                            <td class="td-p1">18.0%</td>
+                                                            <td>6.3%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：师均国际论文数=国际论文数/专任教师数
+数据来源：Clarivate Analytics（原汤森路透知识产权与科技事业部），《中国高等学校大全》（2015年版），软科加工整理" align="left">17. 师均国际论文数（篇） <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">148</span></td>
+                                                            <td class="tr-head14">1.2</td>
+                                                            <td class="tr-head16">3.9</td>
+                                                            <td class="td-p1">29.7%</td>
+                                                            <td>6.3%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：
+数据来源：" align="left">18. 科研规模（论文数量）（篇） <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">151</span></td>
+                                                            <td class="tr-head14">2523</td>
+                                                            <td class="tr-head16">12002</td>
+                                                            <td class="td-p1">21.0%</td>
+                                                            <td>/</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：指可被CSSCI（Chinese Social Sciences Citation Index，中国社会科学引文索引）检索到的文献总数。
+数据来源：CSSCI数据库" align="left">19. CSSCI论文发表总数（篇） <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">215</span></td>
+                                                            <td class="tr-head14">355</td>
+                                                            <td class="tr-head16">1667</td>
+                                                            <td class="td-p1">21.3%</td>
+                                                            <td>6.3%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：CSSCI论文发表师均数=CSSCI论文发表总数/专任教师数
+数据来源：CSSCI数据库，《中国高等学校大全》（2015年版），软科加工整理" align="left">20. CSSCI论文发表师均数（篇） <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">267</span></td>
+                                                            <td class="tr-head14">0.2</td>
+                                                            <td class="tr-head16">0.7</td>
+                                                            <td class="td-p1">35.1%</td>
+                                                            <td>6.3%</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-white">
+                                    <div class="panel-heading heading-control" id="heading-control7">
+                                        <h6 class="panel-title" id="panel6">
+                                            <a class="collapsed" data-toggle="collapse" href="#collapsible-control-right-group7">模块七：服务社会能力</a>
+                                        </h6>
+                                    </div>
+                                    <div id="collapsible-control-right-group7" class="panel-collapse collapse">
+                                        <div class="panel-body third-panel">
+                                            <div class="table-responsive" style="padding-top:30px;">
+                                                <table class="table-custom table" id="module7-nestedtable">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>维度</th>
+                                                            <th>指标</th>
+                                                            <th class="ourrank">排名</th>
+                                                            <th class="ourvalue">贵校</th>
+                                                            <th class="comparevalue">电子科技大学</th>
+                                                            <th>比例</th>
+                                                            <th>权重</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="tr-head11" rowspan="2">科技服务</td>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：指科研经费中企事业单位委托的经费总额。
+数据来源：《2015年高等学校科技统计资料汇编》" align="left">1. 企业科研经费总额（亿元） <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">113</span></td>
+                                                            <td class="tr-head14">0.6</td>
+                                                            <td class="tr-head16">2.7</td>
+                                                            <td class="td-p1">22.6%</td>
+                                                            <td>25.0%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：师均企业科研经费=企业科研经费总额/专任教师数
+数据来源：《2015年高等学校科技统计资料汇编》，《中国高等学校大全》（2015年版），软科加工整理" align="left">2. 师均企业科研经费（万元） <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">117</span></td>
+                                                            <td class="tr-head14">4.2</td>
+                                                            <td class="tr-head16">11.4</td>
+                                                            <td class="td-p1">37.3%</td>
+                                                            <td>25.0%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tr-head11" rowspan="2">成果转化</td>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：指技术转让情况的当年实际收入总额。
+数据来源：《2015年高等学校科技统计资料汇编》" align="left">3. 技术转让收入总额（万元） <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">25</span></td>
+                                                            <td class="tr-head14">2642</td>
+                                                            <td class="tr-head16">584</td>
+                                                            <td class="td-p1">452.5%</td>
+                                                            <td>25.0%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：师均技术转让收入=技术转让收入总额/专任教师数
+数据来源：《2015年高等学校科技统计资料汇编》，《中国高等学校大全》（2015年版），软科加工整理" align="left">4. 师均技术转让收入（万元） <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">18</span></td>
+                                                            <td class="tr-head14">1.84</td>
+                                                            <td class="tr-head16">0.25</td>
+                                                            <td class="td-p1">746.3%</td>
+                                                            <td>25.0%</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-white">
+                                    <div class="panel-heading heading-control" id="heading-control8">
+                                        <h6 class="panel-title" id="panel7">
+                                            <a class="collapsed" data-toggle="collapse" href="#collapsible-control-right-group8">模块八：高端人才</a>
+                                        </h6>
+                                    </div>
+                                    <div id="collapsible-control-right-group8" class="panel-collapse collapse">
+                                        <div class="panel-body third-panel">
+                                            <div class="table-responsive" style="padding-top:30px;">
+                                                <table class="table-custom table" id="module8-nestedtable">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>维度</th>
+                                                            <th>指标</th>
+                                                            <th class="ourrank">排名</th>
+                                                            <th class="ourvalue">贵校</th>
+                                                            <th class="comparevalue">电子科技大学</th>
+                                                            <th>比例</th>
+                                                            <th>权重</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="tr-head11" rowspan="3">学术权威</td>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：指现职工作单位（人事关系）在贵校或标杆学校的中国科学院院士总人数。
+数据来源：中国科学院网站，软科加工整理" align="left">1. 中国科学院院士（人） <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">/</span></td>
+                                                            <td class="tr-head14">0</td>
+                                                            <td class="tr-head16">2</td>
+                                                            <td class="td-p1">0.0%</td>
+                                                            <td>/</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：指现职工作单位（人事关系）在贵校或标杆学校的中国工程院院士总人数。
+数据来源：中国工程院网站，软科加工整理" align="left">2. 中国工程院院士（人） <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">/</span></td>
+                                                            <td class="tr-head14">0</td>
+                                                            <td class="tr-head16">2</td>
+                                                            <td class="td-p1">0.0%</td>
+                                                            <td>/</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：两院院士总数=中国科学院院士（现职）+中国工程院院士（现职）
+数据来源：中国科学院网站，中国工程院网站，软科加工整理" align="left">3. 两院院士总数（人） <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">/</span></td>
+                                                            <td class="tr-head14">0</td>
+                                                            <td class="tr-head16">4</td>
+                                                            <td class="td-p1">0.0%</td>
+                                                            <td>33.3%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tr-head11" rowspan="3">学术带头人</td>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：指现职工作单位（人事关系）在贵校或标杆学校的国家杰出青年科学基金获得者总人数。
+数据来源：国家自然科学基金委员会网站" align="left">4. 国家杰出青年科学基金获得者（人） <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">79</span></td>
+                                                            <td class="tr-head14">4</td>
+                                                            <td class="tr-head16">17</td>
+                                                            <td class="td-p1">23.5%</td>
+                                                            <td>/</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：指现职工作单位（人事关系）在贵校或标杆学校的长江学者特聘教授总人数。
+数据来源：教育部科技发展中心网站，软科加工整理" align="left">5. 长江学者特聘教授（人） <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">/</span></td>
+                                                            <td class="tr-head14">0</td>
+                                                            <td class="tr-head16">18</td>
+                                                            <td class="td-p1">0.0%</td>
+                                                            <td>/</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：学术带头人=长江学者特聘教授（现职）+国家杰出青年科学基金获得者（现职）
+数据来源：教育部科技发展中心网站，国家自然科学基金委员会网站，软科加工整理" align="left">6. 学术带头人（人） <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">105</span></td>
+                                                            <td class="tr-head14">4</td>
+                                                            <td class="tr-head16">35</td>
+                                                            <td class="td-p1">11.4%</td>
+                                                            <td>33.3%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tr-head11" rowspan="5">拔尖青年</td>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：指当选工作单位在贵校或标杆学校的“万人计划”青年拔尖人才（简称“青年拔尖人才”）总人数。
+数据来源：中央人才工作协调小组办公室" align="left">7. 万人计划青年拔尖人才（人） <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">/</span></td>
+                                                            <td class="tr-head14">0</td>
+                                                            <td class="tr-head16">5</td>
+                                                            <td class="td-p1">0.0%</td>
+                                                            <td>/</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：指当选工作单位在贵校或标杆学校的青年海外高层次人才引进计划工作（简称“青年千人计划”）入选者总人数。
+数据来源：千人计划网，科学网" align="left">8. 青年千人计划入选者（人） <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">/</span></td>
+                                                            <td class="tr-head14">0</td>
+                                                            <td class="tr-head16">14</td>
+                                                            <td class="td-p1">0.0%</td>
+                                                            <td>/</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：指当选工作单位在贵校或标杆学校的国家优秀青年科学基金获得者总人数。
+数据来源：国家自然科学基金委员会网站" align="left">9. 国家优秀青年科学基金获得者（人） <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">114</span></td>
+                                                            <td class="tr-head14">1</td>
+                                                            <td class="tr-head16">9</td>
+                                                            <td class="td-p1">11.1%</td>
+                                                            <td>/</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：指当选工作单位在贵校或标杆学校的“长江学者奖励计划”中青年学者（简称“青年长江学者”）总人数。
+数据来源：教育部网站" align="left">10. 青年长江学者（人） <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">/</span></td>
+                                                            <td class="tr-head14">0</td>
+                                                            <td class="tr-head16">3</td>
+                                                            <td class="td-p1">0.0%</td>
+                                                            <td>/</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：四青总数=青年千人计划入选者+国家优秀青年科学基金获得者+青年长江学者+万人计划青年拔尖人才
+数据来源：千人计划网，科学网，国家自然科学基金委员会网站，教育部网站，中央人才工作协调小组办公室，软科加工整理" align="left">11. 四青总数（人） <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">143</span></td>
+                                                            <td class="tr-head14">1</td>
+                                                            <td class="tr-head16">31</td>
+                                                            <td class="td-p1">3.2%</td>
+                                                            <td>33.3%</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-white">
+                                    <div class="panel-heading heading-control" id="heading-control9">
+                                        <h6 class="panel-title" id="panel8">
+                                            <a class="collapsed" data-toggle="collapse" href="#collapsible-control-right-group9">模块九：重大项目与成果</a>
+                                        </h6>
+                                    </div>
+                                    <div id="collapsible-control-right-group9" class="panel-collapse collapse">
+                                        <div class="panel-body third-panel">
+                                            <div class="table-responsive" style="padding-top:30px;">
+                                                <table class="table-custom table" id="module9-nestedtable">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>维度</th>
+                                                            <th>指标</th>
+                                                            <th class="ourrank">排名</th>
+                                                            <th class="ourvalue">贵校</th>
+                                                            <th class="comparevalue">电子科技大学</th>
+                                                            <th>比例</th>
+                                                            <th>权重</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="tr-head11" rowspan="5">自科项目</td>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：指学校主持立项的国家自然科学基金重大项目，仅统计项目主持人所在单位。
+数据来源：国家自然科学基金委员会网站" align="left">1. 自然科学基金重大项目（项） <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">/</span></td>
+                                                            <td class="tr-head14">0</td>
+                                                            <td class="tr-head16">0</td>
+                                                            <td class="td-p1">100.0%</td>
+                                                            <td>/</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：指学校的国家自然科学基金重点项目，仅统计项目主持人所在单位。
+数据来源：国家自然科学基金委员会网站" align="left">2. 自然科学基金重点项目（项） <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">98</span></td>
+                                                            <td class="tr-head14">3</td>
+                                                            <td class="tr-head16">21</td>
+                                                            <td class="td-p1">14.3%</td>
+                                                            <td>/</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：指学校主持立项的普通973计划、重大科学研究计划和青年科学家专题项目总数，仅统计项目主持人所在单位。
+数据来源：中国科学技术部网站" align="left">3. 973项目总数（项） <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">/</span></td>
+                                                            <td class="tr-head14">0</td>
+                                                            <td class="tr-head16">0</td>
+                                                            <td class="td-p1">100.0%</td>
+                                                            <td>/</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：
+数据来源：" align="left">4. 国家重点研发计划（项） <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">66</span></td>
+                                                            <td class="tr-head14">1</td>
+                                                            <td class="tr-head16">1</td>
+                                                            <td class="td-p1">NaN%</td>
+                                                            <td>/</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：自科重大重点项目折合数=973项目总数*5+自然科学基金重大项目*6+自然科学基金重点项目*1
+数据来源：国家自然科学基金委员会网站，软科加工整理" align="left">5. 自科重大重点项目折合数 <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">104</span></td>
+                                                            <td class="tr-head14">3</td>
+                                                            <td class="tr-head16">21</td>
+                                                            <td class="td-p1">14.3%</td>
+                                                            <td>35.0%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tr-head11" rowspan="3">社科项目</td>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：指学校主持立项的国家社会科学基金重大项目，仅统计项目主持人所在单位。
+数据来源：全国哲学社会科学规划办公室网站" align="left">6. 社会科学基金重大项目（项） <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">/</span></td>
+                                                            <td class="tr-head14">0</td>
+                                                            <td class="tr-head16">0</td>
+                                                            <td class="td-p1">100.0%</td>
+                                                            <td>/</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：指学校主持立项的国家社会科学基金重点项目，仅统计项目主持人所在单位。
+数据来源：全国哲学社会科学规划办公室网站" align="left">7. 社会科学基金重点项目（项） <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">/</span></td>
+                                                            <td class="tr-head14">0</td>
+                                                            <td class="tr-head16">1</td>
+                                                            <td class="td-p1">0.0%</td>
+                                                            <td>/</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：社科重大重点项目折合数=社会科学基金重大项目*2+社会科学基金重点项目*1
+数据来源：全国哲学社会科学规划办公室网站，软科加工整理" align="left">8. 社科重大重点项目折合数 <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">/</span></td>
+                                                            <td class="tr-head14">0</td>
+                                                            <td class="tr-head16">1</td>
+                                                            <td class="td-p1">0.0%</td>
+                                                            <td>15.0%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tr-head11" rowspan="12">自科成果</td>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：指学校获得的由国务院颁发的国家科技进步奖特等奖，仅统计排在第一位的完成人所在单位，且仅统计通用项目。
+数据来源：中国科学技术部网站" align="left">9. 国家科技进步奖特等奖（项） <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">/</span></td>
+                                                            <td class="tr-head14">0</td>
+                                                            <td class="tr-head16">0</td>
+                                                            <td class="td-p1">100.0%</td>
+                                                            <td>/</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：指学校获得的由国务院颁发的国家科技进步奖一等奖，仅统计排在第一位的完成人所在单位，且仅统计通用项目。
+数据来源：中国科学技术部网站" align="left">10. 国家科技进步奖一等奖（项） <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">/</span></td>
+                                                            <td class="tr-head14">0</td>
+                                                            <td class="tr-head16">0</td>
+                                                            <td class="td-p1">100.0%</td>
+                                                            <td>/</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：指学校获得的由国务院颁发的国家科技进步奖二等奖，仅统计排在第一位的完成人所在单位，且仅统计通用项目。
+数据来源：中国科学技术部网站" align="left">11. 国家科技进步奖二等奖（项） <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">/</span></td>
+                                                            <td class="tr-head14">0</td>
+                                                            <td class="tr-head16">3</td>
+                                                            <td class="td-p1">0.0%</td>
+                                                            <td>/</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：指学校获得的由国务院颁发的国家科技进步奖团队合作奖，仅统计排在第一位的完成人所在单位，且仅统计通用项目。
+数据来源：中国科学技术部网站" align="left">12. 国家科技进步奖创新团队（项） <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">/</span></td>
+                                                            <td class="tr-head14">0</td>
+                                                            <td class="tr-head16">0</td>
+                                                            <td class="td-p1">100.0%</td>
+                                                            <td>/</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：
+数据来源：" align="left">13. 国家科技进步奖（项） <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">/</span></td>
+                                                            <td class="tr-head14">0</td>
+                                                            <td class="tr-head16">3</td>
+                                                            <td class="td-p1">0.0%</td>
+                                                            <td>/</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：指学校获得的由国务院颁发的国家自然科学奖一等奖，仅统计排在第一位的完成人所在单位。
+数据来源：中国科学技术部网站" align="left">14. 国家自然科学奖一等奖（项） <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">/</span></td>
+                                                            <td class="tr-head14">0</td>
+                                                            <td class="tr-head16">0</td>
+                                                            <td class="td-p1">100.0%</td>
+                                                            <td>/</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：指学校获得的由国务院颁发的国家自然科学奖二等奖，仅统计排在第一位的完成人所在单位。
+数据来源：中国科学技术部网站" align="left">15. 国家自然科学奖二等奖（项） <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">/</span></td>
+                                                            <td class="tr-head14">0</td>
+                                                            <td class="tr-head16">0</td>
+                                                            <td class="td-p1">100.0%</td>
+                                                            <td>/</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：
+数据来源：" align="left">16. 国家自然科学奖（项） <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">/</span></td>
+                                                            <td class="tr-head14">0</td>
+                                                            <td class="tr-head16">0</td>
+                                                            <td class="td-p1">100.0%</td>
+                                                            <td>/</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：指学校获得的由国务院颁发的国家技术发明奖一等奖，仅统计排在第一位的完成人所在单位，且仅统计通用项目。
+数据来源：中国科学技术部网站" align="left">17. 国家技术发明奖一等奖（项） <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">/</span></td>
+                                                            <td class="tr-head14">0</td>
+                                                            <td class="tr-head16">0</td>
+                                                            <td class="td-p1">100.0%</td>
+                                                            <td>/</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：指学校获得的由国务院颁发的国家技术发明奖二等奖，仅统计排在第一位的完成人所在单位，且仅统计通用项目。
+数据来源：中国科学技术部网站" align="left">18. 国家技术发明奖二等奖（项） <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">/</span></td>
+                                                            <td class="tr-head14">0</td>
+                                                            <td class="tr-head16">1</td>
+                                                            <td class="td-p1">0.0%</td>
+                                                            <td>/</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：
+数据来源：" align="left">19. 国家技术发明奖（项） <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">/</span></td>
+                                                            <td class="tr-head14">0</td>
+                                                            <td class="tr-head16">1</td>
+                                                            <td class="td-p1">0.0%</td>
+                                                            <td>/</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：国家三大科技奖折合数=（国家自然科学奖一等奖+国家技术发明奖一等奖+国家科技进步奖特等奖）*100+国家科技进步奖一等奖*10+（国家自然科学奖二等奖+国家技术发明奖二等奖）*2+国家科技进步奖二等奖*1
+数据来源：中国科学技术部网站，软科加工整理" align="left">20. 国家三大科技奖折合数 <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">/</span></td>
+                                                            <td class="tr-head14">0</td>
+                                                            <td class="tr-head16">5</td>
+                                                            <td class="td-p1">0.0%</td>
+                                                            <td>35.0%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tr-head11" rowspan="1">社科成果</td>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：指学校获得的由教育部面向高校颁发的优秀成果著作奖、优秀成果论文奖和优秀成果研究报告奖的一等奖、二等奖和三等奖。
+数据来源：中国教育部网站" align="left">21. 高校科研优秀成果奖（人文社科类）（项） <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">162</span></td>
+                                                            <td class="tr-head14">1</td>
+                                                            <td class="tr-head16">4</td>
+                                                            <td class="td-p1">25.0%</td>
+                                                            <td>15.0%</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-white">
+                                    <div class="panel-heading heading-control" id="heading-control10">
+                                        <h6 class="panel-title" id="panel9">
+                                            <a class="collapsed" data-toggle="collapse" href="#collapsible-control-right-group10">模块十：国际竞争力</a>
+                                        </h6>
+                                    </div>
+                                    <div id="collapsible-control-right-group10" class="panel-collapse collapse">
+                                        <div class="panel-body third-panel">
+                                            <div class="table-responsive" style="padding-top:30px;">
+                                                <table class="table-custom table" id="module10-nestedtable">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>维度</th>
+                                                            <th>指标</th>
+                                                            <th class="ourrank">排名</th>
+                                                            <th class="ourvalue">贵校</th>
+                                                            <th class="comparevalue">电子科技大学</th>
+                                                            <th>比例</th>
+                                                            <th>权重</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="tr-head11" rowspan="3">国际化程度</td>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：留学生比例=学历留学生数/学生总数
+数据来源：《中国高等学校大全》（2015年版），软科加工整理" align="left">1. 学历留学生比例 <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">402</span></td>
+                                                            <td class="tr-head14">0.2%</td>
+                                                            <td class="tr-head16">1.1%</td>
+                                                            <td class="td-p1">20.9%</td>
+                                                            <td>8.3%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：国际教师比例=国际教师数/专任教师数
+数据来源：" align="left">2. 国际教师比例 <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">/</span></td>
+                                                            <td class="tr-head14">暂无数据</td>
+                                                            <td class="tr-head16">暂无数据</td>
+                                                            <td class="td-p1">/</td>
+                                                            <td>8.3%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：指可被Incites数据库检索到的文献中国际合作论文的比例，仅统计类型为Article文献，不统计Review和Letter等其他类型文献。
+数据来源：Clarivate Analytics（原汤森路透知识产权与科技事业部）" align="left">3. 国际合作论文比例 <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">85</span></td>
+                                                            <td class="tr-head14">25%</td>
+                                                            <td class="tr-head16">28%</td>
+                                                            <td class="td-p1">88.5%</td>
+                                                            <td>8.3%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tr-head11" rowspan="3">国际显示度</td>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：指可被Incites数据库检索到的论文总数，仅统计类型为Article文献，不统计Review和Letter等其他类型文献。
+数据来源：Clarivate Analytics（原汤森路透知识产权与科技事业部）" align="left">4. 国际论文数（篇） <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">149</span></td>
+                                                            <td class="tr-head14">1670</td>
+                                                            <td class="tr-head16">9280</td>
+                                                            <td class="td-p1">18.0%</td>
+                                                            <td>12.5%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：师均国际论文数=国际论文数/专任教师数
+数据来源：Clarivate Analytics（原汤森路透知识产权与科技事业部），《中国高等学校大全》（2015年版），软科加工整理" align="left">5. 师均国际论文论文数（篇） <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">148</span></td>
+                                                            <td class="tr-head14">1.2</td>
+                                                            <td class="tr-head16">3.9</td>
+                                                            <td class="td-p1">29.7%</td>
+                                                            <td>/</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：国际论文增幅=2015年国际论文数/2011年国际论文数
+数据来源：Clarivate Analytics（原汤森路透知识产权与科技事业部），软科加工整理" align="left">6. 国际论文增幅 <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">113</span></td>
+                                                            <td class="tr-head14">2.5</td>
+                                                            <td class="tr-head16">1.8</td>
+                                                            <td class="td-p1">142.2%</td>
+                                                            <td>12.5%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tr-head11" rowspan="3">国际影响力</td>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：指可被Incites数据库检索到的文献的总被引次数，仅统计类型为Article文献，不统计Review和Letter等其他类型文献。
+数据来源：Clarivate Analytics（原汤森路透知识产权与科技事业部）" align="left">7. 论文被引总次数（次） <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">154</span></td>
+                                                            <td class="tr-head14">8679</td>
+                                                            <td class="tr-head16">52434</td>
+                                                            <td class="td-p1">16.6%</td>
+                                                            <td>12.5%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：指可被Incites数据库检索到的文献被引总次数和相同学科、相同年份、相同类型论文平均被引次数的比值，仅统计类型为Article文献，不统计Review和Letter等其他类型文献。
+数据来源：Clarivate Analytics（原汤森路透知识产权与科技事业部）" align="left">8. 标准化论文影响力 <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">60</span></td>
+                                                            <td class="tr-head14">1.06</td>
+                                                            <td class="tr-head16">0.94</td>
+                                                            <td class="td-p1">112.7%</td>
+                                                            <td>12.5%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：
+数据来源：" align="left">9. 科研质量（论文质量） <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">111</span></td>
+                                                            <td class="tr-head14">0.928</td>
+                                                            <td class="tr-head16">0.948</td>
+                                                            <td class="td-p1">97.9%</td>
+                                                            <td>/</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tr-head11" rowspan="6">世界一流标志</td>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：指学校被Clarivate Analytics（原汤森路透知识产权与科技事业部）公司研发的“高被引科学家”名单收录的研究人员数。
+数据来源：Clarivate Analytics（原汤森路透知识产权与科技事业部）" align="left">10. 高被引科学家数（位） <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">0</span></td>
+                                                            <td class="tr-head14">0</td>
+                                                            <td class="tr-head16">2</td>
+                                                            <td class="td-p1">0.0%</td>
+                                                            <td>12.5%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：指学校在《自然》（Nature）和《科学》（Science）上发表的论文的折合数量，仅统计类型为Article的文献，不统计Review或Letter等其他类型文献。为了更客观地反映大学的学术表现，对不同作者单位排序赋予不同的权重，通讯作者单位的权重为100%，第一作者单位（如果第一作者单位与通讯作者单位相同，则为第二作者单位）的权重为50%，下一个作者单位的权重为25%，其他作者单位的权重为10%。
+数据来源：Clarivate Analytics（原汤森路透知识产权与科技事业部），软科加工整理" align="left">11. Nature和Science论文数（篇） <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">/</span></td>
+                                                            <td class="tr-head14">0.00</td>
+                                                            <td class="tr-head16">0.00</td>
+                                                            <td class="td-p1">100.0%</td>
+                                                            <td>12.5%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：
+数据来源：" align="left">12. 获诺贝尔奖和菲尔兹奖的教师折合数 <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">/</span></td>
+                                                            <td class="tr-head14">0.0</td>
+                                                            <td class="tr-head16">0.0</td>
+                                                            <td class="td-p1">100.0%</td>
+                                                            <td>/</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：
+数据来源：" align="left">13. 获诺贝尔奖和菲尔兹奖的校友折合数 <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">/</span></td>
+                                                            <td class="tr-head14">0.0</td>
+                                                            <td class="tr-head16">0.0</td>
+                                                            <td class="td-p1">100.0%</td>
+                                                            <td>/</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：
+数据来源：" align="left">14. 顶尖成果（高被引论文）（篇） <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">88</span></td>
+                                                            <td class="tr-head14">67</td>
+                                                            <td class="tr-head16">238</td>
+                                                            <td class="td-p1">28.2%</td>
+                                                            <td>/</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tr-head13">
+                                                                <div title="数据定义：
+数据来源：" align="left">15. 顶尖人才（高被引学者）（位） <i class="icon-question3"></i></div>
+                                                            </td>
+                                                            <td class="tr-head14"><span class="data-background">93</span></td>
+                                                            <td class="tr-head14">2</td>
+                                                            <td class="tr-head16">13</td>
+                                                            <td class="td-p1">15.4%</td>
+                                                            <td>/</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- off-canvas backdrop -->
+                    <div class="mui-off-canvas-backdrop ">
+
+                    </div>
+                </div>
+
+                <!--底部导航-->
+                <nav class="mui-bar mui-bar-tab">
+                    <a class="mui-tab-item mui-active" href="#tabbar">
+                        <span class="mui-icon mui-home">
+                        <!--<img src="../images/icon/overview2.png" alt="">-->
+                    </span>
+                        <span class="mui-tab-label">数据总揽</span>
+                    </a>
+                    <a class="mui-tab-item" href="#tabbar-with-chat">
+                        <span class="mui-icon mui-email"></span>
+                        <span class="mui-tab-label">数据对比</span>
+                    </a>
+                    <a class="mui-tab-item" href="#tabbar-with-contact">
+                        <span class="mui-icon mui-contact"></span>
+                        <span class="mui-tab-label">数据明细</span>
+                    </a>
+                </nav>
+
+            </div>
+
+            <script src="./libs/bootstrap/jquery.min.js"></script>
+            <script src="./libs/bootstrap/bootstrap.min.js"></script>
+            <script src="./libs/mui/mui.min.js"></script>
+            <script src="./js/comment.js"></script>
+            <script src="./js/compare.js"></script>
+</body>
+
+</html>

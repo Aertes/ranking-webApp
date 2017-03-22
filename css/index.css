@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+.graphic-analysis .title h1{
+	color: #3d71b2;
+	text-align: center;
+}
+
+.graphic-analysis .svg{
+	position: relative;
+	overflow: hidden;
+}
+
+
+.graphic-analysis .svg div{
+	width: 30px;
+	height: 30px;
+	border: 2px solid #ccc;
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-15px);
+}
+
+.graphic-analysis .svg .click-right{
+	position: absolute;
+	top: 50%;
+	right: 0;
+}
+
+
+.graphic-analysis .svg div a{
+	display: block;
+	top: 50%;
+	left: 50%;
+}
+
+
+
+
+
