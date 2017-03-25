@@ -1,9 +1,6 @@
 @charset "utf-8";
 
-
-
 /*指标*/
-
 
 .graphic-analysis .title h1{
 	color: #3d71b2;
@@ -14,22 +11,66 @@
 .graphic-analysis .svg{
 	position: relative;
 	overflow: hidden;
+	border:0.025rem solid red;
 }
 
 .graphic-analysis .university{
-	margin: 0 auto;
+	/*margin: 0 auto;*/
 	text-align: center;
 }
 .graphic-analysis .university div{
+	padding: 0.25rem;
 	background-color: #f4f4f4;
+	box-sizing: border-box;
 }
-
 .graphic-analysis .university a{
 	display: block;
 	font-size: 0.7rem;
 	color: #808080;
 }
 
+#active-color{
+	color: #3d71b2;
+}
+
+/*表格*/
+.table>thead>tr>th{
+    vertical-align: middle;
+    border: none;
+    padding: 0;
+    text-align: center;
+    background-color: #d2e6ff;
+    font-size: 0.7rem;
+    color: #3d71b2;
+    box-sizing: border-box;
+}
+
+.table>tbody>tr>td{
+	border-top: none;
+}
+
+.list-module table tbody th, td{
+	font-size: 0.6rem;
+	width: 100%;
+	padding: 0.5rem;
+	position: relative;
+}
+
+.table>tbody>tr>td.modulescoretablebody1, 
+.modulescoretablebody2,
+.modulescoretablebody3{
+	padding: 0 0.25rem;
+	vertical-align: middle;
+	box-sizing: border-box;
+}
+
+.tab-content table>tbody>tr:nth-child(2n){
+	background-color: #e7f1fc;
+}
+
+.panel-body{
+	padding: 0;
+}
 
 /*模块*/
 
@@ -44,7 +85,7 @@
 .list-module table tbody th, td{
 	padding: 0.5rem;
 	width: 100%;
-	white-space: nowrap;
+	/*white-space: nowrap;*/
 	/*word-break: keep-all;*/
 }
 
@@ -62,4 +103,75 @@
 
 .list-module table tbody td i{
 	position: relative;
+}
+
+#heading-control1{
+	border-bottom: 0.025rem solid #c3c3c3;
+	border-radius: 0.25rem;
+}
+
+#heading-control1 h6 a{
+	font-size: 0.8rem;
+}
+
+
+#collapsible-control-right-group1{
+	/*display: none;*/
+}
+
+#panel0{
+	position: relative;
+}
+#panel3 table>thead>tr>th{
+	padding: 0.5rem 0;
+}
+
+.table-responsive table>thead>tr>th{
+	background-color: #fff;
+	color: #57575f;
+	padding: 0.5rem 0;
+	border-left: 0.025rem solid #c3c3c3;
+	border-bottom: 0.025rem solid #c3c3c3;
+}
+
+.table-responsive table>tbody>tr>td{
+	border-left: 0.025rem solid #c3c3c3;
+	border-bottom: 0.025rem solid #c3c3c3;
+	line-height: 100%;
+}
+
+
+#panel3 .tab-pane table{
+	table-layout: fixed;
+	text-align: center;
+}
+
+#panel4 ul li{
+	padding: 0;
+}
+#panel4 .table-responsive{
+	margin: 0;
+}
+
+
+
+@media screen (min-width:769px)and(max-width: 1024px){
+	#panel4 .table-responsive table{
+		table-layout: fixed;
+		text-align: center;
+	}
+}
+
+#panel4 ul li a{
+	padding: 0.5rem 0.25rem;
+	margin: 0;
+}
+
+@media screen (max-width:768px) {
+	.table-responsive table>tr>th,td{
+		font-size: 0.75rem;
+		padding: 0 0.5rem;
+		word-wrap:break-word;
+		white-space: nowrap;
+	}
 }

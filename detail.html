@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./libs/mui/mui.min.css">
     <link rel="stylesheet" href="./libs/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./libs/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./libs/fonts/iconfont/iconfont.css">
     <link rel="stylesheet" href="./css/comment.css">
     <link rel="stylesheet" href="./css/detail.css">
 </head>
@@ -29,27 +31,27 @@
                     </div>
                     <ul class="mui-table-view mui-table-view-chevron mui-table-view-inverted">
                         <li class="mui-table-view-cell">
-                            <a class="mui-navigate-right">
+                            <a class="mui-navigate-right icon-write-filled">
 									自定义
 							</a>
                         </li>
                         <li class="mui-table-view-cell">
-                            <a class="mui-navigate-right">
+                            <a class="mui-navigate-right fa fa-calendar">
 									数据年份
 							</a>
                         </li>
                         <li class="mui-table-view-cell">
-                            <a class="mui-navigate-right">
+                            <a class="mui-navigate-right  icon-tongjifenxi5">
 									关键指标
 							</a>
                         </li>
                         <li class="mui-table-view-cell">
-                            <a class="mui-navigate-right">
+                            <a class="mui-navigate-right icon-47">
 									指标权重
 							</a>
                         </li>
                         <li class="mui-table-view-cell">
-                            <a class="mui-navigate-right">
+                            <a class="mui-navigate-right fa fa-bell-o">
 									通知
 							</a>
                         </li>
@@ -89,14 +91,19 @@
         <!--主界面部分-->
         <div class="mui-inner-wrap">
             <header class="mui-bar mui-bar-nav">
-                <a href="#offCanvasSide" class="mui-icon mui-action-menu mui-icon-bars mui-pull-left">
-                    <i class="fa fa-bars" aria-hidden="true"></i>
-                </a>
-                <a href="#" class="mui-btn mui-btn-link mui-pull-right  mui-person"></a>
+                <a href="#offCanvasSide" class="mui-icon mui-action-menu mui-icon-bars mui-pull-left" aria-hidden="true"></a>
+                <!-- Single button -->
+                <div class="dropdown">
+                    <button type="button" id="dLabel" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a href="#" class=""></a>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dLabel">
+                        <li><a href="#">修改密码</a></li>
+                        <li><a href="#">登出</a></li>
+                    </ul>
+                </div>
                 <h1 class="mui-title">
-                    <a href="#">
-                        <img src="./images/icon/srcdata2.png" alt="软科数据平台">
-                    </a>
+                    <a href="./index.html">大学360°对比分析平台</a>
                 </h1>
             </header>
             <div id="offCanvasContentScroll" class="mui-content mui-scroll-wrapper">
@@ -109,84 +116,125 @@
                     </div>
 
                     <!-- 模块 -->
-                    <div class="list-module">
-                        <ul class="mui-table-view">
-                            <li class="mui-table-view-cell">
-                                <a class="navigate-right">
-                                        模块一：办学规模与层次
+                    <div class="list-module" id="panel4">
+                        <ul class="mui-table-view mui-table-view-chevron">
+                            <li class="mui-table-view-cell mui-collapse">
+                                <a class="navigate-right-right">
+                                    模块一：办学规模与层次
                                 </a>
-                                
-                            </li>
-                            <li class="mui-table-view-cell">
-                                <a class="navigate-right">
-                                        模块二：学科布局与水平
-                                    </a>
-                            </li>
-                            <li class="mui-table-view-cell">
-                                <a class="navigate-right">
-                                        模块三：办学资源
-                                    </a>
-                            </li>
-                            <li class="mui-table-view-cell">
-                                <a class="navigate-right">
-                                        模块四：师资规模与结构
-                                    </a>
-                            </li>
-                            <li class="mui-table-view-cell">
-                                <a class="navigate-right">
-                                        模块五：人才培养能力
-                                    </a>
-                            </li>
-                            <li class="mui-table-view-cell">
-                                <a class="navigate-right">
-                                        模块六：科学研究能力
-                                    </a>
-                            </li>
-                            <li class="mui-table-view-cell">
-                                <a class="navigate-right">
-                                        模块七：服务社会能力
-                                    </a>
-                            </li>
-                            <li class="mui-table-view-cell">
-                                <a class="navigate-right">
-                                        模块八：高端人才
-                                    </a>
-                            </li>
-                            <li class="mui-table-view-cell">
-                                <a class="navigate-right">
-                                        模块九：重大项目与成果
-                                    </a>
-                            </li>
-                            <li class="mui-table-view-cell">
-                                <a class="navigate-right">
-                                        模块十：国际竞争力
-                                    </a>
+                                <div class="table-responsive mui-table-view mui-table-view-chevron">
+                                    <table class="table-custom table" id="module1-nestedtable" align="center">
+                                        <thead>
+                                            <tr>
+                                                <th>维度</th>
+                                                <th>指标</th>
+                                                <th class="ourrank">
+                                                    排名
+                                                </th>
+                                                <th class="ourvalue">
+                                                    贵校
+                                                </th>
+                                                <th class="comparevalue">
+                                                    电子科技大学
+                                                </th>
+                                                <th>比例</th>
+                                                <th>权重</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="tr-head11" rowspan="5">办学规模</td>
+                                                <td class="tr-head13">
+                                                    <div title="数据定义：学生总数=本科生数+硕士生数+博士生数+学历留学生数。数据来源：《中国高等学校大全》（2015年版）" align="left">1. 学生总数（人） <i class="icon-question3 star"></i>
+                                                    </div>
+                                                </td>
+                                                <td class="tr-head14"><span class="data-background">288</span></td>
+                                                <td class="tr-head14">19556</td>
+                                                <td class="tr-head16">34875</td>
+                                                <td class="td-p1">56.1%</td>
+                                                <td>50.0%</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="tr-head13">
+                                                    <div title="数据定义：指攻读各种学士学位的全日制在校生数，不包括学历留学生。数据来源：《中国高等学校大全》（2015年版）" align="left">2. 本科生数（人） <i class="icon-question3"></i></div>
+                                                </td>
+                                                <td class="tr-head14"><span class="data-background">322</span></td>
+                                                <td class="tr-head14">16571</td>
+                                                <td class="tr-head16">21878</td>
+                                                <td class="td-p1 tag">75.7%
+                                                </td>
+                                                <td>/</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="tr-head13">
+                                                    <div title="数据定义：指攻读各种硕士学位的全日制在校生数，不包括学历留学生。数据来源：《中国高等学校大全》（2015年版）" align="left">3. 硕士生数（人） <i class="icon-question3 Active"></i></div>
+                                                </td>
+                                                <td class="tr-head14"><span class="data-background">171</span></td>
+                                                <td class="tr-head14">2930</td>
+                                                <td class="tr-head16">10706</td>
+                                                <td class="td-p1">27.4%</td>
+                                                <td>/</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="tr-head13">
+                                                    <div title="数据定义：指攻读各种博士学位的全日制在校生数，不包括学历留学生。数据来源：《中国高等学校大全》（2015年版）" align="left">4. 博士生数（人） <i class="icon-question3"></i></div>
+                                                </td>
+                                                <td class="tr-head14"><span class="data-background">283</span></td>
+                                                <td class="tr-head14">9</td>
+                                                <td class="tr-head16">1899</td>
+                                                <td class="td-p1">0.5%</td>
+                                                <td>/</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="tr-head13">
+                                                    <div title="数据定义：指攻读各种学士学位、硕士学位、博士学位的在校生中拥有其他国家国籍或持有我国香港、澳门、台湾永久性居民身份证的学生数。数据来源：《中国高等学校大全》（2015年版）" align="left">5. 学历留学生数（人） <i class="icon-question3"></i></div>
+                                                </td>
+                                                <td class="tr-head14"><span class="data-background">377</span></td>
+                                                <td class="tr-head14">46</td>
+                                                <td class="tr-head16">392</td>
+                                                <td class="td-p1">11.7%</td>
+                                                <td>/</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="tr-head11" rowspan="1">办学层次</td>
+                                                <td class="tr-head13">
+                                                    <div title="数据定义：研究生比例=（硕士生数+博士生数）/学生总数。数据来源：《中国高等学校大全》（2015年版），软科加工整理" align="left">6. 研究生比例 <i class="icon-question3"></i></div>
+                                                </td>
+                                                <td class="tr-head14"><span class="data-background">181</span></td>
+                                                <td class="tr-head14">15.0%</td>
+                                                <td class="tr-head16">36.1%</td>
+                                                <td class="td-p1">41.6%</td>
+                                                <td>50.0%</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </li>
                         </ul>
                     </div>
 
                 </div>
-                <!-- off-canvas backdrop -->
-                <div class="mui-off-canvas-backdrop">
 
-                </div>
             </div>
 
             <!--底部导航-->
             <nav class="mui-bar mui-bar-tab">
-                <a class="mui-tab-item mui-active" href="#tabbar">
+                <a class="mui-tab-item" id="index" href="#index">
                     <span class="mui-icon mui-home"></span>
                     <span class="mui-tab-label">数据总揽</span>
                 </a>
-                <a class="mui-tab-item" href="#tabbar-with-chat">
+                <a class="mui-tab-item" id="compare" href="#compare">
                     <span class="mui-icon mui-email"></span>
                     <span class="mui-tab-label">数据对比</span>
                 </a>
-                <a class="mui-tab-item" href="#tabbar-with-contact">
+                <a class="mui-tab-item mui-active" id="detail" href="#detail">
                     <span class="mui-icon mui-contact"></span>
                     <span class="mui-tab-label">数据明细</span>
                 </a>
             </nav>
+
+            <!-- off-canvas backdrop -->
+            <div class="mui-off-canvas-backdrop"></div>
 
         </div>
 
@@ -194,7 +242,7 @@
         <script src="./libs/bootstrap/bootstrap.min.js"></script>
         <script src="./libs/mui/mui.min.js"></script>
         <script src="./js/comment.js"></script>
-        <script src="./js/detail.js"></script>
+        <!--<script src="./js/detail.js"></script>-->
 </body>
 
 </html>

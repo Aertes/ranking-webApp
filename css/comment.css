@@ -1,41 +1,13 @@
 @charset "utf-8";
 
 
-/*
-@media only screen and (min-width:401px){
-    html{
-        font-size: 0.625rem !important;
-    }
-}
-@media only screen and (min-width:428px){
-    html{
-        font-size: 26.75px !important;
-    }
-}
-@media only screen and (min-width:481px){
-    html{
-        font-size: 0.75rem !important;
-    }
-}
-@media only screen and (min-width:569px){
-    html{
-        font-size: 0.875rem !important;
-    }
-}
-@media only screen and (min-width:641px){
-    html{
-        font-size: 1.0rem !important;
-    }
-}*/
-
-
 .mui-inner-wrap .mui-content{
     background-color: #fff;
 }
 
-.navigate-right:after{
+.navigate-right:before{
     font-family: 'Muiicons';
-    font-size: inherit;
+    font-size: 0.8rem;
     line-height: 1;
     position: absolute;
     top: 50%;
@@ -43,31 +15,64 @@
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
     text-decoration: none;
-    color: #bbb;
+    color: #ccc;
     -webkit-font-smoothing: antialiased;
     position: absolute;
     top: 50%;
     right: 1rem;
-    content: '\e583';
+    content: '\e581';
 }
 
 
 /*header-nav*/
+
 .mui-icon-bars::before{
     content: '\e563';
     color: #fff;
 }
-.mui-person::before{
-    content: '';
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    background-image: url('../images/icon/user.png');
+
+
+.dropdown{
     position: absolute;
-    top: 10px;
     right: 0;
+    background-color: #303953;
+    box-sizing: border-box;
+    border: none;
+    padding: 0;
 }
 
+.btn{
+    background-color: #303953;
+    /*padding: 0;*/
+}
+
+.btn a {
+    display: inline-block;
+    background: url('../images/icon/user.png') no-repeat;
+    background-size: 100% 100%;
+    padding: 11px 10px ;
+}
+
+.open>.dropdown-menu{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #303953;
+    border: none;
+    margin: 0;
+    min-width: 0;
+}
+
+.dropdown-menu li a{
+    display: block;
+    min-width: 0;
+    font-size: 0.6rem;
+    color: #fff;
+}
+
+.mui-navigate-right:after, .mui-push-right:after{
+    content: "";
+}
 
 .mui-inner-wrap header{
     background-color: #303953;
@@ -75,17 +80,10 @@
 }
 
 .mui-inner-wrap  .mui-title a{
-    text-align: center;
+    display: inline-block;
+    box-sizing: border-box;
+    color: #fff;
 }
-.mui-inner-wrap  .mui-title a img{
-    display: block;    
-    height: 2.0rem;
-    line-height: 1.0rem;
-    background-size: cover;
-    padding: 0.25rem 1.0rem;
-}
-
-
 
 
 /*footer-nav*/
@@ -101,7 +99,7 @@
     width: 26px;
     height: 22px;
     background-image: url('../images/icon/overview2.png');
-    background-size: cover;
+    background-size: 100% 100%;
 }
 
 .mui-inner-wrap .mui-bar-tab{
@@ -140,7 +138,7 @@
 
 .mui-draggable .content p{
     text-align: center;
-    font-size: 1.7rem;
+    font-size: 0.85rem;
     color: #fff;
     font-weight: 700;
 }
@@ -156,9 +154,9 @@
 }
 
 .mui-scroll-wrapper .mui-scroll ul li{
-    text-indent: 3.5rem;
-    font-size: 1.5rem;
-    font-weight: 700;
+    font-size: 0.7rem;
+    font-weight: 400;
+    padding-left: 1.3rem;
 }
 
 .mui-navigate-right:after, 
@@ -170,34 +168,35 @@
 }
 .mui-scroll-wrapper .table-time ol{
     position: relative;
+    padding: 0.25rem;
 }
 
 .mui-scroll-wrapper .table-time ol li{
     color: #fff;
-    text-indent: 5rem;
-    font-size: 1.4rem;
+    font-size: 0.6rem;
     font-weight: 400;
+    text-indent: 0.2rem;
 }
 
 .mui-scroll-wrapper .table-time li a{
     display: inline-block;
     color: #fff;
-    font-size: 1.4rem;
+    font-size: 0.6rem;
     font-weight: 400;
-    text-indent: 8rem;
+    text-indent: 4rem;
 }
 
 
 .table-time-cell:after{
     content: "";
     display: block;
-    width: 15px;
-    height: 15px;
+    width: 0.5rem;
+    height: 0.5rem;
     background-color: #d83f3f;
     border-radius: 50%;
     position: absolute;
-    top: 3px;
-    left: 25px;
+    top: 0.45rem;
+    left: 0.8rem;
 }
 
 
@@ -205,12 +204,21 @@
 
 .tag-app::after {
     content: "";
-    width: 12px;
-    height: 15px;
+    width: 0.4rem;
+    height: 0.6rem;
     position: absolute;
     top: 50%;
-    left: -15px;
-    transform: translateY(-50%);
-    background: url("../images/icon/书签.jpg") no-repeat;
+    left: 33%;
+    transform: translate(-50%, -50%);
+    background: url("../images/icon/书签.jpg");
+    background-size: 100% 100%;
 }
+
+
+.background-color:{
+    background-color: #466fa1;
+}
+
+
+
 
