@@ -75,7 +75,6 @@ if (mui.os.plus && mui.os.ios) {
 }
 
 
-//tap为mui封装的单击事件，可参考手势事件章节
 document.getElementById('index').addEventListener('tap', function() {
   //打开关于页面
   mui.openWindow({
@@ -84,7 +83,7 @@ document.getElementById('index').addEventListener('tap', function() {
   });
 });
 
-//tap为mui封装的单击事件，可参考手势事件章节
+
 document.getElementById('compare').addEventListener('tap', function() {
   //打开关于页面
   mui.openWindow({
@@ -94,7 +93,7 @@ document.getElementById('compare').addEventListener('tap', function() {
 });
 
 
-//tap为mui封装的单击事件，可参考手势事件章节
+
 document.getElementById('detail').addEventListener('tap', function() {
   //打开关于页面
   mui.openWindow({
@@ -102,4 +101,13 @@ document.getElementById('detail').addEventListener('tap', function() {
     id:'detail'
   });
 });
+
+
+// document.getElementById('idicator').addEventListener('tap', function() {
+//   //打开关于页面
+//   mui.openWindow({
+//     url: 'idicator.html', 
+//     id:'idicator'
+//   });
+// });
 

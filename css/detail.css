@@ -13,46 +13,21 @@
 
 /*模块*/
 
-.list-module table{
+
+#table-responsive{
+    margin: 0;
+}
+
+#table-responsive table>thead>tr>th{
+    padding: 0.5rem 0.25rem;
+    font-size: 0.6rem;
+    vertical-align: middle;
     text-align: center;
-    margin: 0 auto;
-    /*table-layout: fixed;*/
-    width: 100%;
-    box-sizing: border-box;
-}
-
-.list-module table tbody th, td{
-    padding: 0.5rem;
-    width: 100%;
-    /*white-space: nowrap;*/
-    /*word-break: keep-all;*/
-}
-
-.list-module table th{
-    text-align: center;
-    padding: 0 0.5rem;
-    background-color: #d2e6ff;
-    color: #3d71b2;
-}
-
-.list-module table tbody td:nth-child(1){
-    text-align: left;
-    text-indent: 0.5rem;
-}
-
-
-#panel0{
-    position: relative;
-}
-
-#panel3 table>thead>tr>th{
-    padding: 0.5rem 0;
 }
 
 .table-responsive table>thead>tr>th{
     background-color: #fff;
     color: #57575f;
-    padding: 0.5rem 0;
     border-left: 0.025rem solid #c3c3c3;
     border-bottom: 0.025rem solid #c3c3c3;
 }
@@ -61,34 +36,50 @@
     border-left: 0.025rem solid #c3c3c3;
     border-bottom: 0.025rem solid #c3c3c3;
     line-height: 100%;
+    text-align: center;
+    font-size: 14px;
+    vertical-align: middle;
 }
 
 
-#panel4 ul li{
+#table-responsive .tab-pane table{
+    table-layout: fixed;
+    text-align: center;
+}
+
+.mui-scroll-wrapper .mui-scroll ul li{
+    font-size: 0.7rem;
+    font-weight: 400;
+    padding-left: 1.3rem;
+}
+
+#detail-module ul li a{
+    margin: 0;
+    padding: 0.5rem 0.25rem;
+}
+
+.mui-scroll-wrapper .mui-scroll ul>li{
     padding: 0;
 }
-#panel4 .table-responsive{
-    margin: 0;
+
+#offCanvasSide .mui-scroll-wrapper .mui-scroll ul>li{
+    padding-left: 1.3rem;
 }
 
-
-@media screen (min-width:769px)and(max-width: 1024px){
-    #panel4 .table-responsive table{
-        table-layout: fixed;
-        text-align: center;
-    }
+#offCanvasSide .mui-scroll-wrapper .mui-scroll ul>li>a{
+    margin-right: 0;
+}
+.mui-table-view-chevron .mui-table-view-cell{
+    padding-left: 65px;
 }
 
-#panel4 ul li a{
-    padding: 0.5rem 0.25rem;
-    margin: 0;
-}
-
-@media screen (max-width:768px) {
-    .table-responsive table>tr>th,td{
-        font-size: 0.75rem;
-        padding: 0 0.5rem;
-        /*word-wrap:break-word;*/
-        /*white-space: nowrap;*/
-    }
+.mui-table-view-cell>a:not(.mui-btn){
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 10px 0;
+    padding: inherit;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: inherit;
 }

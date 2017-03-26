@@ -1,0 +1,203 @@
+@charset "utf-8";
+html,
+body {
+    background-color: #efeff4;
+}
+
+/*header*/
+#header{
+    background-color: #303953;
+}
+
+.mui-icon-back:before, .mui-icon-left-nav:before{
+    color: #fff;
+}
+
+.mui-bar .mui-pull-left .mui-icon {
+    padding-right: 5px;
+    font-size: 28px;
+}
+
+.mui-bar .mui-title{
+    color: #fff;
+}
+
+.mui-bar .mui-btn {
+    font-weight: normal;
+    font-size: 17px;
+}
+
+.mui-bar .mui-btn-link {
+    top: 1px;
+}
+
+
+/*清除模块*/
+.selected .title,
+.clear .title {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.6rem;
+    padding: 0.5rem 0.25rem;
+    height: 100%;
+    color: #919191;
+}
+
+.selected .title .left span,
+.clear .title .left span{
+    vertical-align: baseline;
+    padding: 0 0.5rem;
+    /*display: block;*/
+}
+
+.mui-btn-outlined.mui-btn-danger{
+    font-size: 0.6rem;
+    color: #919191;
+}
+
+.mui-btn-danger{
+    border: none;
+}
+
+.mui-icon-trash:before{
+    font-size: 1rem;
+}
+
+.clear .lin-list{
+    /*display: flex;*/
+    /*align-items: stretch;*/
+}
+
+.selected .lin-list .list,
+.clear .lin-list .list{
+    text-align: center;
+    font-size: 0.6rem;
+    padding: 0.25rem 0.5rem;
+    color: #fff;
+    /*margin: 0.125rem;*/
+    box-sizing: border-box;
+    border-radius: 1.0rem;
+    margin: 0.1rem 0;
+    position: relative;
+}
+.selected .lin-list .people,
+.clear .lin-list .people{
+    background-color: #435;
+}
+
+.selected .lin-list .subject,
+.clear .lin-list .subject{
+    background-color: #854;
+}
+
+.selected .lin-list .ranking,
+.clear .lin-list .ranking{
+    background-color: #665;
+}
+
+.selected .lin-list .list i,
+.clear .lin-list .list i{
+    display: inline-block;
+    width: 1.0rem;
+    height: 1.0rem;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    border: 0.1rem solid #fff;
+    border-radius: 50%;
+    line-height: 1.0rem;
+    vertical-align: middle;
+}
+
+
+/*模块清单*/
+
+.mui-table-view:before{
+    background-color: #fff;
+}
+.mui-table-view{
+    margin-top: 10px;
+}
+
+#indicator-module table{
+    width: 100%;
+    text-align: center;
+    border-top: 0.025rem solid #ccc;
+}
+
+#indicator-module .table thead>tr>th{
+    padding: 0.5rem 0;
+    font-size: 0.75rem;
+    font-weight: 400;
+    border-bottom: 0.025rem solid #ccc;
+}
+
+#indicator-module .table tbody>tr>td{
+    padding: 0.2rem 0;
+    font-size: 0.7rem;
+    font-weight: 400;
+    border-bottom: 0.025rem solid #ccc;
+}
+
+.mui-content-padded{
+    margin: 0;
+}
+#indicator-module .date .year{
+    background-color: #fff;
+    font-size: 0.7rem;
+    border-color: #c97345;
+    position: relative;
+}
+#indicator-module .date .year span{
+    display: inline-block;
+    height: 100%;
+    width: 30%;
+    border: 0.025rem solid #c97345;
+    box-sizing: border-box;
+}
+#indicator-module .operation .add{
+    font-size: 0.7rem;
+    color: #fff;
+    background-color: #c97345;
+}
+
+.table-responsive .selected .stay labe{
+    
+}
+
+/*底部选项*/
+
+.mui-bar {
+    background-color: #eee;
+}
+
+.mui-bar a{
+    display: block;
+    height: 100%;
+    font-size: 0.6rem;
+    color: #999;
+    text-align: center;
+    /*vertical-align: middle;*/
+    /*line-height: 0;*/
+}
+.mui-bar a>span{
+    padding: 0.25rem;
+    display: block;
+}
+
+.mui-bar .mui-btn{
+    font-size: 0.6rem;
+    background-color: #9c2424;
+    border: none;
+    padding: 0 10px;
+}
+
+.mui-bar .left i{
+    font-size: 0.75rem;
+    color: #9c2424;
+}
+
+.mui-icon-compose:before{
+    font-size: 24px;
+}

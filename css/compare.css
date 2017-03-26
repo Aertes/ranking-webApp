@@ -33,26 +33,27 @@
 	color: #3d71b2;
 }
 
-/*表格*/
+/*数据总览表格*/
 .table>thead>tr>th{
     vertical-align: middle;
     border: none;
     padding: 0;
     text-align: center;
     background-color: #d2e6ff;
-    font-size: 0.7rem;
+    font-size: 0.5rem;
     color: #3d71b2;
     box-sizing: border-box;
 }
 
-.table>tbody>tr>td{
+ .table>tbody>tr>td{
 	border-top: none;
+	font-size: 0.6rem;
+	vertical-align: middle;
 }
 
 .list-module table tbody th, td{
-	font-size: 0.6rem;
-	width: 100%;
-	padding: 0.5rem;
+	font-size: 0.4rem;
+	/*padding: 0.5rem 0;*/
 	position: relative;
 }
 
@@ -72,7 +73,7 @@
 	padding: 0;
 }
 
-/*模块*/
+/*分页模块模块*/
 
 .list-module table{
 	text-align: center;
@@ -82,16 +83,10 @@
 	box-sizing: border-box;
 }
 
-.list-module table tbody th, td{
-	padding: 0.5rem;
-	width: 100%;
-	/*white-space: nowrap;*/
-	/*word-break: keep-all;*/
-}
 
 .list-module table th{
 	text-align: center;
-	padding: 0 0.5rem;
+	/*padding: 0 0.5rem;*/
 	background-color: #d2e6ff;
 	color: #3d71b2;
 }
@@ -114,22 +109,18 @@
 	font-size: 0.8rem;
 }
 
-
-#collapsible-control-right-group1{
-	/*display: none;*/
-}
-
 #panel0{
 	position: relative;
 }
 #panel3 table>thead>tr>th{
 	padding: 0.5rem 0;
+	font-size: 0.7rem;
 }
 
 .table-responsive table>thead>tr>th{
 	background-color: #fff;
 	color: #57575f;
-	padding: 0.5rem 0;
+	/*padding: 0.5rem 0;*/
 	border-left: 0.025rem solid #c3c3c3;
 	border-bottom: 0.025rem solid #c3c3c3;
 }
@@ -138,6 +129,9 @@
 	border-left: 0.025rem solid #c3c3c3;
 	border-bottom: 0.025rem solid #c3c3c3;
 	line-height: 100%;
+	text-align: center;
+	font-size: 0.5rem;
+	vertical-align: middle;
 }
 
 
@@ -155,23 +149,9 @@
 
 
 
-@media screen (min-width:769px)and(max-width: 1024px){
-	#panel4 .table-responsive table{
-		table-layout: fixed;
-		text-align: center;
-	}
-}
-
 #panel4 ul li a{
 	padding: 0.5rem 0.25rem;
 	margin: 0;
 }
 
-@media screen (max-width:768px) {
-	.table-responsive table>tr>th,td{
-		font-size: 0.75rem;
-		padding: 0 0.5rem;
-		word-wrap:break-word;
-		white-space: nowrap;
-	}
-}
+

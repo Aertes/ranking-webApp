@@ -2811,7 +2811,8 @@ th {
 .table>thead>tr>td,
 .table>tbody>tr>td,
 .table>tfoot>tr>td {
-    padding: 12px 20px;
+    /*padding: 12px 20px;*/
+    padding: 0.3rem 0.25rem;
     line-height: 1.5384616;
     vertical-align: top;
     border-top: 1px solid #ddd
@@ -3024,7 +3025,7 @@ table th[class*="col-"] {
     .table-responsive>.table>thead>tr>td,
     .table-responsive>.table>tbody>tr>td,
     .table-responsive>.table>tfoot>tr>td {
-        white-space: nowrap
+        /*white-space: nowrap*/
     }
     .table-responsive>.table-bordered {
         border: 0

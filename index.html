@@ -17,6 +17,7 @@
 </head>
 
 <body>
+
     <div id="offCanvasWrapper" class="mui-off-canvas-wrap mui-draggable">
         <!--侧滑菜单部分-->
         <aside id="offCanvasSide" class="mui-off-canvas-left">
@@ -40,8 +41,8 @@
 									数据年份
 							</a>
                         </li>
-                        <li class="mui-table-view-cell">
-                            <a class="mui-navigate-right  icon-tongjifenxi5">
+                        <li id="idicator" class="mui-table-view-cell">
+                            <a href="#idicator" class="mui-navigate-right  icon-tongjifenxi5">
 									关键指标
 							</a>
                         </li>
@@ -129,12 +130,11 @@
                         </div>
 
                         <!-- 模块 -->
-                        <div class="list-module">
+                        <div id="list-module" class="list-module">
                             <ul class="mui-table-view mui-table-view-chevron">
+
                                 <li class="mui-table-view-cell mui-collapse">
-                                    <a class="navigate-right-right">
-                                    模块一：办学规模与层次
-                                </a>
+                                    <a class="mui-navigate-right">模块一：办学规模与层次</a>
                                     <ul id="first-module" class="first-module mui-table-view mui-table-view-chevron">
                                         <li class="top mui-row mui-col-xs-12">
                                             <div class="people mui-col-xs-6">学生总数<i>（1234人）</i></div>
@@ -147,9 +147,7 @@
                                     </ul>
                                 </li>
                                 <li class="mui-table-view-cell mui-collapse">
-                                    <a class="navigate-right-right navigate-right">
-                                    模块一：办学规模与层次
-                                </a>
+                                    <a class="mui-navigate-right">模块二：学科布局与水平</a>
                                     <ul id="first-module" class="first-module mui-table-view mui-table-view-chevron">
                                         <li class="top mui-row mui-col-xs-12">
                                             <div class="people mui-col-xs-6">学生总数<i>（1234人）</i></div>
@@ -162,9 +160,7 @@
                                     </ul>
                                 </li>
                                 <li class="mui-table-view-cell mui-collapse">
-                                    <a class="navigate-right-right">
-                                    模块一：办学规模与层次
-                                </a>
+                                    <a class="mui-navigate-right">模块三：办学资源</a>
                                     <ul id="first-module" class="first-module mui-table-view mui-table-view-chevron">
                                         <li class="top mui-row mui-col-xs-12">
                                             <div class="people mui-col-xs-6">学生总数<i>（1234人）</i></div>
@@ -177,9 +173,7 @@
                                     </ul>
                                 </li>
                                 <li class="mui-table-view-cell mui-collapse">
-                                    <a class="navigate-right-right">
-                                    模块一：办学规模与层次
-                                </a>
+                                    <a class="mui-navigate-right">模块四：师资规模与结构</a>
                                     <ul id="first-module" class="first-module mui-table-view mui-table-view-chevron">
                                         <li class="top mui-row mui-col-xs-12">
                                             <div class="people mui-col-xs-6">学生总数<i>（1234人）</i></div>
@@ -192,9 +186,7 @@
                                     </ul>
                                 </li>
                                 <li class="mui-table-view-cell mui-collapse">
-                                    <a class="navigate-right-right">
-                                    模块一：办学规模与层次
-                                </a>
+                                    <a class="mui-navigate-right">模块五：人才培养能力</a>
                                     <ul id="first-module" class="first-module mui-table-view mui-table-view-chevron">
                                         <li class="top mui-row mui-col-xs-12">
                                             <div class="people mui-col-xs-6">学生总数<i>（1234人）</i></div>
@@ -207,9 +199,7 @@
                                     </ul>
                                 </li>
                                 <li class="mui-table-view-cell mui-collapse">
-                                    <a class="navigate-right-right">
-                                    模块一：办学规模与层次
-                                </a>
+                                    <a class="mui-navigate-right">模块六：科学研究能力</a>
                                     <ul id="first-module" class="first-module mui-table-view mui-table-view-chevron">
                                         <li class="top mui-row mui-col-xs-12">
                                             <div class="people mui-col-xs-6">学生总数<i>（1234人）</i></div>
@@ -222,9 +212,7 @@
                                     </ul>
                                 </li>
                                 <li class="mui-table-view-cell mui-collapse">
-                                    <a class="navigate-right-right">
-                                    模块一：办学规模与层次
-                                </a>
+                                    <a class="mui-navigate-right">模块七：服务社会能力</a>
                                     <ul id="first-module" class="first-module mui-table-view mui-table-view-chevron">
                                         <li class="top mui-row mui-col-xs-12">
                                             <div class="people mui-col-xs-6">学生总数<i>（1234人）</i></div>
@@ -237,9 +225,33 @@
                                     </ul>
                                 </li>
                                 <li class="mui-table-view-cell mui-collapse">
-                                    <a class="navigate-right-right">
-                                    模块一：办学规模与层次
-                                </a>
+                                    <a class="mui-navigate-right">模块八：高端人才</a>
+                                    <ul id="first-module" class="first-module mui-table-view mui-table-view-chevron">
+                                        <li class="top mui-row mui-col-xs-12">
+                                            <div class="people mui-col-xs-6">学生总数<i>（1234人）</i></div>
+                                            <div class="num mui-col-xs-6"> <i></i> <em class="littler">14名</em> </div>
+                                        </li>
+                                        <li class="bottom mui-row mui-col-xs-12">
+                                            <div class="people mui-col-xs-6">高校科研优秀成果奖（人文社科）（2014-2016）<i>（1234人）</i></div>
+                                            <div class="num mui-col-xs-6"> <i>  <em class="littler length">20-24名</em> </i></div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="mui-table-view-cell mui-collapse">
+                                    <a class="mui-navigate-right">模块九：重大项目与成果</a>
+                                    <ul id="first-module" class="first-module mui-table-view mui-table-view-chevron">
+                                        <li class="top mui-row mui-col-xs-12">
+                                            <div class="people mui-col-xs-6">学生总数<i>（1234人）</i></div>
+                                            <div class="num mui-col-xs-6"> <i></i> <em class="littler">14名</em> </div>
+                                        </li>
+                                        <li class="bottom mui-row mui-col-xs-12">
+                                            <div class="people mui-col-xs-6">高校科研优秀成果奖（人文社科）（2014-2016）<i>（1234人）</i></div>
+                                            <div class="num mui-col-xs-6"> <i>  <em class="littler length">20-24名</em> </i></div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="mui-table-view-cell mui-collapse">
+                                    <a class="mui-navigate-right">模块十：国际竞争能力</a>
                                     <ul id="first-module" class="first-module mui-table-view mui-table-view-chevron">
                                         <li class="top mui-row mui-col-xs-12">
                                             <div class="people mui-col-xs-6">学生总数<i>（1234人）</i></div>
@@ -253,11 +265,7 @@
                                 </li>
                             </ul>
                         </div>
-
-
                     </div>
-
-
                 </div>
             </div>
 
@@ -281,15 +289,15 @@
             <!-- off-canvas backdrop -->
             <div class="mui-off-canvas-backdrop">
             </div>
-
         </div>
+    </div>
 
 
-        <script src="./libs/bootstrap/jquery.min.js"></script>
-        <script src="./libs/bootstrap/bootstrap.min.js"></script>
-        <script src="./libs/mui/mui.min.js"></script>
-        <script src="./js/comment.js"></script>
-        <script src="./js/index.js"></script>
+    <script src="./libs/bootstrap/jquery.min.js"></script>
+    <script src="./libs/bootstrap/bootstrap.min.js"></script>
+    <script src="./libs/mui/mui.min.js"></script>
+    <script src="./js/comment.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>

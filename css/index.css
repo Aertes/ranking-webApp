@@ -49,6 +49,15 @@
 	background-color: #f4f4f4;
 }
 
+#list-module ul li a{
+    margin: 0;
+    /*padding: 0.5rem 0.25rem;*/
+}
+
+.mui-table-view:after{
+	/*background-color: #fff;*/
+}
+
 .isActive{
 	display: none;
 }
@@ -59,11 +68,6 @@
 	padding: 0.2rem;
 	border-bottom: 0.025rem solid #c3c3c3;
 	border-radius: 0.5rem;
-}
-
-#offCanvasContentScroll  .navigate-right-right{
-	line-height: 1.6rem;
-	padding: 0.75rem;
 }
 
 #first-module .top{
@@ -168,4 +172,7 @@
 	content: " ";
 	background-color: #fff;
 }
+
+
+
 

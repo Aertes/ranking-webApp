@@ -5,24 +5,6 @@
     background-color: #fff;
 }
 
-.navigate-right:before{
-    font-family: 'Muiicons';
-    font-size: 0.8rem;
-    line-height: 1;
-    position: absolute;
-    top: 50%;
-    display: inline-block;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-    text-decoration: none;
-    color: #ccc;
-    -webkit-font-smoothing: antialiased;
-    position: absolute;
-    top: 50%;
-    right: 1rem;
-    content: '\e581';
-}
-
 
 /*header-nav*/
 
@@ -70,10 +52,6 @@
     color: #fff;
 }
 
-.mui-navigate-right:after, .mui-push-right:after{
-    content: "";
-}
-
 .mui-inner-wrap header{
     background-color: #303953;
     margin: 0 auto;
@@ -84,6 +62,8 @@
     box-sizing: border-box;
     color: #fff;
 }
+
+
 
 
 /*footer-nav*/
@@ -159,13 +139,7 @@
     padding-left: 1.3rem;
 }
 
-.mui-navigate-right:after, 
-.mui-push-left:after, 
-.mui-push-right:after{
-    position: absolute;
-    top: 50%;
-    left: -0.45rem;
-}
+
 .mui-scroll-wrapper .table-time ol{
     position: relative;
     padding: 0.25rem;
