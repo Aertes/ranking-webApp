@@ -20,3 +20,22 @@ window.addEventListener('toggle', function (event) {
 
 
 
+document.getElementById('weight').addEventListener('tap', function() {
+  //打开关于页面
+  mui.openWindow({
+    url: 'weight.html', 
+    id:'weight'
+  });
+});
+
+document.getElementById('indicator').addEventListener('tap', function() {
+  //打开关于页面
+  mui.openWindow({
+    url: 'indicator.html', 
+    id:'indicator'
+  });
+});
+
+
+
+

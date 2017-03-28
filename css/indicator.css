@@ -134,15 +134,40 @@ body {
 }
 
 #indicator-module .table tbody>tr>td{
-    padding: 0.2rem 0;
+    /*padding: 0.2rem 0;*/
     font-size: 0.7rem;
     font-weight: 400;
     border-bottom: 0.025rem solid #ccc;
 }
 
-.mui-content-padded{
+/*selected*/
+
+.date{
     margin: 0;
+    position: relative;
+    border: 0.025rem solid #c97345;
+    /*padding: 0 0.25rem;*/
 }
+
+.date select{
+    font-size: 0.6rem;
+    padding: 0.3rem;
+    margin: 0 !important;
+    border: none;
+}
+.date span{
+    display: inline-block;
+    /*border: 0.025rem solid #c97345;*/
+    padding: 0 0.25rem;
+    font-size: 0.6rem;
+    line-height: 1;
+    vertical-align: middle;
+}
+
+.table-responsive{
+    /*display: none;*/
+}
+
 #indicator-module .date .year{
     background-color: #fff;
     font-size: 0.7rem;
@@ -162,8 +187,25 @@ body {
     background-color: #c97345;
 }
 
-.table-responsive .selected .stay labe{
-    
+.table-responsive .selected .stay div{
+    padding: 0.5rem 0.8rem;
+}
+
+.table-responsive .selected .stay span{
+    font-size: 0.6rem;
+    color: #919191;
+}
+
+.table-responsive .selected .stay span:nth-child(2){
+    position: absolute;
+    right: 2rem;
+}
+
+.mui-checkbox input[type=checkbox], .mui-radio input[type=radio]{
+    position: absolute;
+    top: 4px;
+    right: 15px;
+    font-size: 0.6rem;
 }
 
 /*底部选项*/
@@ -178,8 +220,6 @@ body {
     font-size: 0.6rem;
     color: #999;
     text-align: center;
-    /*vertical-align: middle;*/
-    /*line-height: 0;*/
 }
 .mui-bar a>span{
     padding: 0.25rem;

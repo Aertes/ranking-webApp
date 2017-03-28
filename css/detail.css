@@ -13,6 +13,11 @@
 
 /*模块*/
 
+.icon-passageoftime::before,
+.icon-daohanglandingdananniu-copy1::before,
+.icon-ss-caidan2-copy{
+    color: #3d71b2;
+}
 
 #table-responsive{
     margin: 0;

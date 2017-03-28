@@ -9,39 +9,47 @@ function getFont() {
     var screenWidth = oHtml.clientWidth;
     if (screenWidth <= 320) {
         oHtml.style.fontSize = '23.7037px';
-    } else if (screenWidth >= 640) {
-        oHtml.style.fontSize = '47.4074px';
+    } else if (screenWidth >= 750) {
+        oHtml.style.fontSize = '40.4074px';
     } else {
-        oHtml.style.fontSize = screenWidth / (640 / 40) + 'px';
+        oHtml.style.fontSize = screenWidth / (750 / 40) + 'px';
     }
 }
 
+$('ul>li').each(function () {
+    
+    console.log(24);
+    this.onclick = function () {
+        console.log(4124);
+        $('#responsive').toggle();
+    }
+})
 
 
-mui.init({
-    swipeBack: true //启用右滑关闭功能
-});
-mui('.mui-input-group').on('change', 'input', function () {
-    var value = this.checked ? "true" : "false";
-    this.previousElementSibling.innerText = "checked：" + value;
-});
 
 
-(function ($) {
-    $.init();
-    var result = $('#result')[0];
-    var btns = $('.btn');
-    btns.each(function (i, btn) {
-        btn.addEventListener('tap', function () {
-            var optionsJson = this.getAttribute('data-options') || '{}';
-            var options = JSON.parse(optionsJson);
-            var id = this.getAttribute('id');
-            var picker = new $.DtPicker(options);
-            picker.show(function (rs) {
-                result.innerText = '选择结果: ' + rs.text;
-                picker.dispose();
-            });
-        }, false);
+
+var listAll = [];
+if (listAll == []) {
+    
+}else{
+    $('#btnClearAll').on('click', function () {
+        $('.clear').remove();
     });
-})(mui);
+}
+
+$('#btn').on('click', function () {
+    $('#selected').remove();
+    $('#title').remove();
+})
+
+$('.add').on('click', function () {
+
+    $('.lin-list').append();
+})
+
+
+
+
+
 

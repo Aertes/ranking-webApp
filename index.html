@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./libs/mui/mui.min.css">
     <link rel="stylesheet" href="./libs/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="./libs/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./libs/fonts/iconfont/iconfont.css">
     <link rel="stylesheet" href="./css/comment.css">
     <link rel="stylesheet" href="./css/index.css">
@@ -32,16 +31,16 @@
                     </div>
                     <ul class="mui-table-view mui-table-view-chevron mui-table-view-inverted">
                         <li class="mui-table-view-cell">
-                            <a class="mui-navigate-right icon-write-filled">
+                            <a class="mui-navigate-right iconfont icon-write">
 									自定义
 							</a>
                         </li>
                         <li class="mui-table-view-cell">
-                            <a class="mui-navigate-right fa fa-calendar">
+                            <a class="mui-navigate-right iconfont icon-date-copy">
 									数据年份
 							</a>
                         </li>
-                        <li id="idicator" class="mui-table-view-cell">
+                        <!--<li id="idicator" class="mui-table-view-cell">
                             <a href="#idicator" class="mui-navigate-right  icon-tongjifenxi5">
 									关键指标
 							</a>
@@ -50,9 +49,9 @@
                             <a class="mui-navigate-right icon-47">
 									指标权重
 							</a>
-                        </li>
+                        </li>-->
                         <li class="mui-table-view-cell">
-                            <a class="mui-navigate-right fa fa-bell-o">
+                            <a class="mui-navigate-right iconfont icon-lingsheng-copy">
 									通知
 							</a>
                         </li>
@@ -93,16 +92,11 @@
         <div class="mui-inner-wrap">
             <header class="mui-bar mui-bar-nav">
                 <a href="#offCanvasSide" class="mui-icon mui-action-menu mui-icon-bars mui-pull-left" aria-hidden="true"></a>
-                <!-- Single button -->
-                <div class="dropdown">
-                    <button type="button" id="dLabel" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <a href="#" class=""></a>
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dLabel">
-                        <li><a href="#">修改密码</a></li>
-                        <li><a href="#">登出</a></li>
-                    </ul>
-                </div>
+                <a href="#" id="user" class="mui-icon iconfont icon-user mui-pull-right"></a>
+                <ul class="dropdown-menu" aria-labelledby="dLabel">
+                    <li><a href="#">修改密码</a></li>
+                    <li><a href="#">登出</a></li>
+                </ul>
                 <h1 class="mui-title">
                     <a href="./index.html">大学360°对比分析平台</a>
                 </h1>
@@ -272,18 +266,17 @@
             <!--底部导航-->
             <nav class="mui-bar mui-bar-tab">
                 <a class="mui-tab-item mui-active" id="index" href="#index">
-                    <span class="mui-icon mui-home"></span>
+                    <span class="mui-icon iconfont icon-xuexifenxi"></span>
                     <span class="mui-tab-label">数据总揽</span>
                 </a>
                 <a class="mui-tab-item" id="compare" href="#compare">
-                    <span class="mui-icon mui-email"></span>
+                    <span class="mui-icon iconfont icon-industryconcern"></span>
                     <span class="mui-tab-label">数据对比</span>
                 </a>
                 <a class="mui-tab-item" id="detail" href="#detail">
-                    <span class="mui-icon mui-contact"></span>
+                    <span class="mui-icon iconfont icon-daohanglandingdananniu-copy"></span>
                     <span class="mui-tab-label">数据明细</span>
                 </a>
-
             </nav>
 
             <!-- off-canvas backdrop -->

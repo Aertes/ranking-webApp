@@ -13,29 +13,11 @@
     color: #fff;
 }
 
-
-.dropdown{
-    position: absolute;
-    right: 0;
-    background-color: #303953;
-    box-sizing: border-box;
-    border: none;
-    padding: 0;
+.icon-user:before{
+    color: #fff;
 }
 
-.btn{
-    background-color: #303953;
-    /*padding: 0;*/
-}
-
-.btn a {
-    display: inline-block;
-    background: url('../images/icon/user.png') no-repeat;
-    background-size: 100% 100%;
-    padding: 11px 10px ;
-}
-
-.open>.dropdown-menu{
+.dropdown-menu{
     position: absolute;
     top: 100%;
     right: 0;
