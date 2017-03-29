@@ -52,8 +52,7 @@
     text-align: center;
 }
 
-.mui-scroll-wrapper .mui-scroll ul li{
-    font-size: 0.7rem;
+.mui-scroll-wrapper .mui-scroll .table-time li{
     font-weight: 400;
     padding-left: 1.3rem;
 }
@@ -66,14 +65,10 @@
 .mui-scroll-wrapper .mui-scroll ul>li{
     padding: 0;
 }
-
-#offCanvasSide .mui-scroll-wrapper .mui-scroll ul>li{
-    padding-left: 1.3rem;
+#offCanvasSideScroll .mui-table-view-cell{
+    padding: 11px 65px 11px 1.3rem;
 }
 
-#offCanvasSide .mui-scroll-wrapper .mui-scroll ul>li>a{
-    margin-right: 0;
-}
 .mui-table-view-chevron .mui-table-view-cell{
     padding-left: 65px;
 }
@@ -82,7 +77,6 @@
     position: relative;
     display: block;
     overflow: hidden;
-    margin: 10px 0;
     padding: inherit;
     white-space: nowrap;
     text-overflow: ellipsis;

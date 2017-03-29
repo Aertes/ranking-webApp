@@ -18,31 +18,37 @@ function getFont() {
 
 
 
-// var uls = document.querySelectorAll('ul');
-// var lis = document.querySelectorAll('li');
-// var i = 0, k = 0;
-
-
 $('ul>li').each(function () {
-
-    console.log(123);
-    this.onclick = function () {
-        console.log(121233);
-        $('#table-responsive').toggle();
-    }
+    var _this = $(this);
+    console.log(_this);
+    _this.on('click', function () {
+        _this.next().toggle();
+        _this.children().toggleClass('mui-icon-arrowdown mui-icon-arrowup')
+    })
 })
 
 
-// for (var i = 0; i < uls.length; i++) {
-//     console.log(uls[i])
-//     $('ul>li').on('click', function () {
-
-//         $('ul').children().eq(1).toggle();
-//         console.log(351);
-//     });
-// }
+var inputValue = document.querySelector('#test').value;
+changeOneDecimal_f(inputValue);
 
 
+function changeOneDecimal_f(num) {
+    var f_x = parseFloat(num);
+    if (isNaN(f_x)) {
+        return false;
+    }
+    var f_x = Math.round(num * 100) / 100;
+    var s_x = f_x.toString();
+    var pos_decimal = s_x.indexOf('.');
+    if (pos_decimal < 0) {
+        pos_decimal = s_x.length;
+        s_x += '.';
+    }
+    while (s_x.length <= pos_decimal + 2) {
+        s_x += '0';
+    }
+    return s_x;
+}
 
 
 
@@ -50,25 +56,4 @@ $('ul>li').each(function () {
 
 
 
-
-
-
-// mui.init();
-// var indicator = document.querySelector('#indicator-module');
-// var ul = indicator.childNode;
-// var lis = ul.children;
-// for(var i = 0, len = lis.length; i < len; i++){
-//     (function(i){
-//         li = lis[i];
-//         li.onclick = function(){
-//             var div = document.querySelector('#table-responsive');
-//             if(div.style.display == 'none'){
-//                 div.style.display == 'table'
-//             }else{
-//                 div.style.display == 'none'
-//             }
-//         }
-//     })
-
-// }
 

@@ -6,7 +6,16 @@ body {
 #header{
     background-color: #303953;
 }
-
+.mui-icon-arrowdown:before{
+    position: absolute;
+    right: 0;
+    color: #bbb;
+}
+.mui-icon-arrowup:before{
+    position: absolute;
+    right: 0;
+    color: #bbb;
+}
 .mui-icon-back:before, .mui-icon-left-nav:before{
     color: #fff;
 }
