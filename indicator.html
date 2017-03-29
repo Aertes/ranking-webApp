@@ -14,6 +14,7 @@
     <!--<link rel="stylesheet" href="./libs/font-awesome-4.7.0/css/font-awesome.min.css">-->
     <!--<link rel="stylesheet" href="./libs/fonts/iconfont/iconfont.css">-->
     <link rel="stylesheet" href="./css/comment.css">
+    <link rel="stylesheet" href="./libs/animate.min.css">
     <link rel="stylesheet" href="./css/indicator.css">
 
 </head>
@@ -30,10 +31,12 @@
         <div class="clear">
             <div class="title">
                 <div class="left"><span>当前已选指标</span></div>
-                <div class="clearAll">
-                    <button id="btnClearAll" type="button" class="mui-btn mui-btn-danger mui-btn-outlined">清空	
-		                <span class="mui-icon mui-icon-trash"></span>
-		            </button>
+                <div class="delAll fr">
+                    <div>清空</div>
+                    <div>
+                        <div class="del-t"></div>
+                        <div class="del-b"></div>
+                    </div>
                 </div>
             </div>
             <div class="lin-list mui-row">
@@ -53,25 +56,29 @@
                 <div id="responsive" class="table-responsive mui-table-view mui-table-view-chevron">
                     <div class="selected">
                         <div id="title">
-                            <div class="title">
+                            <div class="del-m">
                                 <div class="left"><span>已选</span></div>
-                                <div class="clearAll">
-                                    <button id="btn" type="button" class="mui-btn mui-btn-danger mui-btn-outlined">清空	
-		                            <span class="mui-icon mui-icon-trash"></span>
-		                        </button>
+                                <div class="del fr">
+                                    <div>清空</div>
+                                    <div>
+                                        <div class="del-t"></div>
+                                        <div class="del-b"></div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="lin-list mui-row">
+                            <div class="lin-list clearList mui-row">
                                 <div class=" people list mui-col-xs-6"><span>博士生数（2015）</span><i>X</i></div>
                                 <div class=" people list mui-col-xs-6"><span>博士生数（2015）</span><i>X</i></div>
                             </div>
                         </div>
 
-                        <div class="stay">
-                            <div class="mui-input-row mui-checkbox">
-                                <span>待选</span>
-                                <span>全选</span>
-                                <input name="checkbox" type="checkbox" checked>
+                        <div class="stay ">
+                            <div class="check-set">
+                                <div class="lf"><span>待选</span></div>
+                                <div class="fr checked">
+                                    <span>全选</span>
+                                    <input name="checkbox" type="checkbox" checked>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -213,6 +220,17 @@
         </a>
     </nav>
 
+    <!-- 模态框 -->
+    <section class="pop_srceen dn">
+        <div class="pop_info my__center animated">
+            <p>你确定要清空么？</p>
+            <div class="btn_wrap clearfix">
+                <button class="fl exit">取消</button>
+                <button class="fr sure">确定</button>
+            </div>
+        </div>
+    </section>
+
 
     <script src="./libs/bootstrap/jquery.min.js"></script>
     <!--<script src="./libs/bootstrap/bootstrap.min.js"></script>-->
@@ -220,7 +238,7 @@
     <!--<script src="./libs/mui/mui.picker.min.js"></script>-->
     <!--<script src="./js/comment.js"></script>-->
     <script src="./js/indicator.js"></script>
-
+    
 </body>
 
 </html>

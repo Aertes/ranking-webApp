@@ -1,7 +1,7 @@
 @charset "utf-8";
 html,
 body {
-    background-color: #efeff4;
+    background-color: #fff;
 }
 
 /*header*/
@@ -33,21 +33,50 @@ body {
 
 
 /*清除模块*/
-.selected .title,
+
+.mui-content{
+    background-color: #fff;
+}
+
+.clear .delAll{
+    display: flex;
+    justify-content: center;
+}
+
+.del-m .del{
+    display: flex;
+    justify-content: center;
+}
+
+
+ .del-t{
+    width: 20px;
+    height: 5px;
+    display: block;
+    background-image: url(../images/icon/delete_up.png);
+    background-size: 100% 100%;
+    margin-left: -1px;
+    -webkit-transform-origin: left top;
+    transform-origin: left top;
+}
+
+ .del-b{
+    width: 18px;
+    height: 18px;
+    display: block;
+    background-image: url(../images/icon/delete_down.png);
+    background-size: 100% 100%;
+    margin-top: -2px;
+}
+
+
+.selected .del-m,
 .clear .title {
     display: flex;
     justify-content: space-between;
     font-size: 0.6rem;
-    padding: 0.5rem 0.25rem;
-    height: 100%;
+    padding: 0.5rem 0.5rem;
     color: #919191;
-}
-
-.selected .title .left span,
-.clear .title .left span{
-    vertical-align: baseline;
-    padding: 0 0.5rem;
-    /*display: block;*/
 }
 
 .mui-btn-outlined.mui-btn-danger{
@@ -63,18 +92,12 @@ body {
     font-size: 1rem;
 }
 
-.clear .lin-list{
-    /*display: flex;*/
-    /*align-items: stretch;*/
-}
-
 .selected .lin-list .list,
 .clear .lin-list .list{
     text-align: center;
     font-size: 0.6rem;
     padding: 0.25rem 0.5rem;
     color: #fff;
-    /*margin: 0.125rem;*/
     box-sizing: border-box;
     border-radius: 1.0rem;
     margin: 0.1rem 0;
@@ -113,7 +136,7 @@ body {
 
 /*模块清单*/
 
-.mui-table-view:before{
+.mui-table-view::before{
     background-color: #fff;
 }
 .mui-table-view{
@@ -164,9 +187,6 @@ body {
     vertical-align: middle;
 }
 
-.table-responsive{
-    /*display: none;*/
-}
 
 #indicator-module .date .year{
     background-color: #fff;
@@ -187,26 +207,131 @@ body {
     background-color: #c97345;
 }
 
-.table-responsive .selected .stay div{
-    padding: 0.5rem 0.8rem;
-}
-
-.table-responsive .selected .stay span{
+.stay .check-set{
+    display: flex;
+    justify-content: space-between;
     font-size: 0.6rem;
     color: #919191;
+    padding: 0.5rem;
+    line-height: 100%;
+    vertical-align: middle;
 }
 
-.table-responsive .selected .stay span:nth-child(2){
-    position: absolute;
-    right: 2rem;
+.stay .checked{
+    display: flex;
+    /*padding: 0 0.5rem;*/
+    justify-content: space-between;
+}
+.stay .checked span{
+    position: relative;
+}
+.stay input[type=checkbox]{
+    width: 0.7rem;
+    height: 0.7rem;
+    -webkit-appearance: none;
+    border: 0.025rem solid #ccc;
+    /*background-color: #007aff;*/
+    border-radius: 50%;
 }
 
-.mui-checkbox input[type=checkbox], .mui-radio input[type=radio]{
-    position: absolute;
-    top: 4px;
-    right: 15px;
-    font-size: 0.6rem;
+
+/* 模态框 */
+.pop_srceen{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba(0,0,0,.8);
+    z-index: 99999;
+    display: none;
 }
+.pop_info{
+    width: 80%;
+    height: 160px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.pop_info p{
+    height: 90px;
+    text-align: center;
+    line-height: 90px;
+    font-size: 16px;
+    border-bottom: 1px solid #ccc;
+}
+.btn_wrap{
+    padding-top: 10px;
+}
+.btn_wrap button{
+    width: 45%;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    text-align: center;
+    background-color: #fff;
+    color: #aaa;
+}
+.btn_wrap .sure{
+    color: #fff;
+    background-color: #D8505C
+}
+
+@-webkit-keyframes my_bounceInDown {
+  from, 60%, 75%, 90%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-50%, -3000px, 0);
+    transform: translate3d(-50%, -3000px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(-50%, 25px, 0);
+    transform: translate3d(-50%, 25px, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(-50%, -60%, 0);
+    transform: translate3d(-50%, -60%, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(-50%, -45%, 0);
+    transform: translate3d(-50%, -45%, 0);
+  }
+
+  to {
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+  }
+}
+
+.my_bounceInDown {
+  -webkit-animation-name: my_bounceInDown;
+  animation-name: my_bounceInDown;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*底部选项*/
 
