@@ -1,0 +1,155 @@
+@charset "utf-8";
+
+
+/* search */
+
+.search {
+    background-color: #6b7183;
+}
+.search .input{
+    display: flex;
+    justify-content: center;    
+    padding: 10px 0;
+    align-items: baseline;
+}
+.search input{
+    background-color: #fff;
+    font-size: 14px;
+    text-align: left;
+    /*text-indent: 10px;*/
+    padding: 10px 0 10px 40px; 
+    border-radius: 2px;
+}
+.img_icon{
+    display: table;
+    position: relative;
+}
+.search .btn{
+    background-color: #f98648;
+    color: #fff;
+    vertical-align: middle;
+    padding: 7px 12px;
+}
+
+.img_icon::before{
+    content: '';
+    display: block;
+    width: 26px;
+    height: 26px;
+    background-image: url(../images/icon/search.png) ;
+    background-size: 100% auto;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
+
+/* user */
+
+.user{
+    background-color: #fff;
+}
+
+.guide h4,
+.question h4,
+.user h4{
+    color: #4f4f4f;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    padding: 30px 0 20px 0;
+}
+
+.user ul {
+    display: flex;
+    justify-content: center;
+    padding: 10px 15px;
+}
+.user ul>li{
+    padding: 0 5px;
+    text-align: center;
+    font-size: 14px;
+    color: #6b7183;
+}
+
+.user ul>li>a{
+    padding: 10px 0;
+}
+
+
+/* question */
+
+.question{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+    background-color: #f3f0f0;
+}
+
+.question .question-content h5{
+    font-size: 16px;
+    color: #830b0b;
+}
+
+.question .question-content p{
+    font-size: 14px;
+    color: #959595;
+}
+
+.more {
+    padding: 20px 0;
+}
+
+.more a{
+    color: #fff;
+    font-size: 15px;
+    display: block;
+    background-color: #f98648;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+
+/*guide*/
+
+.guide{
+    background-color: #fff;
+}
+
+.guide .view{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.guide .view img{
+    width: 3.0rem;
+    height: 3.0rem;
+}
+
+.guide .view .center img{
+    width: 4.0rem;
+    height: 4.0rem;
+}
+
+.guide .top{
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.guide .buttom{
+    display: flex;
+    justify-content: space-between;
+}
+
+.guide .view a{
+    display: inline-block;
+    color: #555454;
+    padding: 10px;
+    font-size: 14px;
+}
+
