@@ -5,7 +5,7 @@
 .graphic-analysis .title h1{
 	color: #3d71b2;
 	text-align: center;
-	font-size: 0.9rem;
+	font-size: 22px;
 }
 
 .graphic-analysis .svg{
@@ -25,7 +25,7 @@
 }
 .graphic-analysis .university a{
 	display: block;
-	font-size: 0.7rem;
+	font-size: 17px;
 	color: #808080;
 }
 
@@ -37,23 +37,22 @@
 .table>thead>tr>th{
     vertical-align: middle;
     border: none;
-    padding: 0;
+    padding: 10px 0;
     text-align: center;
     background-color: #d2e6ff;
-    font-size: 0.5rem;
+    font-size: 14px;
     color: #3d71b2;
     box-sizing: border-box;
 }
 
  .table>tbody>tr>td{
 	border-top: none;
-	font-size: 0.6rem;
+	font-size: 14px;
 	vertical-align: middle;
 }
 
 .list-module table tbody th, td{
 	font-size: 0.4rem;
-	/*padding: 0.5rem 0;*/
 	position: relative;
 }
 
@@ -114,7 +113,7 @@
 }
 #panel3 table>thead>tr>th{
 	padding: 0.5rem 0;
-	font-size: 0.7rem;
+	font-size: 16px;
 }
 
 .table-responsive table>thead>tr>th{
@@ -126,11 +125,11 @@
 }
 
 .table-responsive table>tbody>tr>td{
-	border-left: 0.025rem solid #c3c3c3;
-	border-bottom: 0.025rem solid #c3c3c3;
+	border-left: 1px solid #c3c3c3;
+	border-bottom: 1px solid #c3c3c3;
 	line-height: 100%;
 	text-align: center;
-	font-size: 0.5rem;
+	font-size: 14px;
 	vertical-align: middle;
 }
 
@@ -150,7 +149,7 @@
 
 
 #panel4 ul li a{
-	padding: 0.5rem 0.25rem;
+	padding: 10px 5px;
 	margin: 0;
 }
 

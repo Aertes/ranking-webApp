@@ -5,7 +5,7 @@
 .graphic-analysis .title h1{
 	color: #3d71b2;
 	text-align: center;
-	font-size: 0.9rem;
+	font-size: 22px;
 }
 
 .graphic-analysis .svg{
@@ -63,19 +63,19 @@
 }
 
 #offCanvasContentScroll .list-module .mui-table-view-cell{
-	font-size: 0.8rem;
+	font-size: 16px;
 	font-weight: 400;
 	padding: 0.2rem;
-	border-bottom: 0.025rem solid #c3c3c3;
+	border-bottom: 1px solid #c3c3c3;
 	border-radius: 0.5rem;
 }
 
 #first-module .top{
-	padding: 1.5rem 1rem;
+	padding: 20px;
 	display: flex;
 }
 #first-module .bottom{
-	padding: 1.0rem 1rem;
+	padding: 20px;
 	display: flex;
 }
 
@@ -89,7 +89,7 @@
 
 #first-module .num, .people{
 	text-align: left;
-	font-size: 0.7rem;
+	font-size: 15px;
 }
 
 
@@ -97,24 +97,23 @@
 #first-module .num i{
 	display: inline-flex;
 	background-color: #ccc;
-	height: 0.4rem;
+	height: 6px;
 	width: 70%;
-	border-radius: 0.2rem;
+	border-radius: 3px;
 	position: relative;
 }
 
 
 #first-module .num em{
 	display: block;
-	width: 3.0rem;
-	height: 1.25rem;
+	width: 70px;
+	height: 30px;
 	background-color: #c97345;
 	position: absolute;
-	top: -1.48rem;
+	top: -37px;
 	left: 0;
-	border-radius: 0.25rem;
-	line-height: 1.25rem;
-	text-indent: 0;
+	border-radius: 5px;
+	line-height: 30px;
 	color: #fff;
 	text-align: center;
 }
@@ -122,23 +121,23 @@
 
 #first-module .top .num em{
 	display: block;
-	width: 3.0rem;
-	height: 1.25rem;
+	width: 70px;
+	height: 30px;
 	background-color: #c97345;
 	position: absolute;
-	top: -1.2rem;
-	left: 0.0rem;
-	border-radius: 0.25rem;
-	line-height: 1.25rem;
+	top: -30px;
+	left: 0;
+	border-radius: 5px;
+	line-height: 30px;
 }
 
 .littler::before{
 	content: '';
 	width: 0;
 	height: 0;
-	border-left: 0.2rem solid transparent;
-    border-right: 0.2rem solid transparent;
-    border-top: 0.4rem solid #c97345;
+	border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 10px solid #c97345;
     position: absolute;
 	top: 100%;
 	left: 50%;
@@ -146,8 +145,8 @@
 }
 .littler::after{
 	content: '';
-	width: 0.4rem;
-	height: 0.4rem;
+	width: 10px;
+	height: 10px;
     position: absolute;
 	top: 120%;
 	left: 50%;
@@ -158,13 +157,13 @@
 
 .length::after{
 	content: '';
-	width: 1rem;
-	height: 0.4rem;
+	width: 25px;
+	height: 8px;
     position: absolute;
 	top: 120%;
 	left: 50%;
 	transform: translateX(-50%);
-	border-radius: 0.2rem;
+	border-radius: 5px;
 	background-color: #c97345;
 }
 

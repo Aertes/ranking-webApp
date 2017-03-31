@@ -7,7 +7,7 @@
 .graphic-analysis .title h1{
     color: #3d71b2;
     text-align: center;
-    font-size: 25px;
+    font-size: 22px;
 }
 
 
@@ -24,8 +24,8 @@
 }
 
 #table-responsive table>thead>tr>th{
-    padding: 0.5rem 0.25rem;
-    font-size: 0.6rem;
+    padding: 10px;
+    font-size: 14px;
     vertical-align: middle;
     text-align: center;
 }
