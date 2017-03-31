@@ -2811,8 +2811,7 @@ th {
 .table>thead>tr>td,
 .table>tbody>tr>td,
 .table>tfoot>tr>td {
-    /*padding: 12px 20px;*/
-    padding: 0.3rem 0.25rem;
+    padding: 10px 0;
     line-height: 1.5384616;
     vertical-align: top;
     border-top: 1px solid #ddd

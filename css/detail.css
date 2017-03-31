@@ -33,13 +33,13 @@
 .table-responsive table>thead>tr>th{
     background-color: #fff;
     color: #57575f;
-    border-left: 0.025rem solid #c3c3c3;
-    border-bottom: 0.025rem solid #c3c3c3;
+    border-left: 1px solid #c3c3c3;
+    border-bottom: 1px solid #c3c3c3;
 }
 
 .table-responsive table>tbody>tr>td{
-    border-left: 0.025rem solid #c3c3c3;
-    border-bottom: 0.025rem solid #c3c3c3;
+    border-left: 1px solid #c3c3c3;
+    border-bottom: 1px solid #c3c3c3;
     line-height: 100%;
     text-align: center;
     font-size: 14px;
