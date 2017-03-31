@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>上海软科360数据平台 - 上海软科教育信息咨询有限公司</title>
+    <link rel="shortcut icon" href="./images/icon/favion.png">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./libs/mui/mui.min.css">
+    <link rel="stylesheet" href="./libs/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./libs/fonts/iconfont/iconfont.css">
+    <link rel="stylesheet" href="./css/comment.css">
+    <link rel="stylesheet" href="./css/rankings.css">
+</head>
+
+<body>
+    <div id="offCanvasWrapper" class="mui-off-canvas-wrap mui-draggable">
+        <!--侧滑菜单部分-->
+        <aside id="offCanvasSide" class="mui-off-canvas-left">
+            <div id="offCanvasSideScroll" class="mui-scroll-wrapper">
+                <div class="mui-scroll">
+                    <div class="title"></div>
+                    <div class="content">
+                        <span class="android-only"></span>
+                        <p id="offCanvasHide" style="margin: 10px 15px;">
+                            上海交通大学
+                        </p>
+                    </div>
+                    <ul class="mui-table-view mui-table-view-chevron mui-table-view-inverted">
+                        <li class="mui-table-view-cell">
+                            <a class="mui-navigate-right iconfont icon-write">
+									自定义
+							</a>
+                        </li>
+                        <li class="mui-table-view-cell">
+                            <a class="mui-navigate-right iconfont icon-date-copy">
+									数据年份
+							</a>
+                        </li>
+                        <li class="mui-table-view-cell">
+                            <a class="mui-navigate-right iconfont icon-lingsheng-copy">
+									通知
+							</a>
+                        </li>
+                    </ul>
+                    <ul class="table-time">
+                        <li>
+                            <ol class="table-time-cell">
+                                <li>更新时间：2017.01.03</li>
+                                <li>更新内容：xx数据更新至</li>
+                                <li>2016年底</li>
+                            </ol>
+                        </li>
+                        <li>
+                            <a href="#">
+                                查看更多>>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+
+        <!--主界面部分-->
+        <div class="mui-inner-wrap">
+            <header class="mui-bar mui-bar-nav">
+                <a href="#offCanvasSide" class="mui-icon mui-action-menu mui-icon-bars mui-pull-left" aria-hidden="true"></a>
+                <a href="#" id="user" class="mui-icon iconfont icon-user mui-pull-right"></a>
+                <ul class="dropdown-menu" aria-labelledby="dLabel">
+                    <li><a href="#">修改密码</a></li>
+                    <li><a href="#">登出</a></li>
+                </ul>
+                <h1 class="mui-title">
+                    <a href="./index.html">大学360°对比分析平台</a>
+                </h1>
+            </header>
+            <div id="offCanvasContentScroll" class="mui-content mui-scroll-wrapper">
+                <div class="mui-scroll">
+                    <!--帮助-->
+                    <div class="help">
+                        <a id="helpIndex" href="#helpIndex" class="iconfont icon-wenhao">帮助</a>
+                    </div>
+
+                    <!--指标 -->
+                    <div class="graphic-analysis">
+                        <div class="title">
+                            <h1>软科中国最好大学排名2017</h1>
+                            <a href="#">（查看排名方法）</a>
+                        </div>
+                    </div>
+
+                    <!-- 模块 -->
+                    <div id="detail-module" class="list-module">
+
+                        <div id="table-responsive" class="table-responsive mui-table-view mui-table-view-chevron">
+                            <table class="table-custom table" align="center">
+                                <thead>
+                                    <tr>
+                                        <th>维度</th>
+                                        <th>指标</th>
+                                        <th>权重</th>
+                                        <th>原始数据</th>
+                                        <th>模拟数据</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td rowspan="2">人才培养（45%）</td>
+                                        <td>
+                                            <div align="left">生源质量<i class="">（新生高考成绩）</i></div>
+                                        </td>
+                                        <td>30%</td>
+                                        <td>94</td>
+                                        <td>94<i class="">（1-100）</i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div align="left">培养结果<i class="">（新生就业率）</i></div>
+                                        </td>
+                                        <td>15%</td>
+                                        <td>98.3%</td>
+                                        <td>98.3%<i class="">（1-100）</i></td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="4">科学研究（40%）</td>
+                                       <td>
+                                           <div align="left">科研规模 <i class="">（论文数量）</i></div>
+                                       </td>
+                                        <td>10%</td>
+                                        <td>6545</td>
+                                        <td>6545</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                           <div align="left">科研质量 <i class="">（高被引论文）</i></div>
+                                       </td>
+                                        <td>10%</td>
+                                        <td>6545</td>
+                                        <td>6545</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                           <div align="left">顶尖成果 <i class="">（高被引论文）</i></div>
+                                       </td>
+                                        <td>10%</td>
+                                        <td>6545</td>
+                                        <td>6545</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                           <div align="left">顶尖人才 <i class="">（高被引学者）</i></div>
+                                       </td>
+                                        <td>10%</td>
+                                        <td>6545</td>
+                                        <td>6545</td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="2">服务社会（10%）</td>
+                                        <td>
+                                           <div align="left">科技服务 <i class="">（企业科研经费）</i></div>
+                                       </td>
+                                        <td>5%</td>
+                                        <td>1245</td>
+                                        <td>1245</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                           <div align="left">成果转化 <i class="">（技术转让收入）</i></div>
+                                       </td>
+                                        <td>5%</td>
+                                        <td>1245</td>
+                                        <td>1245</td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="1">国际化（5%）</td>
+                                        <td>
+                                           <div align="left">学生国际化 <i class="">（留学生比例）</i></div>
+                                       </td>
+                                        <td>5%</td>
+                                        <td>30.9%</td>
+                                        <td>30.9%</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--底部导航-->
+                <nav class="mui-bar mui-bar-tab">
+                    <a class="mui-tab-item" id="index" href="#index">
+                        <span class="mui-icon iconfont icon-sanyuan-copy-copy"></span>
+                        <span class="mui-tab-label">数据总揽</span>
+                    </a>
+                    <a class="mui-tab-item" id="compare" href="#compare">
+                        <span class="mui-icon iconfont icon-industryconcern"></span>
+                        <span class="mui-tab-label">数据对比</span>
+                    </a>
+                    <a class="mui-tab-item mui-active" id="rankings" href="#rankings">
+                        <span class="mui-icon iconfont icon-r"></span>
+                        <span class="mui-tab-label">排名模拟</span>
+                    </a>
+                    <a class="mui-tab-item" id="detail" href="#detail">
+                        <span class="mui-icon iconfont icon-daohanglandingdananniu-copy"></span>
+                        <span class="mui-tab-label">数据明细</span>
+                    </a>
+                </nav>
+
+            <!-- off-canvas backdrop -->
+            <div class="mui-off-canvas-backdrop"></div>
+        </div>
+
+        <script src="./libs/bootstrap/jquery.min.js"></script>
+        <script src="./libs/bootstrap/bootstrap.min.js"></script>
+        <script src="./libs/mui/mui.min.js"></script>
+        <script src="./js/comment.js"></script>
+        <!--<script src="./js/detail.js"></script>-->
+</body>
+
+</html>

@@ -36,3 +36,47 @@ body {
 .mui-bar .mui-btn-link {
     top: 1px;
 }
+
+
+/* search */
+
+.search {
+    background-color: #6b7183;
+}
+.search .input{
+    display: flex;
+    justify-content: center;    
+    padding: 10px 0;
+    align-items: baseline;
+}
+.search input{
+    background-color: #fff;
+    font-size: 14px;
+    text-align: left;
+    /*text-indent: 10px;*/
+    padding: 10px 0 10px 40px; 
+    border-radius: 2px;
+}
+.img_icon{
+    display: table;
+    position: relative;
+}
+.search .btn{
+    background-color: #f98648;
+    color: #fff;
+    vertical-align: middle;
+    padding: 7px 12px;
+}
+
+.img_icon::before{
+    content: '';
+    display: block;
+    width: 26px;
+    height: 26px;
+    background-image: url(../images/icon/search.png) ;
+    background-size: 100% auto;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
+

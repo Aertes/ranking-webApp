@@ -1,0 +1,84 @@
+@charset "utf-8";
+
+/* title */
+
+.graphic-analysis .title{
+    text-align: center;
+}
+.graphic-analysis .title a{
+    display: inline-block;
+    border-bottom: 1px solid #2c9af4;
+    padding-bottom: 3px;
+    margin-bottom: 10px;
+}
+.graphic-analysis .title h1{
+    font-size: 0.9rem;
+}
+
+
+/*分析表*/
+
+#table-responsive{
+    margin: 0;
+}
+
+#table-responsive table>thead>tr>th{
+    font-size: 0.6rem;
+    vertical-align: middle;
+    text-align: center;
+    background-color: #a7d0f5;
+
+}
+
+.table-responsive table>thead>tr>th{
+    background-color: #fff;
+    color: #57575f;
+    border-left: 0.025rem solid #c3c3c3;
+    border-bottom: 0.025rem solid #c3c3c3;
+}
+
+.table-responsive table>tbody>tr>td{
+    border-left: 0.025rem solid #c3c3c3;
+    border-bottom: 0.025rem solid #c3c3c3;
+    line-height: 100%;
+    text-align: center;
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+
+#table-responsive .tab-pane table{
+    table-layout: fixed;
+    text-align: center;
+}
+
+.mui-scroll-wrapper .mui-scroll .table-time li{
+    font-weight: 400;
+    padding-left: 1.3rem;
+}
+
+#detail-module ul li a{
+    margin: 0;
+    padding: 0.5rem 0.25rem;
+}
+
+.mui-scroll-wrapper .mui-scroll ul>li{
+    padding: 0;
+}
+#offCanvasSideScroll .mui-table-view-cell{
+    padding: 11px 65px 11px 1.3rem;
+}
+
+.mui-table-view-chevron .mui-table-view-cell{
+    padding-left: 65px;
+}
+
+.mui-table-view-cell>a:not(.mui-btn){
+    position: relative;
+    display: block;
+    overflow: hidden;
+    padding: inherit;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: inherit;
+}

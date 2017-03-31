@@ -1,0 +1,58 @@
+@charset 'utf-8';
+
+/*userHelp list*/
+
+.help-guide{
+    margin: 35px 40px 40px 30px;
+}
+.help-list{
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.help-list ul{
+    padding: 10px 0;
+}
+.help-list ul>h5{
+    font-size: 16px;
+    color: #3d79b6;
+}
+.help-list ul>li{
+    float: left;
+    padding: 10px 15px 0 0 ;
+}
+
+.B-active{
+    border-bottom: 1px solid #b21207;
+}
+
+.help-list ul>li>a{
+    color: #3b3b3b;
+    font-size: 15px;
+}
+
+/* particular */
+
+.help-particular{
+    padding-left: 20px;
+}
+
+h3{
+    font-size: 18px;
+    color: #9c2424;
+    padding: 10px 0;
+    position: relative;
+}
+
+h3::before{
+    content: '';
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 12px;
+    left: -18px;
+    border-top: 8px solid transparent;
+    border-left: 16px solid #9c2524;
+    border-bottom: 8px solid transparent;
+}
+

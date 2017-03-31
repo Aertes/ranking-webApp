@@ -71,7 +71,6 @@ document.getElementById('index').addEventListener('tap', function() {
   });
 });
 
-
 document.getElementById('compare').addEventListener('tap', function() {
   mui.openWindow({
     url: 'compare.html', 
@@ -79,7 +78,12 @@ document.getElementById('compare').addEventListener('tap', function() {
   });
 });
 
-
+document.getElementById('rankings').addEventListener('tap', function() {
+  mui.openWindow({
+    url: 'rankings.html', 
+    id:'rankings'
+  });
+});
 
 document.getElementById('detail').addEventListener('tap', function() {
   mui.openWindow({
@@ -87,6 +91,15 @@ document.getElementById('detail').addEventListener('tap', function() {
     id:'detail'
   });
 });
+
+
+document.getElementById('helpIndex').addEventListener('tap', function() {
+  mui.openWindow({
+    url: 'helpIndex.html', 
+    id:'helpIndex'
+  });
+});
+
 
 $('#user').on('tap', function () {
     $('.dropdown-menu').toggle();
