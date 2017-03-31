@@ -12,7 +12,7 @@
     margin-bottom: 10px;
 }
 .graphic-analysis .title h1{
-    font-size: 0.9rem;
+    font-size: 17px;
 }
 
 
@@ -23,7 +23,7 @@
 }
 
 #table-responsive table>thead>tr>th{
-    font-size: 0.6rem;
+    font-size: 16px;
     vertical-align: middle;
     text-align: center;
     background-color: #a7d0f5;
@@ -82,3 +82,42 @@
     text-overflow: ellipsis;
     color: inherit;
 }
+
+
+/* proceed */
+
+.proceed .sure{
+    background-color: #fff;
+    text-align: center;
+    display: none;
+}
+
+.proceed .sure a{
+    color: #fff;
+    font-size: 16px;
+    margin: 15px 0;
+    padding: 5px 15px;
+    background-color: #9c2424;
+    display: inline-block;
+}
+
+.proceed .result{
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+}
+.proceed .result span {
+    padding: 5px 0;
+    border: 1px solid #ccc;
+}
+.proceed .result .ranking{
+    display: flex;
+    background-color: #303953;
+}
+
+.proceed .result .num{
+    display: flex;
+    background-color: #5d6479;
+    font-size: 17px;
+}
+

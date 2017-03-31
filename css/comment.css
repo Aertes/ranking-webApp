@@ -110,7 +110,7 @@
 
 .mui-draggable .content p{
     text-align: center;
-    font-size: 0.85rem;
+    font-size: 20px;
     color: #fff;
     font-weight: 700;
 }
@@ -126,9 +126,9 @@
 }
 
 .mui-scroll-wrapper .mui-scroll ul li{
-    font-size: 0.7rem;
+    font-size: 17px;
     font-weight: 400;
-    padding-left: 1.3rem;
+    padding-left: 30px;
 }
 
 
