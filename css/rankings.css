@@ -27,8 +27,7 @@
     font-size: 16px;
     vertical-align: middle;
     text-align: center;
-    background-color: #a7d0f5;
-    background-color: #fff;
+    background-color: #9dcdf4;
     color: #57575f;
     border-left: 1px solid #c3c3c3;
     border-bottom: 1px solid #c3c3c3;
@@ -42,7 +41,9 @@
     font-size: 14px;
     vertical-align: middle;
 }
-
+.table-responsive table>tbody>tr>td>div{
+    font-size: 12px;
+}
 
 #table-responsive .tab-pane table{
     table-layout: fixed;

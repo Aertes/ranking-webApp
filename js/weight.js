@@ -28,127 +28,40 @@ $('ul>li').each(function () {
     })
 })
 
-// window.onload = function () {
-//     if (!document.getElementsByClassName) {
-//         document.getElementsByClassName = function (cls) {
-//             var ret = [];
-//             var els = document.getElementsByTagName('*');
-//             for (var i = 0, len = els.length; i < len; i++) {
-
-//                 if (els[i].className.indexOf(cls + ' ') >= 0 || els[i].className.indexOf(' ' + cls + ' ') >= 0 || els[i].className.indexOf(' ' + cls) >= 0) {
-//                     ret.push(els[i]);
-//                 }
-//             }
-//             return ret;
-//         }
-//     }
-
-    var left = document.querySelectorAll('.mui-btn-numbox-minus');
-    var right = document.querySelectorAll('.mui-btn-numbox-plus');
-    var input = document.querySelectorAll('#test');
-    var confirm = document.querySelectorAll('.confirm');
-    var sum = document.querySelectorAll('.sum');
-    var sumValue = sum.value;
-    var tr = document.querySelectorAll('tr');
-
-    for (var i = 0; i < tr.length; i++) {
-
-        (function (i) {
-            lf = left[i];
-            rg = right[i];
-            var value = Math.round(((input[i].value) * 10) / 10);
-            if (isNaN(value)) {
-                return false;
-            }
-
-            var string = value.toString();
-            var dian = string.indexOf('.');
-            if (dian != 0) {
-                dian = string.length;
-                string += '.';
-            }
-            while (string.length <= dian + 1) {
-                string += '0'
-            }
 
 
-            console.log(value)
-            lf.onclick = function () {
+window.onload = function () {
 
-                if (value != 0) {
-                    value=value-0.1;
+    if (!document.getElementsByClassName) {
+        document.getElementsByClassName = function (cls) {
+            var ret = [];
+            var els = document.getElementsByTagName('*');
+            for (var i = 0, len = els.length; i < len; i++) {
+
+                if (els[i].className.indexOf(cls + ' ') >= 0 || els[i].className.indexOf(' ' + cls + ' ') >= 0 || els[i].className.indexOf(' ' + cls) >= 0) {
+                    ret.push(els[i]);
                 }
-
-                input[i].value = value;
-
-
-
-                console.log(input[i].value)
-                console.log(sumValue)
-
             }
-            rg.onclick = function () {
-                if (value < 100) {
-                    value=value+0.1;
-                }
+            return ret;
+        }
+    }
 
-                input[i].value = value;
+    var table = document.getElementById('module-nestedtable');
+    var tr = table.children[1].rows;
+    var nums = document.getElementById('test');
 
-                console.log(input[i].value)
-                console.log(sumValue)
-            }
-
-        })(i)
-
-//         tr[i].onclick = function (e) {
-//             var e = e || window.event;
-//             var el = e.target || e.srcElement;
-//             var cls = el.className;
-//             var cuntInput = document.querySelector('#test');
-//             var value = parseFloat(cuntInput.value);
-//             switch (cls) {
-//                 case 'right':
-//                     // statements_1
-//                     cuntInput.value = value + 0.1;
-//                     getSub(this);
-//                     break;
-//                 case 'left':
-//                     // statements_def
-//                     if (value > 1) {
-//                         cuntInput.value = value - 0.1;
-//                         getSub(this);
-//                     }
-//                     break;
-//             }
-//             getTotal();
-//         }
-//         // tr[i].input.onkeyup = function () {
-//         //     var val = parseFloat(this.value);
-//         //     if(isNaN(val) || val <= 0){
-//         //         val = 0.0;
-//         //     }
-//         //     if(this.value != val){
-//         //         this.value = val;
-//         //     }
-//         //     getTotal();
-//         // };
-//     }
+    var subs = document.querySelectorAll('.sub');
+    var adds = document.querySelectorAll('.add');
+    var sums = document.querySelectorAll('.sum');
+    var submits = document.querySelectorAll('#submit');
 
 
-//     function getTotal() {
-//         var sumValue = 0;
-//         for (var i = 0; i < tr.length; i++) {
-//             sumValue += parseFloat(tr[i].cells[4].innerHTML);
-//         }
-//         sum.innerHTML = sumValue.toFixed(1);
-//     }
 
-//     function getSub(tr) {
-//         var cuntInput = document.querySelectorAll('#test');
-
-//     }
 
 }
+
+
+
 
 
 
