@@ -46,54 +46,57 @@ window.onload = function () {
         }
     }
 
+    
+
     var table = document.getElementById('module-nestedtable');
     var tr = table.children[1].rows;
-    var nums = document.getElementById('test');
+    var num = document.querySelector('.num');
+    var sum = document.querySelector('.sum');
+    var sub = document.querySelector('.sub');
+    var add = document.querySelector('.add');
+    var submit = document.querySelector('#submit');
 
-    var subs = document.querySelectorAll('.sub');
-    var adds = document.querySelectorAll('.add');
-    var sums = document.querySelectorAll('.sum');
-    var submits = document.querySelectorAll('#submit');
+    function getTotal() {
+        
+
+    }
 
 
+    for (var i = 0; i < tr.length; i++) {
+        tr[i].onclick = function (e) {
+            var e = e || window.event;
+            var el = e.target || e.srcElement;
+            var cls = el.className;
+            var countInout = this.querySelector('.num');
+            var value = Math.round(parseFloat(countInout.value)*10)/10;
+            console.log(value);
+            switch (cls) {
+                case 'add':
+                    if(countInout.value < 100){
+                        countInout.value = Math.round(parseFloat( value + 0.1)*10)/10;
+                        add.disabled = false;
 
+                    }else{
+                        add.disabled = true;
+                    }
+                    break;
+                case 'sub':
+                    if(countInout.value == 0){
+                        countInout.value = 0.0;
+                        sub.disabled = true;
+
+                    }else{
+                        countInout.value = Math.round(parseFloat( value - 0.1)*10)/10;
+                    }
+                    break;
+            }
+
+        }
+        getTotal();
+    }
 
 }
 
-
-
-
-
-
-// var left = document.querySelectorAll('.mui-btn-numbox-minus');
-// var right = document.querySelectorAll('.mui-btn-numbox-plus');
-// var input = document.querySelectorAll('#test');
-// var confirm = document.querySelectorAll('.confirm');
-// var sum = document.querySelectorAll('.sum');
-// var submit = document.querySelectorAll('#submit');
-
-// var tbodys = document.querySelectorAll('tbody');
-// var sumValue = sum.value;
-
-// for (var i = 0; i < submit.length; i++) {
-
-//     (function(k) {
-//         var sub = submit[k];
-//         sub.index = k;
-//         sub.onclick = function() {
-//             var allval = 0,
-//                 tage;
-//             tage = this.index;
-//             var tests = tbodys[tage].querySelectorAll('#test');
-//             // console.log(tage);
-//             for (var i = 0; i < tests.length; i++) {
-//                 allval += Math.round(parseFloat(tests[i].value) * 10) / 10;
-//                 console.log(allval);
-//             }
-//             sum[tage].value = allval;
-//         }
-//     })(i)
-// }
 
 
 
