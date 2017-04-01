@@ -52,7 +52,6 @@
 
 .mui-scroll-wrapper .mui-scroll .table-time li{
     font-weight: 400;
-    padding-left: 1.3rem;
 }
 
 #detail-module ul li a{
@@ -64,7 +63,7 @@
     padding: 0;
 }
 #offCanvasSideScroll .mui-table-view-cell{
-    padding: 11px 65px 11px 1.3rem;
+    padding: 8px 15px;
 }
 
 .mui-table-view-chevron .mui-table-view-cell{

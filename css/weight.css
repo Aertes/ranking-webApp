@@ -1,11 +1,9 @@
 @charset "utf-8";
 html,
 body {
-    background-color: #efeff4;
+    background-color: #fff;
 }
-#header{
-    background-color: #303953;
-}
+
 .mui-icon-arrowdown:before{
     position: absolute;
     right: 0;

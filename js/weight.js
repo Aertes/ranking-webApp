@@ -46,7 +46,7 @@ window.onload = function () {
         }
     }
 
-    
+
 
     var table = document.getElementById('module-nestedtable');
     var tr = table.children[1].rows;
@@ -61,7 +61,6 @@ window.onload = function () {
 
     }
 
-
     for (var i = 0; i < tr.length; i++) {
         tr[i].onclick = function (e) {
             var e = e || window.event;
@@ -74,17 +73,11 @@ window.onload = function () {
                 case 'add':
                     if(countInout.value < 100){
                         countInout.value = Math.round(parseFloat( value + 0.1)*10)/10;
-                        add.disabled = false;
-
-                    }else{
-                        add.disabled = true;
                     }
                     break;
                 case 'sub':
                     if(countInout.value == 0){
                         countInout.value = 0.0;
-                        sub.disabled = true;
-
                     }else{
                         countInout.value = Math.round(parseFloat( value - 0.1)*10)/10;
                     }

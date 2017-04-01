@@ -128,41 +128,36 @@
 .mui-scroll-wrapper .mui-scroll ul li{
     font-size: 17px;
     font-weight: 400;
-    padding-left: 30px;
-}
-
-
-.mui-scroll-wrapper .table-time ol{
-    position: relative;
-    padding: 0.25rem;
 }
 
 .mui-scroll-wrapper .table-time ol li{
     color: #fff;
-    font-size: 0.6rem;
+    font-size: 12px;
     font-weight: 400;
-    text-indent: 0.2rem;
+    text-indent: 5px;
+    padding: 1px 45px;
+    position: relative;
 }
 
 .mui-scroll-wrapper .table-time li a{
     display: inline-block;
     color: #fff;
-    font-size: 0.6rem;
+    font-size: 12px;
     font-weight: 400;
-    text-indent: 4rem;
+    text-indent: 110px;
 }
 
 
 .table-time-cell:after{
     content: "";
     display: block;
-    width: 0.5rem;
-    height: 0.5rem;
+    width: 10px;
+    height: 10px;
     background-color: #d83f3f;
     border-radius: 50%;
     position: absolute;
-    top: 0.45rem;
-    left: 0.8rem;
+    top: 2px;
+    left: 33px;
 }
 
 
@@ -170,12 +165,12 @@
 
 .tag-app::after {
     content: "";
-    width: 0.4rem;
-    height: 0.6rem;
+    width: 10px;
+    height: 15px;
     position: absolute;
     top: 50%;
-    left: 33%;
-    transform: translate(-50%, -50%);
+    left: -10px;
+    transform: translateY(-50%);
     background: url("../images/icon/书签.jpg");
     background-size: 100% 100%;
 }
@@ -184,7 +179,5 @@
 .background-color:{
     background-color: #466fa1;
 }
-
-
 
 

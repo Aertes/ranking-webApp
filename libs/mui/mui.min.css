@@ -1799,19 +1799,19 @@ input[type=submit]:enabled:active {
 }
 
 .mui-table-view-chevron .mui-table-view-cell {
-    padding-right: 65px
+    /* padding-right: 65px*/
 }
 
 .mui-table-view-chevron .mui-table-view-cell>a:not(.mui-btn) {
-    margin-right: -65px
+    /* margin-right: -65px*/
 }
 
 .mui-table-view-radio .mui-table-view-cell {
-    padding-right: 65px
+    /* padding-right: 65px*/
 }
 
 .mui-table-view-radio .mui-table-view-cell>a:not(.mui-btn) {
-    margin-right: -65px
+    /* margin-right: -65px*/
 }
 
 .mui-table-view-radio .mui-table-view-cell .mui-navigate-right:after {
@@ -1875,7 +1875,7 @@ input[type=submit]:enabled:active {
 .mui-table-view-cell {
     position: relative;
     overflow: hidden;
-    padding: 11px 15px;
+    padding: 8px 15px;
     -webkit-touch-callout: none
 }
 
@@ -1914,7 +1914,7 @@ input[type=submit]:enabled:active {
     position: relative;
     display: block;
     overflow: hidden;
-    margin: -11px -15px;
+    /* margin: -11px -15px;*/
     padding: inherit;
     white-space: nowrap;
     text-overflow: ellipsis;

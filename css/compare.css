@@ -11,7 +11,7 @@
 .graphic-analysis .svg{
 	position: relative;
 	overflow: hidden;
-	border:0.025rem solid red;
+	border: 1px solid red;
 }
 
 .graphic-analysis .university{
@@ -47,13 +47,17 @@
 
  .table>tbody>tr>td{
 	border-top: none;
-	font-size: 14px;
+	font-size: 16px;
 	vertical-align: middle;
 }
 
-.list-module table tbody th, td{
-	font-size: 0.4rem;
+.tag-app{
 	position: relative;
+	padding: 0 2px;
+}
+
+.list-module table tbody th, td{
+	font-size: 16px;
 }
 
 .table>tbody>tr>td.modulescoretablebody1, 
@@ -112,7 +116,7 @@
 	position: relative;
 }
 #panel3 table>thead>tr>th{
-	padding: 0.5rem 0;
+	padding: 10px 0;
 	font-size: 16px;
 }
 
