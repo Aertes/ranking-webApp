@@ -41,21 +41,48 @@ body {
 #table-responsive table>thead>tr>th{
     font-size: 16px;
     font-weight: 400;
-    padding: 0.25rem 0;
+    padding: 10px 0;
     text-align: center;
 }
 
 table{
     width: 100%;
 }
+
+table select{
+    width: 100%;
+    padding: 8px 20px 8px 5px;
+    font-size: 16px;
+    border-radius: 0;
+}
+.mui-icon{
+    display: block;
+}
+.arrowdown:before{
+    position: absolute;
+    content: '\e581';
+    top: 20px;
+    right: 2px;
+    color: #bbb;
+}
+
 #table-responsive table>tbody>tr{
     border-bottom: 1px solid #ccc;
-    text-align: center;
 }
 
 #table-responsive table>tbody>tr>td{
     padding: 8px 0;
     font-size: 16px;
+}
+
+.version{
+    color: #3d3d3d;
+}
+
+.source{
+    color: #828282;
+    background-color: #f4f4f4;
+    position: relative;
 }
 
 .responsive{
@@ -95,26 +122,13 @@ table{
 
 .confirm{
     display: flex;
-    justify-content: center;
-    padding: 0.25rem 0;
+    justify-content: flex-end;
+    padding: 10px 0;
     align-items: center;
     border-bottom: 1px solid #ccc;
 }
-.confirm div{
-    /*font-size: 0.7rem;*/
-    color: #848484;
-}
+
 .confirm input{
-    width: 50px;
-    border-left: 1px solid #dc8663;
-    border-top: 1px solid #dc8663;
-    border-bottom: 1px solid #dc8663;
-    border-right: 1px solid #fff;
-    border-radius: 0;
-    text-align: right;
-    padding: 5px 0;
-}
-.confirm input:nth-child(3){
     width: 60px;
     background-color: #af2b2b;
     border: none;
@@ -122,48 +136,4 @@ table{
     text-align: center;
 }
 
-.confirm span{
-    display: block;
-    font-size: 16px;
-    display: flex;
-    align-items: center;
-    border-top: 1px solid #dc8663;
-    border-bottom: 1px solid #dc8663;
-    padding-right: 7px;
-    line-height: 39px;
-}
 
-.mui-numbox{
-    width: 140px;
-}
-
-/*numbox*/
-
-.numbox{
-    display: flex;
-    justify-content: center;
-}
-.numbox button{
-    border-radius: 0;
-    width: 38px;
-    font-size: 17px;
-    line-height: normal;
-}
-.numbox input{
-    width: 45px;
-    padding: 0;
-    text-align: right;
-    height: 35px;
-    font-size: 16px;
-    border-right: none;
-    border-radius: 0;
-}
-.numbox span {
-    display: block;
-    font-size: 16px;
-    display: flex;
-    align-items: center;
-    border-top: 1px solid rgba(0, 0, 0, .2);
-    border-bottom: 1px solid rgba(0, 0, 0, .2);
-    padding-right: 7px;
-}
