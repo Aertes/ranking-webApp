@@ -9,3 +9,5 @@ $('#detailModule li').first().each(function () {
         _this.children().toggleClass('mui-icon-arrowdown mui-icon-arrowup')
     })
 })
+
+

@@ -111,6 +111,12 @@ if (mui.os.plus && mui.os.ios) {
             id: 'inform'
         });
     });
+    document.getElementById('more').addEventListener('tap', function () {
+        mui.openWindow({
+            url: 'inform.html',
+            id: 'more'
+        });
+    });
 
 })();
 
