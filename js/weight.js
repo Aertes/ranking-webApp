@@ -18,7 +18,7 @@ function getFont() {
 }
 
 
-
+// 点击模块显示掩藏
 $('ul>li').each(function () {
     var _this = $(this);
     // console.log(_this);
@@ -27,6 +27,7 @@ $('ul>li').each(function () {
         _this.children().toggleClass('mui-icon-arrowdown mui-icon-arrowup')
     })
 })
+
 
 
 
@@ -45,8 +46,6 @@ window.onload = function () {
             return ret;
         }
     }
-
-
 
     var table = document.getElementById('module-nestedtable');
     var tr = table.children[1].rows;

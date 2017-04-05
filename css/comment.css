@@ -65,35 +65,21 @@
 }
 
 
-.mui-bar-tab .mui-home::before{
-    content: '';
-    display: block;
-    width: 26px;
-    height: 22px;
-    background-image: url('../images/icon/overview2.png');
-    background-size: 100% 100%;
-}
-
 .mui-inner-wrap .mui-bar-tab{
     background-color: #f4f4f4;
 }
 
-.mui-bar-tab .mui-email::before{
+
+.ranking-blue{
     content: '';
-    display: block;
-    width: 22px;
-    height: 20px;
-    background-image: url('../images/icon/compare.png');
-    background-size: cover;
+    background-image: url('../images/icon/排名模拟1.png');
+    background-size: 100% 100%;
 }
 
-.mui-bar-tab .mui-contact::before{
+.ranking-black{
     content: '';
-    display: block;
-    width: 25px;
-    height: 25px;
-    background-image: url('../images/icon/detail4.png');
-    background-size: cover;
+    background-image: url('../images/icon/排名模拟.png');
+    background-size: 100% 100%;
 }
 
 
@@ -179,5 +165,6 @@
 .background-color:{
     background-color: #466fa1;
 }
+
 
 

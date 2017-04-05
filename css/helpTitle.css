@@ -51,10 +51,11 @@ body {
 }
 .search input{
     background-color: #fff;
+    width: 250px;
     font-size: 14px;
     text-align: left;
-    /*text-indent: 10px;*/
-    padding: 10px 0 10px 40px; 
+    text-indent: 30px;
+    padding: 0;
     border-radius: 2px;
 }
 .img_icon{
@@ -77,6 +78,6 @@ body {
     background-size: 100% auto;
     position: absolute;
     top: 5px;
-    left: 10px;
+    left: 2px;
 }
 

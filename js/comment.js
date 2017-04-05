@@ -17,6 +17,7 @@ function getFont() {
 }
 
 
+// 侧滑菜单
 mui.init();
 var offCanvasWrapper = mui('#offCanvasWrapper');
 var offCanvasInner = offCanvasWrapper[0].querySelector('.mui-inner-wrap');
@@ -64,43 +65,57 @@ if (mui.os.plus && mui.os.ios) {
 }
 
 
-document.getElementById('index').addEventListener('tap', function() {
-  mui.openWindow({
-    url: 'index.html', 
-    id:'index'
-  });
-});
 
-document.getElementById('compare').addEventListener('tap', function() {
-  mui.openWindow({
-    url: 'compare.html', 
-    id:'compare'
-  });
-});
+// 链接新页面
 
-document.getElementById('rankings').addEventListener('tap', function() {
-  mui.openWindow({
-    url: 'rankings.html', 
-    id:'rankings'
-  });
-});
+(function () {
+    document.getElementById('index').addEventListener('tap', function () {
+        mui.openWindow({
+            url: 'index.html',
+            id: 'index'
+        });
+    });
 
-document.getElementById('detail').addEventListener('tap', function() {
-  mui.openWindow({
-    url: 'detail.html', 
-    id:'detail'
-  });
-});
+    document.getElementById('compare').addEventListener('tap', function () {
+        mui.openWindow({
+            url: 'compare.html',
+            id: 'compare'
+        });
+    });
 
+    document.getElementById('rankings').addEventListener('tap', function () {
+        mui.openWindow({
+            url: 'rankings.html',
+            id: 'rankings'
+        });
+    });
 
-document.getElementById('helpIndex').addEventListener('tap', function() {
-  mui.openWindow({
-    url: 'helpIndex.html', 
-    id:'helpIndex'
-  });
-});
+    document.getElementById('detail').addEventListener('tap', function () {
+        mui.openWindow({
+            url: 'detail.html',
+            id: 'detail'
+        });
+    });
 
 
+    document.getElementById('helpIndex').addEventListener('tap', function () {
+        mui.openWindow({
+            url: 'helpIndex.html',
+            id: 'helpIndex'
+        });
+    });
+
+    document.getElementById('inform').addEventListener('tap', function () {
+        mui.openWindow({
+            url: 'inform.html',
+            id: 'inform'
+        });
+    });
+
+})();
+
+
+// 模块点击显示掩藏
 $('#user').on('tap', function () {
     $('.dropdown-menu').toggle();
 })
