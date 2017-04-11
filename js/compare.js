@@ -18,7 +18,6 @@ window.addEventListener('toggle', function (event) {
     }
 });
 
-
 // 新页面
 (function () {
     document.getElementById('weight').addEventListener('tap', function () {
@@ -47,4 +46,11 @@ window.addEventListener('toggle', function (event) {
 })()
 
 
+$('.university').children('div').each(function(){
+    var index = $(this).index();
+    $(this).on('tap',  function(){
+        $(this).children('a').addClass('font-color').parent().siblings().children('a').removeClass('font-color');
+        $('.svg div').eq(index).show().siblings().hide();
+    })
+})
 

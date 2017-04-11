@@ -8,10 +8,8 @@
 	font-size: 22px;
 }
 
-.graphic-analysis .svg{
-	position: relative;
-	overflow: hidden;
-	border: 1px solid red;
+.svg .two{
+	display: none;
 }
 
 .graphic-analysis .university{
@@ -29,7 +27,7 @@
 	color: #808080;
 }
 
-#active-color{
+.graphic-analysis .university .font-color{
 	color: #3d71b2;
 }
 
@@ -77,6 +75,16 @@
 }
 
 /*分页模块模块*/
+
+.mui-table-view-cell:after{
+	border: none;
+	height: 0;
+}
+#panel4 .mui-table-view-cell{
+	border-bottom: 1px solid #c8c7cc;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
 
 .list-module table{
 	text-align: center;
