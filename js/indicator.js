@@ -80,8 +80,15 @@ $('.list').each(function () {
 })
 
 
-
-
+// 显示掩藏
+$('#indicator-module li').each(function () {
+    var _this = $(this);
+    console.log(_this);
+    _this.on('tap', function () {
+        _this.next().toggle();
+        console.log($('#table-responsive'));
+    })
+})
 
 
 

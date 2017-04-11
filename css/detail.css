@@ -20,6 +20,7 @@
 
 #table-responsive{
     margin: 0;
+    display: none;
 }
 
 #detailModule ul>li {
