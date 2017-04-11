@@ -85,7 +85,7 @@
 .proceed .sure{
     background-color: #fff;
     text-align: center;
-    display: none;
+    /*display: none;*/
 }
 
 .proceed .sure a{
@@ -101,6 +101,7 @@
     text-align: center;
     color: #fff;
     font-size: 15px;
+    display: none;
 }
 .proceed .result span {
     padding: 5px 0;

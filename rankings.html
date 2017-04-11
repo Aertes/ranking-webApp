@@ -188,7 +188,7 @@
                     <!-- proceed -->
                     <div class="proceed">
                         <div class="sure">
-                            <a id="confirm" href="#">进行模拟</a>
+                            <a id="confirm" href="javascript:;">进行模拟</a>
                         </div>
                         <div class="result">
                             <div class="ranking">
@@ -235,7 +235,9 @@
         <script src="./js/comment.js"></script>
 
         <script>
-            
+            $('.sure').on('tap', '#confirm', function(){
+                $(this).hide(500).parent().siblings().show(500);
+            })
         </script>
 
 </body>
