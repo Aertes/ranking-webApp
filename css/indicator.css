@@ -74,8 +74,8 @@ body {
 .clear .title {
     display: flex;
     justify-content: space-between;
-    font-size: 0.6rem;
-    padding: 0.5rem 0.5rem;
+    font-size: 13px;
+    padding: 20px;
     color: #919191;
 }
 
@@ -95,8 +95,8 @@ body {
 .selected .lin-list .list,
 .clear .lin-list .list{
     text-align: center;
-    font-size: 0.6rem;
-    padding: 0.25rem 0.5rem;
+    font-size: 14px;
+    padding: 5px;
     color: #fff;
     box-sizing: border-box;
     border-radius: 1.0rem;
@@ -121,15 +121,14 @@ body {
 .selected .lin-list .list i,
 .clear .lin-list .list i{
     display: inline-block;
-    width: 1.0rem;
-    height: 1.0rem;
+    width: 25px;
+    height: 25px;
     position: absolute;
     top: 50%;
     right: 0;
     transform: translateY(-50%);
-    border: 0.1rem solid #fff;
+    border: 2px solid #fff;
     border-radius: 50%;
-    line-height: 1.0rem;
     vertical-align: middle;
 }
 
@@ -143,6 +142,19 @@ body {
 .mui-table-view::before{
     background-color: #fff;
 }
+.mui-icon-arrowdown:before{
+    position: absolute;
+    right: 5px;
+    color: #bbb;
+}
+.mui-icon-arrowup:before{
+    position: absolute;
+    right: 5px;
+    color: #bbb;
+}
+.mui-content-padded{
+    margin: 5px -2px;
+}
 .mui-table-view{
     margin-top: 10px;
 }
@@ -150,21 +162,20 @@ body {
 #indicator-module table{
     width: 100%;
     text-align: center;
-    border-top: 0.025rem solid #ccc;
+    border-top: 1px solid #ccc;
 }
 
 #indicator-module .table thead>tr>th{
-    padding: 0.5rem 0;
-    font-size: 0.75rem;
+    padding: 8px 0;
+    font-size: 16px;
     font-weight: 400;
-    border-bottom: 0.025rem solid #ccc;
+    border-bottom: 1px solid #ccc;
 }
 
 #indicator-module .table tbody>tr>td{
-    /*padding: 0.2rem 0;*/
-    font-size: 0.7rem;
+    font-size: 15px;
     font-weight: 400;
-    border-bottom: 0.025rem solid #ccc;
+    border-bottom: 1px solid #ccc;
 }
 
 /*selected*/
@@ -172,19 +183,18 @@ body {
 .date{
     margin: 0;
     position: relative;
-    border: 0.025rem solid #c97345;
+    border: 1px solid #c97345;
     /*padding: 0 0.25rem;*/
 }
 
 .date select{
-    font-size: 0.6rem;
-    padding: 0.3rem;
+    font-size: 15px;
+    padding: 8px;
     margin: 0 !important;
     border: none;
 }
 .date span{
     display: inline-block;
-    /*border: 0.025rem solid #c97345;*/
     padding: 0 0.25rem;
     font-size: 0.6rem;
     line-height: 1;
@@ -202,11 +212,11 @@ body {
     display: inline-block;
     height: 100%;
     width: 30%;
-    border: 0.025rem solid #c97345;
+    border: 1px solid #c97345;
     box-sizing: border-box;
 }
 #indicator-module .operation .add{
-    font-size: 0.7rem;
+    font-size: 15px;
     color: #fff;
     background-color: #c97345;
 }
@@ -214,26 +224,24 @@ body {
 .stay .check-set{
     display: flex;
     justify-content: space-between;
-    font-size: 0.6rem;
+    font-size: 14px;
     color: #919191;
     padding: 0.5rem;
-    line-height: 100%;
     vertical-align: middle;
 }
 
 .stay .checked{
     display: flex;
-    /*padding: 0 0.5rem;*/
     justify-content: space-between;
 }
 .stay .checked span{
     position: relative;
 }
 .stay input[type=checkbox]{
-    width: 0.7rem;
-    height: 0.7rem;
+    width: 20px;
+    height: 20px;
     -webkit-appearance: none;
-    border: 0.025rem solid #ccc;
+    border: 1px solid #ccc;
     /*background-color: #007aff;*/
     border-radius: 50%;
 }
@@ -328,18 +336,20 @@ body {
 /*底部选项*/
 
 .mui-tab {
+    width: 100%;
     background-color: #eee;
     display: flex;
     justify-content: center;
     position: fixed;
     bottom: 0;
     align-items: center;
+    height: 50px;
 }
 
 .mui-tab a{
     width: 33%;
     display: block;
-    font-size: 16px;
+    font-size: 15px;
     color: #999;
     text-align: center;
     padding: 2px 5px;
@@ -352,8 +362,8 @@ body {
     padding: 0 10px;
 }
 
-.mui-tab  .left i{
-    font-size: 0.75rem;
+.mui-tab  .left em{
+    font-size: 24px;
     color: #9c2424;
 }
 
@@ -375,4 +385,5 @@ body {
     border-bottom: 1px solid #c8c7cc;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
+    padding: 8px 10px;
 }

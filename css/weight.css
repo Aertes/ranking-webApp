@@ -60,6 +60,7 @@ table{
 
 .responsive{
     background-color: #fff;
+    display: none;
 }
 
 .mui-bar{
