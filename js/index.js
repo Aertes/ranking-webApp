@@ -1,15 +1,15 @@
 
-mui.init({
-    gestureConfig: {
-        tap: true, //默认为true
-        doubletap: true, //默认为false
-        longtap: true, //默认为false
-        swipe: true, //默认为true
-        drag: true, //默认为true
-        hold: false,//默认为false，不监听
-        release: false//默认为false，不监听
-    }
-});
+// mui.init({
+//     gestureConfig: {
+//         tap: true, //默认为true
+//         doubletap: true, //默认为false
+//         longtap: true, //默认为false
+//         swipe: true, //默认为true
+//         drag: false, //默认为true
+//         hold: false,//默认为false，不监听
+//         release: false//默认为false，不监听
+//     }
+// });
 
 
 
@@ -18,14 +18,15 @@ $(function () {
     var box = document.querySelector('.overflow');
     var ul = box.querySelector('ul');
 
-    var offsetWidth = ul.offsetWidth;
-    var clientWidth = box.clientWidth;
-    var init = 1100 - clientWidth;
-    var scrollLeft = box.scrollLeft;
-    var startX = 0, dex = 0;
+    var ulWidth = ul.offsetWidth;
+    var boxWidth = box.offsetWidth;
+    var init = ulWidth - boxWidth;
+    // var scrollLeft = box.scrollLeft;
+    var startX = 0, dex = 0, dx = 0, currentX =0, maxValue = 50;
     var left;
 
-    console.log(offsetWidth);
+    console.log(ulWidth);
+    console.log(boxWidth);
 
     $('.overflow li').each(function () {
         var _this = $(this);
@@ -35,7 +36,6 @@ $(function () {
             })
         })
     })
-
 
     $('.click-left').on('tap', function () {
         left = init / 2 - dex
@@ -49,7 +49,6 @@ $(function () {
         }
 
     });
-
 
     $('.click-right').on('tap', function () {
         left = init / 2 - dex
@@ -66,21 +65,26 @@ $(function () {
     ul.addEventListener('touchend', touchendHandler);
 
     function touchstartHandler(e) {
-        mui('#offCanvasContentScroll').off('drag');
         startX = e.touches[0].pageX;
-        // console.log(startX);
+        ul.classList.remove('transitionAll');
     }
     function touchmoveHandler(e) {
         dx = e.touches[0].pageX - startX;
-        console.log(dx);
-        ul.style.transform = 'translateX(' + dx + ' px)';
-        // console.log(ul);
+        if((currentX + dx) < maxValue && (currentX + dx) > -(ulWidth - boxWidth + maxValue)){
+			ul.style.webkitTransform = 'translateX('+(currentX + dx)+'px)';
+		}
     }
     function touchendHandler(e) {
-        var dx = e.changedTouches[0].pageX - startX;
-        // ul.style.transform += 'translateX('+ dx +' px)';
-        ul.style.transform = 'translateX(' + dx + ' px)';
-
+        currentX = currentX + dx;
+        if(currentX > 0){
+			ul.classList.add('transitionAll');
+			currentY = 0;
+			ul.style.webkitTransform = 'translateX('+ currentX +'px)';
+		}else if(currentX < -(ulWidth - boxWidth)){
+			ul.classList.add('transitionAll');
+			currentX = -(ulWidth - boxWidth)
+			ul.style.webkitTransform = 'translateX('+ currentX+'px)';
+		}
     }
 
 })

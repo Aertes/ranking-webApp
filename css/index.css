@@ -56,7 +56,12 @@
     text-align: center;
     margin-bottom: 0;
     height: 60px;
-    width: 1200px;
+    /*width: 1100px;*/
+    position: relative;
+}
+
+#box .transitionAll{
+    transition: all 0.3s;
 }
 
 #box li {
