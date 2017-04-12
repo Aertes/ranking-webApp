@@ -39,7 +39,7 @@ body {
 }
 
 #table-responsive table>thead>tr>th{
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
     padding: 0.25rem 0;
     text-align: center;
@@ -54,8 +54,8 @@ table{
 }
 
 #table-responsive table>tbody>tr>td{
-    padding: 8px 0;
-    font-size: 16px;
+    padding: 5px 0;
+    font-size: 14px;
 }
 
 .responsive{
@@ -74,7 +74,7 @@ table{
 }
 
 #listModule ul>li{
-    padding: 20px 10px;
+    padding: 15px 10px;
     position: relative;
     border-bottom: 1px solid #ccc;
     border-bottom-left-radius: 10px; 
@@ -82,9 +82,10 @@ table{
 }
 #listModule ul>li>a{
     display: block;
-    margin: 0  0.25rem !important;
+    margin: 0  1px !important;
     position: relative;
     color: #000;
+    font-size: 14px;
 }
 .mui-navigate-right:after, .mui-push-right:after{
     right: 0;
@@ -114,6 +115,7 @@ table{
     border-radius: 0;
     text-align: right;
     padding: 5px 0;
+    font-size: 14px;
 }
 .confirm input:nth-child(3){
     width: 60px;
@@ -121,17 +123,18 @@ table{
     border: none;
     padding: 10px 0;
     text-align: center;
+    margin-right: 5px;
 }
 
 .confirm span{
     display: block;
-    font-size: 16px;
+    font-size: 14px;
     display: flex;
     align-items: center;
     border-top: 1px solid #dc8663;
     border-bottom: 1px solid #dc8663;
     padding-right: 7px;
-    line-height: 39px;
+    line-height: 38px;
 }
 
 .mui-numbox{
@@ -146,22 +149,22 @@ table{
 }
 .numbox button{
     border-radius: 0;
-    width: 38px;
-    font-size: 17px;
+    width: 30px;
+    font-size: 14px;
     line-height: normal;
 }
 .numbox input{
-    width: 45px;
+    width: 40px;
     padding: 0;
     text-align: right;
     height: 35px;
-    font-size: 16px;
+    font-size: 14px;
     border-right: none;
     border-radius: 0;
 }
 .numbox span {
     display: block;
-    font-size: 16px;
+    font-size: 14px;
     display: flex;
     align-items: center;
     border-top: 1px solid rgba(0, 0, 0, .2);

@@ -13,7 +13,7 @@
     font-size: 14px;
 }
 .graphic-analysis .title h1{
-    font-size: 22px;
+    font-size: 20px;
 }
 
 /*分析表*/
@@ -23,7 +23,7 @@
 }
 
 .table-responsive table>thead>tr>th{
-    font-size: 16px;
+    font-size: 14px;
     vertical-align: middle;
     text-align: center;
     background-color: #9dcdf4;
@@ -41,7 +41,7 @@
     vertical-align: middle;
 }
 .table-responsive table>tbody>tr>td>div{
-    font-size: 12px;
+    font-size: 13px;
 }
 
 #table-responsive .tab-pane table{

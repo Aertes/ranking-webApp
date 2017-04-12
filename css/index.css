@@ -5,7 +5,7 @@
 .graphic-analysis .title h1 {
     color: #3d71b2;
     text-align: center;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .graphic-analysis .svg {
@@ -47,6 +47,7 @@
     display: flex;
     justify-content: center;
     overflow: hidden;
+    align-items: center;
 }
 
 #box ul {
@@ -54,6 +55,8 @@
     align-items: center;
     text-align: center;
     margin-bottom: 0;
+    height: 60px;
+    width: 1200px;
 }
 
 #box li {
@@ -232,9 +235,9 @@
     text-align: right;
 }
 
-#box li>div:nth-child(1):hover+.content {
+/*#box li>div:nth-child(1):hover+.content {
     display: block;
-}
+}*/
 
 #box .ranking {
     width: 80px;
@@ -249,11 +252,11 @@
 
 #first-module {
     background-color: #f4f4f4;
+    margin: 0;
 }
 
 #list-module ul li a {
     margin: 0;
-    /*padding: 0.5rem 0.25rem;*/
 }
 
 
@@ -262,20 +265,16 @@
 }
 
 #offCanvasContentScroll .list-module .mui-table-view-cell {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
-    padding: 0.2rem;
+    padding: 5px;
     border-bottom: 1px solid #c3c3c3;
-    border-radius: 0.5rem;
+    border-radius: 10px;
 }
 
-#first-module .top {
-    padding: 20px;
-    display: flex;
-}
-
+#first-module .top,
 #first-module .bottom {
-    padding: 20px;
+    padding-top: 40px;
     display: flex;
 }
 
@@ -290,15 +289,18 @@
 
 #first-module .num,
 .people {
+    width: 100%;
     text-align: left;
-    font-size: 15px;
+    font-size: 14px;
+    position: relative;
+    padding: 0 10px;
 }
 
 #first-module .num i {
     display: inline-flex;
     background-color: #ccc;
     height: 6px;
-    width: 70%;
+    width: 100%;
     border-radius: 3px;
     position: relative;
 }
@@ -368,5 +370,8 @@
 
 .mui-table-view-cell:after {
     content: " ";
+    background-color: #fff;
+}
+#tabbar .mui-table-view:after{
     background-color: #fff;
 }

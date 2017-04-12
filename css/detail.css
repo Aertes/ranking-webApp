@@ -7,7 +7,7 @@
 .graphic-analysis .title h1{
     color: #3d71b2;
     text-align: center;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 /*模块*/
@@ -22,9 +22,12 @@
     margin: 0;
     display: none;
 }
+#detailModule ul{
+    margin: 0;
+}
 
 #detailModule ul>li {
-    padding: 20px 10px;
+    padding: 15px 10px;
     position: relative;
     border-bottom: 1px solid #ccc;
     border-bottom-left-radius: 10px;
@@ -33,7 +36,7 @@
 
 #detailModule ul>li>a {
     display: block;
-    margin: 0 0.25rem !important;
+    margin: 0 1px !important;
     position: relative;
     color: #000;
 }
@@ -47,7 +50,7 @@
 
 
 #table-responsive table>thead>tr>th{
-    padding: 10px 1px;
+    padding: 5px;
     font-size: 14px;
     vertical-align: middle;
     text-align: center;

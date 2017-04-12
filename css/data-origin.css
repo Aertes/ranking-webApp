@@ -39,7 +39,7 @@ body {
 }
 
 #table-responsive table>thead>tr>th{
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
     padding: 10px 0;
     text-align: center;
@@ -72,7 +72,7 @@ table select{
 
 #table-responsive table>tbody>tr>td{
     padding: 8px 0;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .version{
@@ -101,7 +101,7 @@ table select{
 }
 
 #listModule ul>li{
-    padding: 20px 10px;
+    padding: 15px 10px;
     position: relative;
     border-bottom: 1px solid #ccc;
     border-bottom-left-radius: 10px; 
@@ -109,9 +109,10 @@ table select{
 }
 #listModule ul>li>a{
     display: block;
-    margin: 0  0.25rem !important;
+    margin: 0  1px !important;
     position: relative;
     color: #000;
+    font-size: 14px;
 }
 .mui-navigate-right:after, .mui-push-right:after{
     right: 0;

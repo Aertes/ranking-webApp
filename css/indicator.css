@@ -96,11 +96,11 @@ body {
 .clear .lin-list .list{
     text-align: center;
     font-size: 14px;
-    padding: 5px;
+    padding: 3px;
     color: #fff;
     box-sizing: border-box;
-    border-radius: 1.0rem;
-    margin: 0.1rem 0;
+    border-radius: 40px;
+    margin: 2px 0;
     position: relative;
 }
 .selected .lin-list .people,
@@ -167,13 +167,13 @@ body {
 
 #indicator-module .table thead>tr>th{
     padding: 8px 0;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
     border-bottom: 1px solid #ccc;
 }
 
 #indicator-module .table tbody>tr>td{
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 400;
     border-bottom: 1px solid #ccc;
 }
@@ -188,15 +188,15 @@ body {
 }
 
 .date select{
-    font-size: 15px;
-    padding: 8px;
+    font-size: 14px;
+    padding: 5px;
     margin: 0 !important;
     border: none;
 }
 .date span{
     display: inline-block;
     padding: 0 0.25rem;
-    font-size: 0.6rem;
+    font-size: 14px;
     line-height: 1;
     vertical-align: middle;
 }
@@ -204,7 +204,7 @@ body {
 
 #indicator-module .date .year{
     background-color: #fff;
-    font-size: 0.7rem;
+    font-size: 14px;
     border-color: #c97345;
     position: relative;
 }
@@ -216,7 +216,7 @@ body {
     box-sizing: border-box;
 }
 #indicator-module .operation .add{
-    font-size: 15px;
+    font-size: 14px;
     color: #fff;
     background-color: #c97345;
 }
@@ -349,7 +349,7 @@ body {
 .mui-tab a{
     width: 33%;
     display: block;
-    font-size: 15px;
+    font-size: 14px;
     color: #999;
     text-align: center;
     padding: 2px 5px;
@@ -359,7 +359,7 @@ body {
     font-size: 14px;
     background-color: #9c2424;
     border: none;
-    padding: 0 10px;
+    padding: 0 5px;
 }
 
 .mui-tab  .left em{
@@ -385,5 +385,6 @@ body {
     border-bottom: 1px solid #c8c7cc;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
-    padding: 8px 10px;
+    padding: 5px;
+    font-size: 14px;
 }

@@ -5,7 +5,7 @@
 .graphic-analysis .title h1{
 	color: #3d71b2;
 	text-align: center;
-	font-size: 22px;
+	font-size: 20px;
 }
 
 .svg .two{
@@ -38,14 +38,14 @@
     padding: 10px 0;
     text-align: center;
     background-color: #d2e6ff;
-    font-size: 14px;
+    font-size: 12px;
     color: #3d71b2;
     box-sizing: border-box;
 }
 
  .table>tbody>tr>td{
 	border-top: none;
-	font-size: 16px;
+	font-size: 12px;
 	vertical-align: middle;
 	padding: 5px;
 }
@@ -113,7 +113,7 @@
 }
 
 #heading-control1{
-	border-bottom: 0.025rem solid #c3c3c3;
+	border-bottom: 1px solid #c3c3c3;
 	border-radius: 0.25rem;
 }
 
@@ -126,15 +126,15 @@
 }
 #panel3 table>thead>tr>th{
 	padding: 10px 0;
-	font-size: 16px;
+	font-size: 14px;
 }
 
 .table-responsive table>thead>tr>th{
 	background-color: #fff;
 	color: #57575f;
 	/*padding: 0.5rem 0;*/
-	border-left: 0.025rem solid #c3c3c3;
-	border-bottom: 0.025rem solid #c3c3c3;
+	border-left: 1px solid #c3c3c3;
+	border-bottom: 1px solid #c3c3c3;
 }
 
 .table-responsive table>tbody>tr>td{
@@ -142,7 +142,7 @@
 	border-bottom: 1px solid #c3c3c3;
 	line-height: 100%;
 	text-align: center;
-	font-size: 14px;
+	font-size: 12px;
 	vertical-align: middle;
 }
 
