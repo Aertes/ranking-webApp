@@ -65,6 +65,11 @@ $(function () {
     ul.addEventListener('touchend', touchendHandler);
 
     function touchstartHandler(e) {
+        mui({
+            gestureConfig:{
+                drag: false
+            }
+        })
         startX = e.touches[0].pageX;
         ul.classList.remove('transitionAll');
     }
@@ -75,6 +80,11 @@ $(function () {
 		}
     }
     function touchendHandler(e) {
+        mui({
+            gestureConfig:{
+                drag: true
+            }
+        })
         currentX = currentX + dx;
         if(currentX > 0){
 			ul.classList.add('transitionAll');

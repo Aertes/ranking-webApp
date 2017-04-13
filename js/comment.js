@@ -122,7 +122,7 @@ if (mui.os.plus && mui.os.ios) {
 
 
 // 模块点击显示掩藏
-$('#user').on('tap', function () {
+$(document).on('tap', '#user', function () {
     $('.dropdown-menu').toggle();
 })
 
