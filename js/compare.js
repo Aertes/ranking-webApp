@@ -19,19 +19,170 @@ window.addEventListener('toggle', function (event) {
 });
 
 
-$('.university').children('div').each(function(){
+$('.university').children('div').each(function () {
     var index = $(this).index();
-    $(this).on('tap',  function(){
+    console.log(index);
+    $(this).on('tap', function () {
         $(this).children('a').addClass('font-color').parent().siblings().children('a').removeClass('font-color');
-        $('.svg div').eq(index).show().siblings().hide();
+        console.log(index);
+        $('.svg ls').eq(index).show().siblings().hide();
     })
 })
 
 
-$('#panel4').on('tap', 'li', function(e){
+$('#panel4').on('tap', 'li', function (e) {
     $(this).next().toggle();
     $(this).children().eq(0).toggleClass('mui-icon-arrowup mui-icon-arrowdown');
 })
+
+
+var ourscore2 = [22, 31, 43, 85], comparescore2 = [100, 88, 82, 93];
+DrawRadar('one', '北京大学', ourscore2, comparescore2, '清华大学');
+function DrawRadar(showId, compareinstitution, ourscore, comparescore, ourinstitution) {
+    require.config({
+        paths: {
+            echarts: 'libs/echarts/'
+        }
+    });
+    require(
+        [
+            'echarts',
+            'echarts/theme/src',
+            'echarts/chart/radar'
+        ],
+        function (ec, src) {
+            var compare_institution_a = ec.init(document.getElementById(showId), src);
+
+            radar_filled_options = {
+
+                // Add title
+                title: {
+                    show: false
+                },
+
+                // Add tooltip
+                tooltip: {
+                    trigger: 'axis',
+                    formatter: function (params) {
+                        return params[0][3] + "<br/>" + params[1][1] + "得分：" + params[1][2] + "<br/>" + params[0][1] + "得分：" + params[0][2];
+                    }
+                },
+
+                color: ['#ffbd5f', '#5693ff'],
+
+                // Add legend
+                legend: {
+                    show: true,
+                    x: 'center',
+                    y: 320,
+                    itemGap: 20,
+                    data: [{
+                        name: ourinstitution,
+                        textStyle: {
+                            color: '#494848',
+                            fontSize: '14'
+                        }
+                    }, {
+                        name: compareinstitution,
+                        textStyle: {
+                            color: '#494848',
+                            fontSize: '14'
+                        }
+                    }]
+                },
+
+                // Setup polar coordinates
+                polar: [{
+                    radius: '30%',
+                    axisLine: {
+                        lineStyle: {
+                            color: '#A4A4A4',
+                        }
+                    },
+                    indicator: [
+                        { text: '办学规模与层次', max: 150 },
+                        { text: '国际竞争力', max: 150 },
+                        { text: '重大项目与成果', max: 150 },
+                        { text: '高端人才', max: 150 },
+                        { text: '服务社会能力', max: 150 },
+                        { text: '科学研究能力', max: 150 },
+                        { text: '人才培养能力', max: 150 },
+                        { text: '师资规模与结构', max: 150 },
+                        { text: '办学资源', max: 150 },
+                        { text: '学科布局与水平', max: 150 }
+                    ],
+                    name: {
+                        show: true,
+                        textStyle: {
+                            color: "#494848",
+                            fontSize: '10'
+                        }
+                    }
+                }],
+
+                // Enable drag recalculate
+                calculable: false,
+
+                // Add series
+                series: [{
+                    name: '贵校',
+                    type: 'radar',
+                    symbol: 'circle',
+                    symbolSize: 0,
+
+                    data: [
+
+                        {
+                            value: comparescore,
+                            name: compareinstitution,
+                            itemStyle: {
+                                normal: {
+                                    areaStyle: {
+                                        color: 'rgba(86,147,255,0.4)'
+                                    },
+                                    lineStyle: {
+                                        color: '#5693ff',
+                                        width: 2
+                                    }
+                                }
+                            }
+                        }, {
+                            value: ourscore,
+                            name: ourinstitution,
+                            itemStyle: {
+                                normal: {
+                                    areaStyle: {
+                                        color: 'rgba(255,189,95,0.5)'
+                                    },
+                                    lineStyle: {
+                                        color: '#ffbd5f',
+                                        width: 2
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }]
+            };
+
+            compare_institution_a.setOption(radar_filled_options);
+            var ecConfig = require('echarts/config');
+            compare_institution_a.on(ecConfig.EVENT.HOVER, function (param) {
+                var selected = param.name;
+                //write your code here
+                //console.log(selected);打印参数
+                //hoverin();调用自定义函数
+                //document.getElementById(‘wrong-message‘).innerHTML = str;
+            });
+            window.onresize = function () {
+                setTimeout(function () {
+                    compare_institution_a.resize();
+                }, 200);
+            }
+        }
+    );
+
+}
 
 
 
