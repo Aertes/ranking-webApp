@@ -5482,161 +5482,161 @@ Function.prototype.bind = Function.prototype.bind || function(to) {
 			this.offsetX = null;
 			this.lastTranslateX = null;
 		},
-		handleEvent: function(e) {
-			switch (e.type) {
-				case $.EVENT_START:
-					e.target && !this._preventDefaultException(e.target, this.options.preventDefaultException) && e.preventDefault();
-					break;
-				case 'webkitTransitionEnd': //有个bug需要处理，需要考虑假设没有触发webkitTransitionEnd的情况
-					if (e.target === this.scroller) {
-						this._dispatchEvent();
-					}
-					break;
-				case 'drag':
-					var detail = e.detail;
-					if (!this.startX) {
-						this.startX = detail.center.x;
-						this.lastX = this.startX;
-					} else {
-						this.lastX = detail.center.x;
-					}
-					if (!this.isDragging && Math.abs(this.lastX - this.startX) > this.options.dragThresholdX && (detail.direction === 'left' || (detail.direction === 'right'))) {
-						if (this.slideIn) {
-							this.scroller = this.wrapper.querySelector(SELECTOR_INNER_WRAP);
-							if (this.classList.contains(CLASS_ACTIVE)) {
-								if (this.offCanvasRight && this.offCanvasRight.classList.contains(CLASS_ACTIVE)) {
-									this.offCanvas = this.offCanvasRight;
-									this.offCanvasWidth = this.offCanvasRightWidth;
-								} else {
-									this.offCanvas = this.offCanvasLeft;
-									this.offCanvasWidth = this.offCanvasLeftWidth;
-								}
-							} else {
-								if (detail.direction === 'left' && this.offCanvasRight) {
-									this.offCanvas = this.offCanvasRight;
-									this.offCanvasWidth = this.offCanvasRightWidth;
-								} else if (detail.direction === 'right' && this.offCanvasLeft) {
-									this.offCanvas = this.offCanvasLeft;
-									this.offCanvasWidth = this.offCanvasLeftWidth;
-								} else {
-									this.scroller = null;
-								}
-							}
-						} else {
-							if (this.classList.contains(CLASS_ACTIVE)) {
-								if (detail.direction === 'left') {
-									this.offCanvas = this.offCanvasLeft;
-									this.offCanvasWidth = this.offCanvasLeftWidth;
-								} else {
-									this.offCanvas = this.offCanvasRight;
-									this.offCanvasWidth = this.offCanvasRightWidth;
-								}
-							} else {
-								if (detail.direction === 'right') {
-									this.offCanvas = this.offCanvasLeft;
-									this.offCanvasWidth = this.offCanvasLeftWidth;
-								} else {
-									this.offCanvas = this.offCanvasRight;
-									this.offCanvasWidth = this.offCanvasRightWidth;
-								}
-							}
-						}
-						if (this.offCanvas && this.scroller) {
-							this.startX = this.lastX;
-							this.isDragging = true;
+		// handleEvent: function(e) {
+		// 	switch (e.type) {
+		// 		case $.EVENT_START:
+		// 			e.target && !this._preventDefaultException(e.target, this.options.preventDefaultException) && e.preventDefault();
+		// 			break;
+		// 		case 'webkitTransitionEnd': //有个bug需要处理，需要考虑假设没有触发webkitTransitionEnd的情况
+		// 			if (e.target === this.scroller) {
+		// 				this._dispatchEvent();
+		// 			}
+		// 			break;
+		// 		case 'drag':
+		// 			var detail = e.detail;
+		// 			if (!this.startX) {
+		// 				this.startX = detail.center.x;
+		// 				this.lastX = this.startX;
+		// 			} else {
+		// 				this.lastX = detail.center.x;
+		// 			}
+		// 			if (!this.isDragging && Math.abs(this.lastX - this.startX) > this.options.dragThresholdX && (detail.direction === 'left' || (detail.direction === 'right'))) {
+		// 				if (this.slideIn) {
+		// 					this.scroller = this.wrapper.querySelector(SELECTOR_INNER_WRAP);
+		// 					if (this.classList.contains(CLASS_ACTIVE)) {
+		// 						if (this.offCanvasRight && this.offCanvasRight.classList.contains(CLASS_ACTIVE)) {
+		// 							this.offCanvas = this.offCanvasRight;
+		// 							this.offCanvasWidth = this.offCanvasRightWidth;
+		// 						} else {
+		// 							this.offCanvas = this.offCanvasLeft;
+		// 							this.offCanvasWidth = this.offCanvasLeftWidth;
+		// 						}
+		// 					} else {
+		// 						if (detail.direction === 'left' && this.offCanvasRight) {
+		// 							this.offCanvas = this.offCanvasRight;
+		// 							this.offCanvasWidth = this.offCanvasRightWidth;
+		// 						} else if (detail.direction === 'right' && this.offCanvasLeft) {
+		// 							this.offCanvas = this.offCanvasLeft;
+		// 							this.offCanvasWidth = this.offCanvasLeftWidth;
+		// 						} else {
+		// 							this.scroller = null;
+		// 						}
+		// 					}
+		// 				} else {
+		// 					if (this.classList.contains(CLASS_ACTIVE)) {
+		// 						if (detail.direction === 'left') {
+		// 							this.offCanvas = this.offCanvasLeft;
+		// 							this.offCanvasWidth = this.offCanvasLeftWidth;
+		// 						} else {
+		// 							this.offCanvas = this.offCanvasRight;
+		// 							this.offCanvasWidth = this.offCanvasRightWidth;
+		// 						}
+		// 					} else {
+		// 						if (detail.direction === 'right') {
+		// 							this.offCanvas = this.offCanvasLeft;
+		// 							this.offCanvasWidth = this.offCanvasLeftWidth;
+		// 						} else {
+		// 							this.offCanvas = this.offCanvasRight;
+		// 							this.offCanvasWidth = this.offCanvasRightWidth;
+		// 						}
+		// 					}
+		// 				}
+		// 				if (this.offCanvas && this.scroller) {
+		// 					this.startX = this.lastX;
+		// 					this.isDragging = true;
 
-							$.gestures.session.lockDirection = true; //锁定方向
-							$.gestures.session.startDirection = detail.direction;
+		// 					$.gestures.session.lockDirection = true; //锁定方向
+		// 					$.gestures.session.startDirection = detail.direction;
 
-							this.offCanvas.classList.remove(CLASS_TRANSITIONING);
-							this.scroller.classList.remove(CLASS_TRANSITIONING);
-							this.offsetX = this.getTranslateX();
-							this._initOffCanvasVisible();
-						}
-					}
-					if (this.isDragging) {
-						this.updateTranslate(this.offsetX + (this.lastX - this.startX));
-						detail.gesture.preventDefault();
-						e.stopPropagation();
-					}
-					break;
-				case 'dragend':
-					if (this.isDragging) {
-						var detail = e.detail;
-						var direction = detail.direction;
-						this.isDragging = false;
-						this.offCanvas.classList.add(CLASS_TRANSITIONING);
-						this.scroller.classList.add(CLASS_TRANSITIONING);
-						var ratio = 0;
-						var x = this.getTranslateX();
-						if (!this.slideIn) {
-							if (x >= 0) {
-								ratio = (this.offCanvasLeftWidth && (x / this.offCanvasLeftWidth)) || 0;
-							} else {
-								ratio = (this.offCanvasRightWidth && (x / this.offCanvasRightWidth)) || 0;
-							}
-							if (ratio === 0) {
-								this.openPercentage(0);
-								this._dispatchEvent(); //此处不触发webkitTransitionEnd,所以手动dispatch
-								return;
-							}
-							if (direction === 'right' && ratio >= 0 && (ratio >= 0.5 || detail.swipe)) { //右滑打开
-								this.openPercentage(100);
-							} else if (direction === 'right' && ratio < 0 && (ratio > -0.5 || detail.swipe)) { //右滑关闭
-								this.openPercentage(0);
-							} else if (direction === 'right' && ratio > 0 && ratio < 0.5) { //右滑还原关闭
-								this.openPercentage(0);
-							} else if (direction === 'right' && ratio < 0.5) { //右滑还原打开
-								this.openPercentage(-100);
-							} else if (direction === 'left' && ratio <= 0 && (ratio <= -0.5 || detail.swipe)) { //左滑打开
-								this.openPercentage(-100);
-							} else if (direction === 'left' && ratio > 0 && (ratio <= 0.5 || detail.swipe)) { //左滑关闭
-								this.openPercentage(0);
-							} else if (direction === 'left' && ratio < 0 && ratio >= -0.5) { //左滑还原关闭
-								this.openPercentage(0);
-							} else if (direction === 'left' && ratio > 0.5) { //左滑还原打开
-								this.openPercentage(100);
-							} else { //默认关闭
-								this.openPercentage(0);
-							}
-							if (ratio === 1 || ratio === -1) { //此处不触发webkitTransitionEnd,所以手动dispatch
-								this._dispatchEvent();
-							}
-						} else {
-							if (x >= 0) {
-								ratio = (this.offCanvasRightWidth && (x / this.offCanvasRightWidth)) || 0;
-							} else {
-								ratio = (this.offCanvasLeftWidth && (x / this.offCanvasLeftWidth)) || 0;
-							}
-							if (direction === 'right' && ratio <= 0 && (ratio >= -0.5 || detail.swipe)) { //右滑打开
-								this.openPercentage(100);
-							} else if (direction === 'right' && ratio > 0 && (ratio >= 0.5 || detail.swipe)) { //右滑关闭
-								this.openPercentage(0);
-							} else if (direction === 'right' && ratio <= -0.5) { //右滑还原关闭
-								this.openPercentage(0);
-							} else if (direction === 'right' && ratio > 0 && ratio <= 0.5) { //右滑还原打开
-								this.openPercentage(-100);
-							} else if (direction === 'left' && ratio >= 0 && (ratio <= 0.5 || detail.swipe)) { //左滑打开
-								this.openPercentage(-100);
-							} else if (direction === 'left' && ratio < 0 && (ratio <= -0.5 || detail.swipe)) { //左滑关闭
-								this.openPercentage(0);
-							} else if (direction === 'left' && ratio >= 0.5) { //左滑还原关闭
-								this.openPercentage(0);
-							} else if (direction === 'left' && ratio >= -0.5 && ratio < 0) { //左滑还原打开
-								this.openPercentage(100);
-							} else {
-								this.openPercentage(0);
-							}
-							if (ratio === 1 || ratio === -1 || ratio === 0) {
-								this._dispatchEvent();
-								return;
-							}
+		// 					this.offCanvas.classList.remove(CLASS_TRANSITIONING);
+		// 					this.scroller.classList.remove(CLASS_TRANSITIONING);
+		// 					this.offsetX = this.getTranslateX();
+		// 					this._initOffCanvasVisible();
+		// 				}
+		// 			}
+		// 			if (this.isDragging) {
+		// 				this.updateTranslate(this.offsetX + (this.lastX - this.startX));
+		// 				detail.gesture.preventDefault();
+		// 				e.stopPropagation();
+		// 			}
+		// 			break;
+		// 		case 'dragend':
+		// 			if (this.isDragging) {
+		// 				var detail = e.detail;
+		// 				var direction = detail.direction;
+		// 				this.isDragging = false;
+		// 				this.offCanvas.classList.add(CLASS_TRANSITIONING);
+		// 				this.scroller.classList.add(CLASS_TRANSITIONING);
+		// 				var ratio = 0;
+		// 				var x = this.getTranslateX();
+		// 				if (!this.slideIn) {
+		// 					if (x >= 0) {
+		// 						ratio = (this.offCanvasLeftWidth && (x / this.offCanvasLeftWidth)) || 0;
+		// 					} else {
+		// 						ratio = (this.offCanvasRightWidth && (x / this.offCanvasRightWidth)) || 0;
+		// 					}
+		// 					if (ratio === 0) {
+		// 						this.openPercentage(0);
+		// 						this._dispatchEvent(); //此处不触发webkitTransitionEnd,所以手动dispatch
+		// 						return;
+		// 					}
+		// 					if (direction === 'right' && ratio >= 0 && (ratio >= 0.5 || detail.swipe)) { //右滑打开
+		// 						this.openPercentage(100);
+		// 					} else if (direction === 'right' && ratio < 0 && (ratio > -0.5 || detail.swipe)) { //右滑关闭
+		// 						this.openPercentage(0);
+		// 					} else if (direction === 'right' && ratio > 0 && ratio < 0.5) { //右滑还原关闭
+		// 						this.openPercentage(0);
+		// 					} else if (direction === 'right' && ratio < 0.5) { //右滑还原打开
+		// 						this.openPercentage(-100);
+		// 					} else if (direction === 'left' && ratio <= 0 && (ratio <= -0.5 || detail.swipe)) { //左滑打开
+		// 						this.openPercentage(-100);
+		// 					} else if (direction === 'left' && ratio > 0 && (ratio <= 0.5 || detail.swipe)) { //左滑关闭
+		// 						this.openPercentage(0);
+		// 					} else if (direction === 'left' && ratio < 0 && ratio >= -0.5) { //左滑还原关闭
+		// 						this.openPercentage(0);
+		// 					} else if (direction === 'left' && ratio > 0.5) { //左滑还原打开
+		// 						this.openPercentage(100);
+		// 					} else { //默认关闭
+		// 						this.openPercentage(0);
+		// 					}
+		// 					if (ratio === 1 || ratio === -1) { //此处不触发webkitTransitionEnd,所以手动dispatch
+		// 						this._dispatchEvent();
+		// 					}
+		// 				} else {
+		// 					if (x >= 0) {
+		// 						ratio = (this.offCanvasRightWidth && (x / this.offCanvasRightWidth)) || 0;
+		// 					} else {
+		// 						ratio = (this.offCanvasLeftWidth && (x / this.offCanvasLeftWidth)) || 0;
+		// 					}
+		// 					if (direction === 'right' && ratio <= 0 && (ratio >= -0.5 || detail.swipe)) { //右滑打开
+		// 						this.openPercentage(100);
+		// 					} else if (direction === 'right' && ratio > 0 && (ratio >= 0.5 || detail.swipe)) { //右滑关闭
+		// 						this.openPercentage(0);
+		// 					} else if (direction === 'right' && ratio <= -0.5) { //右滑还原关闭
+		// 						this.openPercentage(0);
+		// 					} else if (direction === 'right' && ratio > 0 && ratio <= 0.5) { //右滑还原打开
+		// 						this.openPercentage(-100);
+		// 					} else if (direction === 'left' && ratio >= 0 && (ratio <= 0.5 || detail.swipe)) { //左滑打开
+		// 						this.openPercentage(-100);
+		// 					} else if (direction === 'left' && ratio < 0 && (ratio <= -0.5 || detail.swipe)) { //左滑关闭
+		// 						this.openPercentage(0);
+		// 					} else if (direction === 'left' && ratio >= 0.5) { //左滑还原关闭
+		// 						this.openPercentage(0);
+		// 					} else if (direction === 'left' && ratio >= -0.5 && ratio < 0) { //左滑还原打开
+		// 						this.openPercentage(100);
+		// 					} else {
+		// 						this.openPercentage(0);
+		// 					}
+		// 					if (ratio === 1 || ratio === -1 || ratio === 0) {
+		// 						this._dispatchEvent();
+		// 						return;
+		// 					}
 
-						}
-					}
-					break;
-			}
-		},
+		// 				}
+		// 			}
+		// 			break;
+		// 	}
+		// },
 		_dispatchEvent: function() {
 			if (this.classList.contains(CLASS_ACTIVE)) {
 				$.trigger(this.wrapper, 'shown', this);
@@ -8021,135 +8021,135 @@ Function.prototype.bind = Function.prototype.bind || function(to) {
  * Houfeng@DCloud.io
  */
 
-// (function($) {
+(function($) {
 
-//     var touchSupport = ('ontouchstart' in document);
-//     var tapEventName = touchSupport ? 'tap' : 'click';
-//     var changeEventName = 'change';
-//     var holderClassName = 'mui-numbox';
-//     var plusClassSelector = '.mui-btn-numbox-plus,.mui-numbox-btn-plus';
-//     var minusClassSelector = '.mui-btn-numbox-minus,.mui-numbox-btn-minus';
-//     var inputClassSelector = '.mui-input-numbox,.mui-numbox-input';
+    var touchSupport = ('ontouchstart' in document);
+    var tapEventName = touchSupport ? 'tap' : 'click';
+    var changeEventName = 'change';
+    var holderClassName = 'mui-numbox';
+    var plusClassSelector = '.mui-btn-numbox-plus,.mui-numbox-btn-plus';
+    var minusClassSelector = '.mui-btn-numbox-minus,.mui-numbox-btn-minus';
+    var inputClassSelector = '.mui-input-numbox,.mui-numbox-input';
 
-//     var Numbox = $.Numbox = $.Class.extend({
-//         /**
-//          * 构造函数
-//          **/
-//         init: function(holder, options) {
-//             var self = this;
-//             if (!holder) {
-//                 throw "构造 numbox 时缺少容器元素";
-//             }
-//             self.holder = holder;
-//             options = options || {};
-//             options.step = parseInt(options.step || 1);
-//             self.options = options;
-//             self.input = $.qsa(inputClassSelector, self.holder)[0];
-//             self.plus = $.qsa(plusClassSelector, self.holder)[0];
-//             self.minus = $.qsa(minusClassSelector, self.holder)[0];
-//             self.checkValue();
-//             self.initEvent();
-//         },
-//         /**
-//          * 初始化事件绑定
-//          **/
-//         initEvent: function() {
-//             var self = this;
-//             self.plus.addEventListener(tapEventName, function(event) {
-//                 var val = Math.round(self.input.value) + self.options.step;
-//                 self.input.value = val.toString();
-//                 $.trigger(self.input, changeEventName, null);
-//             });
-//             self.minus.addEventListener(tapEventName, function(event) {
-//                 var val = Math.round(self.input.value) - self.options.step;
-//                 self.input.value = val.toString();
-//                 $.trigger(self.input, changeEventName, null);
-//             });
-//             self.input.addEventListener(changeEventName, function(event) {
-//                 self.checkValue();
-//                 var val = Math.round(self.input.value);
-//                 //触发顶层容器
-//                 $.trigger(self.holder, changeEventName, {
-//                     value: val
-//                 });
-//             });
-//         },
-//         /**
-//          * 获取当前值
-//          **/
-//         getValue: function() {
-//             var self = this;
-//             return Math.round(self.input.value);
-//         },
-//         /**
-//          * 验证当前值是法合法
-//          **/
-//         checkValue: function() {
-//             var self = this;
-//             var val = self.input.value;
-//             if (val == null || val == '' || isNaN(val)) {
-//                 self.input.value = self.options.min || 0;
-//                 self.minus.disabled = self.options.min != null;
-//             } else {
-//                 var val = parseInt(val);
-//                 if (self.options.max != null && !isNaN(self.options.max) && val >= parseInt(self.options.max)) {
-//                     val = self.options.max;
-//                     self.plus.disabled = true;
-//                 } else {
-//                     self.plus.disabled = false;
-//                 }
-//                 if (self.options.min != null && !isNaN(self.options.min) && val <= parseInt(self.options.min)) {
-//                     val = self.options.min;
-//                     self.minus.disabled = true;
-//                 } else {
-//                     self.minus.disabled = false;
-//                 }
-//                 self.input.value = val;
-//             }
-//         },
-//         /**
-//          * 更新选项
-//          **/
-//         setOption: function(name, value) {
-//             var self = this;
-//             self.options[name] = value;
-//         },
-//         /**
-//          * 动态设置新值
-//          **/
-//         setValue: function(value) {
-//             this.input.value = value;
-//             this.checkValue();
-//         }
-//     });
+    var Numbox = $.Numbox = $.Class.extend({
+        /**
+         * 构造函数
+         **/
+        init: function(holder, options) {
+            var self = this;
+            if (!holder) {
+                throw "构造 numbox 时缺少容器元素";
+            }
+            self.holder = holder;
+            options = options || {};
+            options.step = parseInt(options.step || 1);
+            self.options = options;
+            self.input = $.qsa(inputClassSelector, self.holder)[0];
+            self.plus = $.qsa(plusClassSelector, self.holder)[0];
+            self.minus = $.qsa(minusClassSelector, self.holder)[0];
+            self.checkValue();
+            self.initEvent();
+        },
+        /**
+         * 初始化事件绑定
+         **/
+        initEvent: function() {
+            var self = this;
+            self.plus.addEventListener(tapEventName, function(event) {
+                var val = Math.round(self.input.value) + self.options.step;
+                self.input.value = val.toString();
+                $.trigger(self.input, changeEventName, null);
+            });
+            self.minus.addEventListener(tapEventName, function(event) {
+                var val = Math.round(self.input.value) - self.options.step;
+                self.input.value = val.toString();
+                $.trigger(self.input, changeEventName, null);
+            });
+            self.input.addEventListener(changeEventName, function(event) {
+                self.checkValue();
+                var val = Math.round(self.input.value);
+                //触发顶层容器
+                $.trigger(self.holder, changeEventName, {
+                    value: val
+                });
+            });
+        },
+        /**
+         * 获取当前值
+         **/
+        getValue: function() {
+            var self = this;
+            return Math.round(self.input.value);
+        },
+        /**
+         * 验证当前值是法合法
+         **/
+        checkValue: function() {
+            var self = this;
+            var val = self.input.value;
+            if (val == null || val == '' || isNaN(val)) {
+                self.input.value = self.options.min || 0;
+                self.minus.disabled = self.options.min != null;
+            } else {
+                var val = parseInt(val);
+                if (self.options.max != null && !isNaN(self.options.max) && val >= parseInt(self.options.max)) {
+                    val = self.options.max;
+                    self.plus.disabled = true;
+                } else {
+                    self.plus.disabled = false;
+                }
+                if (self.options.min != null && !isNaN(self.options.min) && val <= parseInt(self.options.min)) {
+                    val = self.options.min;
+                    self.minus.disabled = true;
+                } else {
+                    self.minus.disabled = false;
+                }
+                self.input.value = val;
+            }
+        },
+        /**
+         * 更新选项
+         **/
+        setOption: function(name, value) {
+            var self = this;
+            self.options[name] = value;
+        },
+        /**
+         * 动态设置新值
+         **/
+        setValue: function(value) {
+            this.input.value = value;
+            this.checkValue();
+        }
+    });
 
-//     $.fn.numbox = function(options) {
-//         var instanceArray = [];
-//         //遍历选择的元素
-//         this.each(function(i, element) {
-//             if (element.numbox) {
-//                 return;
-//             }
-//             if (options) {
-//                 element.numbox = new Numbox(element, options);
-//             } else {
-//                 var optionsText = element.getAttribute('data-numbox-options');
-//                 var options = optionsText ? JSON.parse(optionsText) : {};
-//                 options.step = element.getAttribute('data-numbox-step') || options.step;
-//                 options.min = element.getAttribute('data-numbox-min') || options.min;
-//                 options.max = element.getAttribute('data-numbox-max') || options.max;
-//                 element.numbox = new Numbox(element, options);
-//             }
-//         });
-//         return this[0] ? this[0].numbox : null;
-//     }
+    $.fn.numbox = function(options) {
+        var instanceArray = [];
+        //遍历选择的元素
+        this.each(function(i, element) {
+            if (element.numbox) {
+                return;
+            }
+            if (options) {
+                element.numbox = new Numbox(element, options);
+            } else {
+                var optionsText = element.getAttribute('data-numbox-options');
+                var options = optionsText ? JSON.parse(optionsText) : {};
+                options.step = element.getAttribute('data-numbox-step') || options.step;
+                options.min = element.getAttribute('data-numbox-min') || options.min;
+                options.max = element.getAttribute('data-numbox-max') || options.max;
+                element.numbox = new Numbox(element, options);
+            }
+        });
+        return this[0] ? this[0].numbox : null;
+    }
 
-//     //自动处理 class='mui-locker' 的 dom
-//     $.ready(function() {
-//         $('.' + holderClassName).numbox();
-//     });
+    //自动处理 class='mui-locker' 的 dom
+    $.ready(function() {
+        $('.' + holderClassName).numbox();
+    });
 
-// }(mui));
+}(mui));
 /**
  * Button
  * @param {type} $

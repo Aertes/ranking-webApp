@@ -1,28 +1,14 @@
 
-// mui.init({
-//     gestureConfig: {
-//         tap: true, //默认为true
-//         doubletap: true, //默认为false
-//         longtap: true, //默认为false
-//         swipe: true, //默认为true
-//         drag: false, //默认为true
-//         hold: false,//默认为false，不监听
-//         release: false//默认为false，不监听
-//     }
-// });
-
-
 
 $(function () {
 
-    var box = document.querySelector('.overflow');
+    var startX = 0, dx = 0, currentX = 0, maxValue = 200;    
+    var box = document.querySelector('.box');
     var ul = box.querySelector('ul');
-
-    var ulWidth = ul.offsetWidth;
+    var lis = ul.querySelectorAll('li');
+    var ulWidth = ul.offsetWidth + maxValue;
     var boxWidth = box.offsetWidth;
     var init = ulWidth - boxWidth;
-    // var scrollLeft = box.scrollLeft;
-    var startX = 0, dex = 0, dx = 0, currentX =0, maxValue = 50;
     var left;
 
     console.log(ulWidth);
@@ -38,24 +24,18 @@ $(function () {
     })
 
     $('.click-left').on('tap', function () {
-        left = init / 2 - dex
-        console.log(left);
-        
+        left = init / 2 - currentX
         if (left > 0) {
-            dex += 20
-            ul.style.transform = 'translateX(' + dex + 'px)';
-        } else if (left < init / 2 - dex) {
-            dex = 0;
+            currentX += 20
+            ul.style.transform = 'translateX(' + currentX + 'px)';
         }
-
     });
 
     $('.click-right').on('tap', function () {
-        left = init / 2 - dex
-        console.log(left);
+        left = init / 2 - currentX
         if (left != 0 && left < init) {
-            dex -= 20
-            ul.style.transform = 'translateX(' + dex + 'px)';
+            currentX -= 20
+            ul.style.transform = 'translateX(' + currentX + 'px)';
         }
     })
 
@@ -65,37 +45,37 @@ $(function () {
     ul.addEventListener('touchend', touchendHandler);
 
     function touchstartHandler(e) {
-        mui({
-            gestureConfig:{
-                drag: false
-            }
-        })
         startX = e.touches[0].pageX;
         ul.classList.remove('transitionAll');
+
     }
     function touchmoveHandler(e) {
         dx = e.touches[0].pageX - startX;
-        if((currentX + dx) < maxValue && (currentX + dx) > -(ulWidth - boxWidth + maxValue)){
-			ul.style.webkitTransform = 'translateX('+(currentX + dx)+'px)';
-		}
-    }
-    function touchendHandler(e) {
-        mui({
-            gestureConfig:{
-                drag: true
-            }
-        })
-        currentX = currentX + dx;
-        if(currentX > 0){
-			ul.classList.add('transitionAll');
-			currentY = 0;
-			ul.style.webkitTransform = 'translateX('+ currentX +'px)';
-		}else if(currentX < -(ulWidth - boxWidth)){
-			ul.classList.add('transitionAll');
-			currentX = -(ulWidth - boxWidth)
-			ul.style.webkitTransform = 'translateX('+ currentX+'px)';
-		}
+        ul.style.webkitTransform = 'translateX(' + (currentX + dx) + 'px)';
     }
 
+    function touchendHandler(e) {
+        currentX = currentX + dx;
+        console.log(currentX);
+
+        // if(Math.abs(currentX) != Math.abs(init/2)){
+        //     currentX = init/2;
+        //     ul.classList.add('transitionAll');
+        //     ul.style.webkitTransform = 'translateX(' + currentX + 'px)';
+        // }
+
+        if (currentX < -init/2) {
+            currentX = -init/2;
+            console.log(currentX);
+            ul.classList.add('transitionAll');
+            ul.style.webkitTransform = 'translateX(' + currentX + 'px)';
+        } else if (currentX > init/2) {
+            ul.classList.add('transitionAll');
+            currentX = init/2;
+            ul.style.webkitTransform = 'translateX(' + currentX + 'px)';
+        }
+    
+    }
+    
 })
 
