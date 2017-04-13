@@ -365,6 +365,7 @@ body {
 .mui-tab  .left em{
     font-size: 24px;
     color: #9c2424;
+    padding: 0 6px;
 }
 
 .mui-icon-compose:before{
