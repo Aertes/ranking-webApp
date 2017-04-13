@@ -1,5 +1,14 @@
 @charset "utf-8";
 
+
+/*侧边栏*/
+
+#offCanvasSideScroll ul>li:nth-child(2) a{
+    padding-left: 40px;
+}
+
+
+
 /* title */
 
 .graphic-analysis .title{

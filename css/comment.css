@@ -1,5 +1,11 @@
 @charset "utf-8";
 
+/* 侧边导航 */
+#offCanvasSideScroll .mui-navigate-right:after{
+    content: ' ';
+}
+
+
 .mui-inner-wrap .mui-content{
     background-color: #fff;
 }
@@ -29,7 +35,7 @@
 .dropdown-menu li a{
     display: block;
     min-width: 0;
-    font-size: 0.6rem;
+    font-size: 14px;
     color: #fff;
 }
 
@@ -142,7 +148,7 @@
     background-color: #d83f3f;
     border-radius: 50%;
     position: absolute;
-    top: 2px;
+    top: 4px;
     left: 33px;
 }
 

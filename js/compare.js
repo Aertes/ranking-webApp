@@ -27,3 +27,11 @@ $('.university').children('div').each(function(){
     })
 })
 
+
+$('#panel4').on('tap', 'li', function(e){
+    $(this).next().toggle();
+    $(this).children().eq(0).toggleClass('mui-icon-arrowup mui-icon-arrowdown');
+})
+
+
+

@@ -1,5 +1,15 @@
 @charset "utf-8";
 
+
+/*侧边栏*/
+
+#offCanvasSideScroll ul>li:nth-child(2) a,
+#offCanvasSideScroll ul>li:nth-child(3) a{
+    padding-left: 40px;
+}
+
+
+
 /*指标*/
 
 .graphic-analysis .title h1{
@@ -153,17 +163,36 @@
 }
 
 #panel4 ul li{
-	padding: 0;
+	border-bottom: 1px solid #ccc;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
 }
 #panel4 .table-responsive{
 	margin: 0;
+	display: none;
 }
-
 
 
 #panel4 ul li a{
-	padding: 10px 5px;
+	padding: 15px 10px;	
 	margin: 0;
+	color: #000;
+	display: block;
 }
 
+.mui-icon-arrowdown:before,
+.mui-icon-arrowup:before{
+	position: absolute;
+	right: 10px;
+	color: #bbb;
+}
 
+.icon-passageoftime::before,
+.icon-daohanglandingdananniu-copy1::before,
+.icon-ss-caidan2-copy{
+    color: #3d71b2;
+}
+
+#panel4 ul tbody i{
+	padding: 0 5px;
+}

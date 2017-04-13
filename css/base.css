@@ -21,8 +21,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     display: block;
 }
 /* 图片自适应 */
+@media (max-width: 450px) {
+    img {
+        width: 100%;
+    }
+}
+
 img {
-    width: 100%;
+    max-width: 100px;
+    max-height: 100px;
     height: auto;
     width: auto\9; /* ie8 */
     display: block;
