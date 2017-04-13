@@ -110,18 +110,34 @@
 
 
 
-$(function(){
+$(function () {
 
-    $('.delAll').on('click', function(){
+    //清除所有clearAll
+    $('.delAll').on('tap', function () {
         $('.lin-list').html('');
-        for(var i = 1; i < 11; i++){
-
-        }
+        // for (var i = 1; i < 11; i++) {
+        //     $('#module'+i+'selected').html('');
+        // }
         $('#num').html('0');
-
-
     })
 
+    $('.lin-list i').on('tap', function(){
+        $(this).parent().remove();
+        $('.clearList div').eq(0).remove();
+    })
+
+
+
+
+
+    // 模块显示掩藏
+    $('#indicator-module li').each(function () {
+        var _this = $(this);
+        _this.on('tap', function () {
+            _this.next().toggle();
+            _this.children().toggleClass('mui-icon-arrowdown mui-icon-arrowup')
+        })
+    })
 
 })
 

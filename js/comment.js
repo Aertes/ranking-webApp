@@ -98,20 +98,6 @@ if (mui.os.plus && mui.os.ios) {
         });
     });
 
-    document.getElementById('helpIndex').addEventListener('tap', function () {
-        mui.openWindow({
-            url: 'helpIndex.html',
-            id: 'helpIndex'
-        });
-    });
-
-    document.getElementById('inform').addEventListener('tap', function () {
-        mui.openWindow({
-            url: 'inform.html',
-            id: 'inform'
-        });
-    });
-
 })();
 
 
