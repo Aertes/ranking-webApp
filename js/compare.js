@@ -18,33 +18,6 @@ window.addEventListener('toggle', function (event) {
     }
 });
 
-// 新页面
-(function () {
-    document.getElementById('weight').addEventListener('tap', function () {
-        //打开关于页面
-        mui.openWindow({
-            url: 'weight.html',
-            id: 'weight'
-        });
-    });
-
-    document.getElementById('indicator').addEventListener('tap', function () {
-        //打开关于页面
-        mui.openWindow({
-            url: 'indicator.html',
-            id: 'indicator'
-        });
-    });
-
-    document.getElementById('data-origin').addEventListener('tap', function () {
-        mui.openWindow({
-            url: 'data-origin.html',
-            id: 'data-origin'
-        });
-    });
-
-})()
-
 
 $('.university').children('div').each(function(){
     var index = $(this).index();

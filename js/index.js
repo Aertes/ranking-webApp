@@ -2,7 +2,7 @@
 
 $(function () {
 
-    var startX = 0, dx = 0, currentX = 0, maxValue = 200;    
+    var startX = 0, dx = 0, currentX = 0, maxValue = 200;
     var box = document.querySelector('.box');
     var ul = box.querySelector('ul');
     var lis = ul.querySelectorAll('li');
@@ -10,9 +10,6 @@ $(function () {
     var boxWidth = box.offsetWidth;
     var init = ulWidth - boxWidth;
     var left;
-
-    console.log(ulWidth);
-    console.log(boxWidth);
 
     $('.overflow li').each(function () {
         var _this = $(this);
@@ -47,7 +44,6 @@ $(function () {
     function touchstartHandler(e) {
         startX = e.touches[0].pageX;
         ul.classList.remove('transitionAll');
-
     }
     function touchmoveHandler(e) {
         dx = e.touches[0].pageX - startX;
@@ -56,26 +52,17 @@ $(function () {
 
     function touchendHandler(e) {
         currentX = currentX + dx;
-        console.log(currentX);
-
-        // if(Math.abs(currentX) != Math.abs(init/2)){
-        //     currentX = init/2;
-        //     ul.classList.add('transitionAll');
-        //     ul.style.webkitTransform = 'translateX(' + currentX + 'px)';
-        // }
-
-        if (currentX < -init/2) {
-            currentX = -init/2;
-            console.log(currentX);
+        if (currentX < -init / 2) {
+            currentX = -init / 2;
             ul.classList.add('transitionAll');
             ul.style.webkitTransform = 'translateX(' + currentX + 'px)';
-        } else if (currentX > init/2) {
+        } else if (currentX > init / 2) {
             ul.classList.add('transitionAll');
-            currentX = init/2;
+            currentX = init / 2;
             ul.style.webkitTransform = 'translateX(' + currentX + 'px)';
         }
-    
+
     }
-    
+
 })
 

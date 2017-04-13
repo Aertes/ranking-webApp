@@ -69,6 +69,7 @@ if (mui.os.plus && mui.os.ios) {
 // 链接新页面
 
 (function () {
+    
     document.getElementById('index').addEventListener('tap', function () {
         mui.openWindow({
             url: 'index.html',
@@ -97,7 +98,6 @@ if (mui.os.plus && mui.os.ios) {
         });
     });
 
-
     document.getElementById('helpIndex').addEventListener('tap', function () {
         mui.openWindow({
             url: 'helpIndex.html',
@@ -109,12 +109,6 @@ if (mui.os.plus && mui.os.ios) {
         mui.openWindow({
             url: 'inform.html',
             id: 'inform'
-        });
-    });
-    document.getElementById('more').addEventListener('tap', function () {
-        mui.openWindow({
-            url: 'inform.html',
-            id: 'more'
         });
     });
 
