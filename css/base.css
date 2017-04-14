@@ -25,8 +25,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     img {
         width: 100%;
     }
-}
+    .guide .view .center img{
+        width: 4.0rem;
+        height: 4.0rem;
+    }
 
+}
 img {
     max-width: 100px;
     max-height: 100px;

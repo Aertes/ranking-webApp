@@ -1,22 +1,5 @@
 
 
-var oHtml = document.documentElement;
-getFont();
-window.onresize = function () {
-    getFont();
-}
-function getFont() {
-    var screenWidth = oHtml.clientWidth;
-    if (screenWidth <= 320) {
-        oHtml.style.fontSize = '23.7037px';
-    } else if (screenWidth >= 640) {
-        oHtml.style.fontSize = '47.4074px';
-    } else {
-        oHtml.style.fontSize = screenWidth / (640 / 40) + 'px';
-    }
-}
-
-
 // 侧滑菜单
 mui.init();
 var offCanvasWrapper = mui('#offCanvasWrapper');
@@ -105,6 +88,53 @@ if (mui.os.plus && mui.os.ios) {
 $(document).on('tap', '#user', function () {
     $('.dropdown-menu').toggle();
 })
+
+
+
+// 模态框
+
+$('td i').each(function () {
+    $(this).on('tap', function () {
+        popupDiv('info');
+        // hideDiv('info');
+    })
+})
+
+$('#info').on('tap', '.close', function(){
+    hideDiv('info');
+})
+
+function popupDiv(div_id) {
+    var $div_obj = $("#" + div_id);
+    var windowWidth = $(window).width();
+    var windowHeight = $(window).height();
+    var popupHeight = $div_obj.height();
+    var popupWidth = $div_obj.width();
+    
+    $("<div id='bg'></div>").width(windowWidth * 0.99)
+        .height(windowHeight * 0.99).click(function () {
+            // hideDiv(div_id);
+        }).appendTo(".mui-inner-wrap").fadeIn();
+
+    // 显示弹出的DIV 
+    $div_obj.css({
+        "position": "absolute"
+    }).animate({
+        left: (windowWidth - popupWidth) / 2,
+        top: (windowHeight - popupHeight) / 2,
+        opacity: "show"
+    }, "slow");
+}
+
+/*隐藏弹出DIV*/
+function hideDiv(div_id) {
+    $("#bg").remove();
+    $("#" + div_id).animate({
+        left: 0,
+        top: 0,
+        opacity: "hide"
+    }, "slow");
+}
 
 
 

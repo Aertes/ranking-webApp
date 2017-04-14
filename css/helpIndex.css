@@ -1,15 +1,14 @@
 @charset "utf-8";
 
-
 /* user */
 
-.user{
+.user {
     background-color: #fff;
 }
 
 .guide h4,
 .question h4,
-.user h4{
+.user h4 {
     color: #4f4f4f;
     font-size: 18px;
     font-weight: 400;
@@ -22,21 +21,22 @@
     justify-content: center;
     padding: 10px 15px;
 }
-.user ul>li{
+
+.user ul>li {
     padding: 0 5px;
     text-align: center;
     font-size: 14px;
     color: #6b7183;
 }
 
-.user ul>li>a{
+.user ul>li>a {
     padding: 10px 0;
 }
 
 
 /* question */
 
-.question{
+.question {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -45,12 +45,12 @@
     background-color: #f3f0f0;
 }
 
-.question .question-content h5{
+.question .question-content h5 {
     font-size: 16px;
     color: #830b0b;
 }
 
-.question .question-content p{
+.question .question-content p {
     font-size: 14px;
     color: #959595;
 }
@@ -59,7 +59,7 @@
     padding: 20px 0;
 }
 
-.more a{
+.more a {
     color: #fff;
     font-size: 15px;
     display: block;
@@ -71,43 +71,47 @@
 
 /*guide*/
 
-.guide{
+.guide {
     background-color: #fff;
 }
 
-.guide .view{
+.guide .view {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
 }
 
-.guide .view img{
+.guide .view img {
     width: 3.0rem;
     height: 3.0rem;
 }
 
-.guide .view .center img{
-    width: 4.0rem;
-    height: 4.0rem;
+@media(min-width: 451px){
+    .guide .view img {
+        width: 3.0rem;
+        height: 3.0rem;
+    }
+    .guide .view .center img {
+        max-width: 160px;
+        max-height: 160px;
+    }
 }
 
-.guide .top{
+.guide .top {
     flex-basis: 100%;
     display: flex;
     justify-content: center;
-
 }
 
-.guide .buttom{
+.guide .buttom {
     display: flex;
     justify-content: space-between;
 }
 
-.guide .view a{
+.guide .view a {
     display: inline-block;
     color: #555454;
     padding: 10px;
     font-size: 14px;
 }
-

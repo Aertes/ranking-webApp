@@ -1,3 +1,4 @@
+
 var oHtml = document.documentElement;
 getFont();
 window.onresize = function () {

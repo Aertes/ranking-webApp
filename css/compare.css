@@ -204,3 +204,63 @@
 	padding: 0 5px;
 	cursor: pointer;
 }
+
+/*模态框*/
+
+#info .title{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+	background-color: #dbdbdb;
+	border-bottom: 1.5px solid #808080;
+
+}
+#info .title h6{
+	font-size: 12px;
+	margin: 0;
+}
+#info .title .close{
+	font-size: 14px;
+}
+
+#info .concent{
+	margin: 10px 5px;
+}
+#info .concent .school{
+	text-align: center;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#info .table>thead>tr>th {
+    vertical-align: middle;
+    padding: 10px 5px;
+    text-align: center;
+    background-color: #fff;
+    font-size: 12px;
+    color: #696969;
+	border: 1px solid #d1d1d1;
+}
+
+#info .table>tbody>tr>td {
+    font-size: 12px;
+    vertical-align: middle;
+    padding: 8px 5px;
+	border: 1px solid #d1d1d1;
+}
