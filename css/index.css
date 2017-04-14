@@ -270,8 +270,9 @@
 
 #list-module ul li a {
     margin: 0;
+    font-size: 14px;
+    color: #000;
 }
-
 
 .isActive {
     display: none;
@@ -281,7 +282,7 @@
     font-size: 14px;
     font-weight: 400;
     padding: 5px;
-    border-bottom: 1px solid #c3c3c3;
+    border-bottom: 1px solid #c8c7cc;
     border-radius: 10px;
 }
 
@@ -386,5 +387,6 @@
     background-color: #fff;
 }
 #tabbar .mui-table-view:after{
+    content: inherit;
     background-color: #fff;
 }

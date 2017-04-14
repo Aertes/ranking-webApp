@@ -92,19 +92,23 @@
 
                     <!-- 指标 -->
                     <div class="graphic-analysis">
-                        <div class="university mui-row">
-                            <div class="click_left mui-col-xs-3  col-xs-offset-3 ">
-                                <a href="javascript:;" class="font-color">  清华大学 </a>
-                            </div>
-                            <div class="click_right mui-col-xs-3">
-                                <a href="javascript:;">  浙江大学 </a>
-                            </div>
+                        <div class="university">
+                            <ul>
+                                <li><a class="font-color" href="#">清华大学</a></li>
+                                <li><a href="#">北京大学</a></li>
+                                <li><a href="#">浙江大学</a></li>
+                                <li><a href="#">上海交通大学</a></li>
+                                <li><a href="#">中国地质大学</a></li>
+                                <li><a href="#">华中科技大学</a></li>
+                                <li><a href="#">中国财经政法大学</a></li>
+                                <li><a href="#">哈尔滨工业大学</a></li>
+                            </ul>
                         </div>
                         <div class="title">
                             <h1>贵校与标杆学校数据对比</h1>
                         </div>
                         <div class="svg">
-                            <div id="one" style="width:100%; height:340px;"></div>
+                            <div id="one" style="width:100%; height:240px;"></div>
                         </div>
                     </div>
 
@@ -372,6 +376,23 @@
                             </div>
                         </ul>
                     </div>
+
+
+                    <!-- 模态框 -->
+                    <div class="modals">
+                        <div class="close">X</div>
+                        <div class="title">
+                            <h4>模块一：办学规模与层次</h4>
+                        </div>
+                        <div class="concent">
+                            快速分类老大
+                        </div>
+                        <div class="button">
+                            <div class="close">关闭</div>
+                            <div class="sure">确定</div>
+                        </div>
+                    </div>
+
                 </div>
 
                 <!--底部导航-->
@@ -393,13 +414,17 @@
                         <span class="mui-tab-label">数据明细</span>
                     </a>
                 </nav>
+
             </div>
 
             <!-- off-canvas backdrop -->
             <div class="mui-off-canvas-backdrop"></div>
 
+
+
         </div>
     </div>
+
     <script src="./libs/bootstrap/jquery.min.js"></script>
     <script src="./libs/bootstrap/bootstrap.min.js"></script>
     <script src="./libs/echarts/echarts.js"></script>

@@ -8,8 +8,6 @@
     padding-left: 40px;
 }
 
-
-
 /*指标*/
 
 .graphic-analysis .title h1{
@@ -18,30 +16,39 @@
 	font-size: 20px;
 }
 
-.svg .two{
-	display: none;
-}
-
 .graphic-analysis .university{
-	/*margin: 0 auto;*/
 	text-align: center;
 }
-.graphic-analysis .university div{
+.graphic-analysis .university ul{
 	padding: 0.25rem;
-	background-color: #f4f4f4;
 	box-sizing: border-box;
+	background-color: #f4f4f4;	
+	display: flex;
+	flex-wrap: wrap;
+	/*justify-content: center;*/
+}
+.graphic-analysis .university ul>li{
+	padding: 0 10px;
 }
 .graphic-analysis .university a{
 	display: block;
-	font-size: 17px;
+	font-size: 16px;
 	color: #808080;
+	padding: 5px;	
 }
 
 .graphic-analysis .university .font-color{
 	color: #3d71b2;
+	background-color: #8d8c8c;
+	border-radius: 5px;
 }
 
 /*数据总览表格*/
+
+#panel3{
+	margin-top: 20px;
+}
+
 .table>thead>tr>th{
     vertical-align: middle;
     border: none;
@@ -174,7 +181,7 @@
 
 
 #panel4 ul li a{
-	padding: 15px 10px;	
+	padding: 10px;	
 	margin: 0;
 	color: #000;
 	display: block;

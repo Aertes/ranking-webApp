@@ -7,7 +7,6 @@
     padding-left: 40px;
 }
 
-
 /*指标*/
 
 .graphic-analysis .title h1{
@@ -33,7 +32,6 @@
 }
 
 #detailModule ul>li {
-    padding: 15px 10px;
     position: relative;
     border-bottom: 1px solid #ccc;
     border-bottom-left-radius: 10px;
@@ -41,6 +39,7 @@
 }
 
 #detailModule ul>li>a {
+    padding: 10px;
     display: block;
     margin: 0 1px !important;
     position: relative;

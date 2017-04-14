@@ -3,17 +3,13 @@ html,
 body {
     background-color: #fff;
 }
-
+.mui-icon-arrowup:before,
 .mui-icon-arrowdown:before{
     position: absolute;
-    right: 0;
+    right: 10px;
     color: #bbb;
 }
-.mui-icon-arrowup:before{
-    position: absolute;
-    right: 0;
-    color: #bbb;
-}
+
 .mui-icon-back:before, .mui-icon-left-nav:before{
     color: #fff;
 }
@@ -73,8 +69,11 @@ table{
     color: #9f9f9f;
 }
 
+#listModule{
+    margin-top: 10px;
+}
+
 #listModule ul>li{
-    padding: 15px 10px;
     position: relative;
     border-bottom: 1px solid #ccc;
     border-bottom-left-radius: 10px; 
@@ -84,8 +83,9 @@ table{
     display: block;
     margin: 0  1px !important;
     position: relative;
-    color: #000;
+    color: inherit;
     font-size: 14px;
+    padding: 10px;
 }
 .mui-navigate-right:after, .mui-push-right:after{
     right: 0;

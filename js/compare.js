@@ -19,13 +19,11 @@ window.addEventListener('toggle', function (event) {
 });
 
 
-$('.university').children('div').each(function () {
+$('.university ul').children('li').each(function () {
     var index = $(this).index();
-    console.log(index);
     $(this).on('tap', function () {
         $(this).children('a').addClass('font-color').parent().siblings().children('a').removeClass('font-color');
-        console.log(index);
-        $('.svg ls').eq(index).show().siblings().hide();
+
     })
 })
 
@@ -36,7 +34,8 @@ $('#panel4').on('tap', 'li', function (e) {
 })
 
 
-var ourscore2 = [22, 31, 43, 85], comparescore2 = [100, 88, 82, 93];
+
+var ourscore2 = [82, 88, 73, 85, 82, 91, 83, 85, 82, 100], comparescore2 = [100, 88, 82, 93, 100, 88, 82, 93, 100, 88];
 DrawRadar('one', '北京大学', ourscore2, comparescore2, '清华大学');
 function DrawRadar(showId, compareinstitution, ourscore, comparescore, ourinstitution) {
     require.config({
@@ -74,8 +73,8 @@ function DrawRadar(showId, compareinstitution, ourscore, comparescore, ourinstit
                 legend: {
                     show: true,
                     x: 'center',
-                    y: 320,
-                    itemGap: 20,
+                    y: 225,
+                    itemGap: 30,
                     data: [{
                         name: ourinstitution,
                         textStyle: {
@@ -93,7 +92,7 @@ function DrawRadar(showId, compareinstitution, ourscore, comparescore, ourinstit
 
                 // Setup polar coordinates
                 polar: [{
-                    radius: '30%',
+                    radius: '60%',
                     axisLine: {
                         lineStyle: {
                             color: '#A4A4A4',
@@ -115,7 +114,7 @@ function DrawRadar(showId, compareinstitution, ourscore, comparescore, ourinstit
                         show: true,
                         textStyle: {
                             color: "#494848",
-                            fontSize: '10'
+                            fontSize: '12'
                         }
                     }
                 }],
@@ -168,11 +167,11 @@ function DrawRadar(showId, compareinstitution, ourscore, comparescore, ourinstit
             compare_institution_a.setOption(radar_filled_options);
             var ecConfig = require('echarts/config');
             compare_institution_a.on(ecConfig.EVENT.HOVER, function (param) {
-                var selected = param.name;
+                // var selected = param.name;
                 //write your code here
-                //console.log(selected);打印参数
-                //hoverin();调用自定义函数
-                //document.getElementById(‘wrong-message‘).innerHTML = str;
+                // console.log(selected);打印参数
+                // hoverin();调用自定义函数
+                // document.getElementById(‘wrong-message‘).innerHTML = str;
             });
             window.onresize = function () {
                 setTimeout(function () {

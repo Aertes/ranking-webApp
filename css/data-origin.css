@@ -4,16 +4,13 @@ body {
     background-color: #fff;
 }
 
+.mui-icon-arrowup:before,
 .mui-icon-arrowdown:before{
     position: absolute;
-    right: 0;
+    right: 10px;
     color: #bbb;
 }
-.mui-icon-arrowup:before{
-    position: absolute;
-    right: 0;
-    color: #bbb;
-}
+
 .mui-icon-back:before, .mui-icon-left-nav:before{
     color: #fff;
 }
@@ -100,14 +97,18 @@ table select{
     color: #9f9f9f;
 }
 
+#listModule{
+    margin-top: 10px;
+}
+
 #listModule ul>li{
-    padding: 15px 10px;
     position: relative;
     border-bottom: 1px solid #ccc;
     border-bottom-left-radius: 10px; 
     border-bottom-right-radius: 10px; 
 }
 #listModule ul>li>a{
+    padding: 10px;
     display: block;
     margin: 0  1px !important;
     position: relative;
