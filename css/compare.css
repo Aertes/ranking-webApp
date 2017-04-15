@@ -211,9 +211,9 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 10px;
-	background-color: #dbdbdb;
-	border-bottom: 1.5px solid #808080;
+	padding: 5px 10px;
+	background-color: #f3f3f3;
+	border-bottom: 1.5px solid #d0d0d0;
 
 }
 #info .title h6{
@@ -221,32 +221,76 @@
 	margin: 0;
 }
 #info .title .close{
-	font-size: 14px;
+	font-size: 18px;
+	padding: 5px;
 }
 
 #info .concent{
-	margin: 10px 5px;
+	margin: 10px 5px 0;
 }
 #info .concent .school{
 	text-align: center;
-	
 }
 
+#info .concent .school .left,
+#info .concent .school .right{
+	border-bottom: 1px solid #b2b2b2;
+}
 
+#info .concent .school .b_color{
+	border-bottom: 1px solid #ff3d3d;	
+}
 
+#info .concent .school a{
+	color: #8b8b8b;	
+	display: block;
+	padding: 5px;
+}
 
+#info .concent .search{
+	margin: 20px 0 10px;
+	display: flex;
+	justify-content: space-between;
+	font-size: 12px;
+	color: #000;
+}
+#info .concent .search .search_name{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;	
+}
+#info .concent .search .search_name p{
+	font-size: 12px;
+	color: #000;
+	margin: 0;
+}
+#info .concent .search .search_result{
+	position: relative;
+}
 
+#info .concent .search .search_result input{
+	text-align: left;
+	font-size: 12px;
+	background-color: #fff;
+	border: 1px solid #d2d2d2;
+	border-radius: 3px;
+	padding: 5px 10px;
+}
 
+.mui-icon-search:before{
+	position: absolute;
+	right: 5px;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 14px;
+	font-weight: 700;
+}
 
-
-
-
-
-
-
-
-
-
+#info .concent .search .btn_down{
+	padding: 7px 10px;
+	background-color: #438ce8;
+	color: #fff;
+}
 
 #info .table>thead>tr>th {
     vertical-align: middle;
@@ -264,3 +308,4 @@
     padding: 8px 5px;
 	border: 1px solid #d1d1d1;
 }
+
