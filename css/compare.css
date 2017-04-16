@@ -205,9 +205,14 @@
 	cursor: pointer;
 }
 
+
 /*模态框*/
 
-#info .title{
+#detail_data {
+	height: 410px;
+}
+
+#detail_data .title{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -216,59 +221,59 @@
 	border-bottom: 1.5px solid #d0d0d0;
 
 }
-#info .title h6{
+#detail_data .title h6{
 	font-size: 12px;
 	margin: 0;
 }
-#info .title .close{
+#detail_data .title .close{
 	font-size: 18px;
 	padding: 5px;
 }
 
-#info .concent{
+#detail_data .concent{
 	margin: 10px 5px 0;
 }
-#info .concent .school{
+#detail_data .concent .school{
 	text-align: center;
 }
 
-#info .concent .school .left,
-#info .concent .school .right{
+#detail_data .concent .school .left,
+#detail_data .concent .school .right{
 	border-bottom: 1px solid #b2b2b2;
 }
 
-#info .concent .school .b_color{
+#detail_data .concent .school .b_color{
 	border-bottom: 1px solid #ff3d3d;	
 }
 
-#info .concent .school a{
+#detail_data .concent .school a{
 	color: #8b8b8b;	
 	display: block;
 	padding: 5px;
 }
 
-#info .concent .search{
+#detail_data .concent .search{
 	margin: 20px 0 10px;
 	display: flex;
 	justify-content: space-between;
 	font-size: 12px;
 	color: #000;
 }
-#info .concent .search .search_name{
+#detail_data .concent .search .search_name{
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;	
 }
-#info .concent .search .search_name p{
+#detail_data .concent .search .search_name p{
 	font-size: 12px;
 	color: #000;
 	margin: 0;
 }
-#info .concent .search .search_result{
+#detail_data .concent .search .search_result{
 	position: relative;
 }
 
-#info .concent .search .search_result input{
+#detail_data .concent .search .search_result input{
 	text-align: left;
 	font-size: 12px;
 	background-color: #fff;
@@ -286,13 +291,13 @@
 	font-weight: 700;
 }
 
-#info .concent .search .btn_down{
+#detail_data .concent .search .btn_down{
 	padding: 7px 10px;
 	background-color: #438ce8;
 	color: #fff;
 }
 
-#info .table>thead>tr>th {
+#detail_data .table>thead>tr>th {
     vertical-align: middle;
     padding: 10px 5px;
     text-align: center;
@@ -302,10 +307,17 @@
 	border: 1px solid #d1d1d1;
 }
 
-#info .table>tbody>tr>td {
+#detail_data .table>tbody>tr>td {
     font-size: 12px;
     vertical-align: middle;
     padding: 8px 5px;
 	border: 1px solid #d1d1d1;
 }
 
+#detail_data table{
+    margin: 0;
+}
+
+#detail_data .table{
+	height: 260px;
+}

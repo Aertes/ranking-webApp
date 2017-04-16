@@ -93,17 +93,6 @@ $(document).on('tap', '#user', function () {
 
 // 模态框
 
-$('td i').each(function () {
-    $(this).on('tap', function () {
-        popupDiv('info');
-        // hideDiv('info');
-    })
-})
-
-$('#info').on('tap', '.close', function(){
-    hideDiv('info');
-})
-
 function popupDiv(div_id) {
     var $div_obj = $("#" + div_id);
     var windowWidth = $(window).width();
@@ -135,6 +124,4 @@ function hideDiv(div_id) {
         opacity: "hide"
     }, "slow");
 }
-
-
 

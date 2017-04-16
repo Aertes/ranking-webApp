@@ -185,3 +185,26 @@ function DrawRadar(showId, compareinstitution, ourscore, comparescore, ourinstit
 
 
 
+
+// 模态框
+
+$('td i').each(function () {
+    $(this).on('tap', function () {
+        popupDiv('detail_data');
+    })
+})
+
+$('#detail_data').on('tap', '.close', function(){
+    hideDiv('detail_data');
+})
+
+
+$('.school div').each(function(){
+    $(this).on('tap', function(){
+        $(this).addClass('b_color').siblings().removeClass('b_color');
+    })
+})
+
+
+
+

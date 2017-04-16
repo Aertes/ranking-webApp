@@ -175,21 +175,9 @@
 
 
 /*modals*/
-#info {
-	height: 405px;
-}
-
-#info table{
-    margin: 0;
-}
-
-#info .table{
-	height: 260px;
-	overflow: auto;
-}
 
 .modals{
-	/*display: none;*/
+	display: none;
 	position: absolute;
 	background-color: #fff;
 	z-index: 9999;
@@ -205,3 +193,11 @@
 	background-color: #57575f;
 	opacity: 0.7;
 }
+
+#info .table,
+#record .table,
+#detail_data .table{
+	overflow: auto;
+    margin: 0;
+}
+
