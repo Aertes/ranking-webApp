@@ -51,7 +51,7 @@ table{
 
 #table-responsive table>tbody>tr>td{
     padding: 5px 0;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .responsive{
@@ -150,7 +150,7 @@ table{
 .numbox button{
     border-radius: 0;
     width: 30px;
-    font-size: 14px;
+    font-size: 12px;
     line-height: normal;
 }
 .numbox input{
@@ -158,13 +158,13 @@ table{
     padding: 0;
     text-align: right;
     height: 35px;
-    font-size: 14px;
+    font-size: 12px;
     border-right: none;
     border-radius: 0;
 }
 .numbox span {
     display: block;
-    font-size: 14px;
+    font-size: 12px;
     display: flex;
     align-items: center;
     border-top: 1px solid rgba(0, 0, 0, .2);

@@ -27,7 +27,7 @@
 
 .icon-54r2:before { content: "\e6cc"; }
 
-.icon-wenhao:before { content: "\e612"; }
+.icon-wenhao:after { content: "\e612"; }
 
 .icon-commdbr:before { content: "\e7c8"; }
 
