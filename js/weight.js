@@ -1,23 +1,5 @@
 
 
-
-var oHtml = document.documentElement;
-getFont();
-window.onresize = function () {
-    getFont();
-}
-function getFont() {
-    var screenWidth = oHtml.clientWidth;
-    if (screenWidth <= 320) {
-        oHtml.style.fontSize = '23.7037px';
-    } else if (screenWidth >= 640) {
-        oHtml.style.fontSize = '47.4074px';
-    } else {
-        oHtml.style.fontSize = screenWidth / (640 / 40) + 'px';
-    }
-}
-
-
 // 点击模块显示掩藏
 $('ul>li').each(function () {
     var _this = $(this);
@@ -28,69 +10,89 @@ $('ul>li').each(function () {
 })
 
 
-
-
+mui.init();
 window.onload = function () {
 
-    if (!document.getElementsByClassName) {
-        document.getElementsByClassName = function (cls) {
-            var ret = [];
-            var els = document.getElementsByTagName('*');
-            for (var i = 0, len = els.length; i < len; i++) {
-
-                if (els[i].className.indexOf(cls + ' ') >= 0 || els[i].className.indexOf(' ' + cls + ' ') >= 0 || els[i].className.indexOf(' ' + cls) >= 0) {
-                    ret.push(els[i]);
-                }
-            }
-            return ret;
-        }
-    }
-
-    var table = document.getElementById('module-nestedtable');
-    var tr = table.children[1].rows;
-    var num = document.querySelector('.num');
-    var sum = document.querySelector('.sum');
-    var sub = document.querySelector('.sub');
-    var add = document.querySelector('.add');
-    var submit = document.querySelector('#submit');
-
-    function getTotal() {
-        
-
-    }
-
+    var tr = $('.moduleOne tbody tr').not(":last");
+    var sum = $('.sum');
+    console.log(tr);
+    //为每行元素添加事件
     for (var i = 0; i < tr.length; i++) {
-        tr[i].onclick = function (e) {
-            var e = e || window.event;
-            var el = e.target || e.srcElement;
-            var cls = el.className;
-            var countInout = this.querySelector('.num');
-            var value = Math.round(parseFloat(countInout.value)*10)/10;
-            console.log(value);
+        //将点击事件绑定到tr元素
+        tr.eq(i).on("tap", function (e) {
+            e.stopPropagation();
+            var sumValue = sum.val();
+            if (sumValue == 100) {
+                //alert('总计大于100,请重新输入');
+                return false;
+            }
+            var el = e.target;
+            var cls = el.className; //触发元素的class
+            //console.log(this);
+            var countInout = this.getElementsByTagName('input')[0];
+            var value = parseFloat(countInout.value); //数目
+            //console.log(value);
+            //通过判断触发元素的class确定用户点击了哪个元素
             switch (cls) {
-                case 'add':
-                    if(countInout.value < 100){
-                        countInout.value = Math.round(parseFloat( value + 0.1)*10)/10;
-                    }
+                case 'add': //点击了加号       
+                    var newValue = value + 0.1;
+                    newValue = newValue.toFixed(1);
+                    countInout.value = newValue;
+                    // console.log(countInout.value);
                     break;
-                case 'sub':
-                    if(countInout.value == 0){
-                        countInout.value = 0.0;
-                    }else{
-                        countInout.value = Math.round(parseFloat( value - 0.1)*10)/10;
+                case 'sub': //点击了减号
+                    //console.log(value);
+                    if (value == 0) {
+                        countInout.value == '0.0';
+                        return false;
                     }
+                    var newValue = value - 0.1;
+                    newValue = newValue.toFixed(1);
+                    countInout.value = newValue;
+                    break;
+                default:
+                    return false;
                     break;
             }
-
-        }
-        getTotal();
+            getTotal();
+        })
     }
+    $('.num').on('blur', function (e) {
+        e.stopPropagation();
+        var sumValue = sum.val();
+        console.log(sumValue);
+        if (sumValue >= 100) {
+            //alert('总计大于100,请重新输入');
+            return false;
+        }
+        var numberValue = Number($(this).val());
+        $(this).val(numberValue.toFixed(1));
+        getTotal();
+    })
+    function getTotal() {
+        var price = 0;
+        for (var i = 0, len = tr.length; i < len; i++) {
+            //console.log(tr.eq(i).find('input'));
+            price += parseFloat(tr.eq(i).find('input').val());
+        }
+        //	console.log(price);
+        sum.val(price.toFixed(1));
+        return price.toFixed(1);
+    }
+
+
+    //按钮点击提交事件
+    $('.moduleOne').on("tap", '#submit', function () {
+        var sumValue = sum.val();
+        if (sumValue < 100) {
+            alert("合计小于100，请重新输入");
+            return false;
+        } else if (sumValue > 100) {
+            alert("合计大于100，请重新输入");
+            return false;
+        }
+    })
 
 }
-
-
-
-
-
 
 
