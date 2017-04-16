@@ -1,14 +1,5 @@
 @charset "utf-8";
 
-
-/*侧边栏*/
-
-#offCanvasSideScroll ul>li:nth-child(2) a{
-    padding-left: 40px;
-}
-
-
-
 /* title */
 
 .graphic-analysis .title{
@@ -46,11 +37,19 @@
     border-bottom: 1px solid #c3c3c3;
     line-height: 100%;
     text-align: center;
-    font-size: 14px;
     vertical-align: middle;
 }
+
+.table-responsive table>tbody>tr>td>input{
+    text-align: center;
+    padding: 0;
+    height: inherit;
+    width: 45px;
+}
+
+
 .table-responsive table>tbody>tr>td>div{
-    font-size: 13px;
+    font-size: 12px;
 }
 
 #table-responsive .tab-pane table{

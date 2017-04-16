@@ -1,0 +1,22 @@
+{
+  "name": "ranking",
+  "version": "1.0.0",
+  "description": "360°大学排名",
+  "main": "index.js",
+  "scripts": {
+    "test": "360 webApp ranking"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Aertes/ranking-webApp.git"
+  },
+  "keywords": [
+    "ranking"
+  ],
+  "author": "Aertes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Aertes/ranking-webApp/issues"
+  },
+  "homepage": "https://github.com/Aertes/ranking-webApp#readme"
+}

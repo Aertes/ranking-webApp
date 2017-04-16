@@ -23,7 +23,15 @@ $('.university ul').children('li').each(function () {
     var index = $(this).index();
     $(this).on('tap', function () {
         $(this).children('a').addClass('font-color').parent().siblings().children('a').removeClass('font-color');
-
+        $('.tabcontent').eq(index).show(500).siblings('.tabcontent').hide();
+        $.ajax({
+            type:'post',
+            url:'',
+            dataType:'json',
+            success:function(){
+                
+            }
+        })
     })
 })
 
@@ -32,7 +40,6 @@ $('#panel4').on('tap', 'li', function (e) {
     $(this).next().toggle();
     $(this).children().eq(0).toggleClass('mui-icon-arrowup mui-icon-arrowdown');
 })
-
 
 
 var ourscore2 = [82, 88, 73, 85, 82, 91, 83, 85, 82, 100], comparescore2 = [100, 88, 82, 93, 100, 88, 82, 93, 100, 88];
@@ -182,7 +189,6 @@ function DrawRadar(showId, compareinstitution, ourscore, comparescore, ourinstit
     );
 
 }
-
 
 
 
