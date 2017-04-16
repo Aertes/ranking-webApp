@@ -1,15 +1,56 @@
 @charset "utf-8";
 
-/* 侧边导航 */
+
+/*侧边栏*/
+
+#offCanvasSideScroll ul>li{
+    padding: 5px 15px;
+}
+#offCanvasSideScroll ul>li:nth-child(1) a{
+    padding: 0 15px;
+}
+#offCanvasSideScroll ul>li:nth-child(2) a,
+#offCanvasSideScroll ul>li:nth-child(3) a{
+    padding: 0 0 0 40px ;
+}
+
+#offCanvasSideScroll .table-time li:nth-child(2) a{
+    padding: 0;
+}
+
+
 #offCanvasSideScroll .mui-navigate-right:after{
     content: ' ';
 }
-
 
 .mui-inner-wrap .mui-content{
     background-color: #fff;
 }
 
+.versions {
+    padding: 0 35px;
+    margin: 10px 0;
+}
+
+.versions h5{
+    color: #fff;
+    font-size: 16px;
+}
+.versions p{
+    padding: 5px 20px;
+    margin: 0;
+}
+
+.versions p .click_color{
+    color: #d83f3f;
+}
+
+
+.versions p>a{
+    display: block;
+    color: #fff;
+    font-size: 12px;
+}
 
 /*header-nav*/
 

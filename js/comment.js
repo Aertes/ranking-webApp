@@ -125,3 +125,10 @@ function hideDiv(div_id) {
     }, "slow");
 }
 
+// 侧边栏
+
+$('.versions a').each(function(){
+    $(this).on('tap', function(){
+        $(this).addClass('click_color').parent().siblings('p').children('a').removeClass('click_color');
+    })
+})

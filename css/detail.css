@@ -3,8 +3,8 @@
 
 /*侧边栏*/
 
-#offCanvasSideScroll ul>li:nth-child(2) a{
-    padding-left: 40px;
+#offCanvasSideScroll ul>li:nth-child(3) a{
+    padding:  0 15px;
 }
 
 /*指标*/

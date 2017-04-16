@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/Aertes/ranking-webApp/issues"
   },
-  "homepage": "https://github.com/Aertes/ranking-webApp#readme"
+  "homepage": "https://github.com/Aertes/ranking-webApp#readme",
+  "dependencies": {
+    "art-template": "^4.0.0-beta8"
+  }
 }
