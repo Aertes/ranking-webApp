@@ -9,6 +9,7 @@
 #offCanvasSideScroll ul>li:nth-child(1) a{
     padding: 0 15px;
 }
+#offCanvasSideScroll ul>li:nth-child(4) a,
 #offCanvasSideScroll ul>li:nth-child(2) a,
 #offCanvasSideScroll ul>li:nth-child(3) a{
     padding: 0 0 0 40px ;
@@ -34,10 +35,10 @@
 
 .versions h5{
     color: #fff;
-    font-size: 16px;
+    font-size: 14px;
 }
 .versions p{
-    padding: 5px 20px;
+    padding: 5px 0px 5px 20px;
     margin: 0;
 }
 
