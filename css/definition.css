@@ -17,16 +17,40 @@
     color: #a9a9a9;
 }
 
+.ul .bg{
+    margin-right: 20px;
+}
+
+.show_over{
+    background-color: #fff;
+    display: none;
+}
+.show_over div{
+    margin: 0 30px;
+}
+ul .show_over div a{
+    font-size: 12px;
+    color: blue;
+    display: block;
+    text-align: right;
+}
 .show_over p{
     margin: 0;
     padding: 5px 0;
     font-size: 12px;
     border-top: 1px solid #c9c9c9;
 }
+.overview{
+    display: none;
+}
 
+.explain_list{
+    padding: 5px 30px;
+    background-color: #fff;
+}
+.explain_list a{
+    font-size: 14px;
 
-.explain_bd{
-    border-top: 1px solid red;
 }
 
 .navigations .subnav {
