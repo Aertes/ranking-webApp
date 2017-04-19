@@ -118,6 +118,25 @@
     background-color: #f4f4f4;
 }
 
+.mui-bar a:nth-child(3){
+    position: relative;
+}
+.mui-bar-tab .mui-tab-item .mui-icon{
+    height: 24px;
+    width: 28px;
+}
+
+.mui-bar a:nth-child(3) span:nth-child(1),
+.mui-bar a:nth-child(3) span:nth-child(2){
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.mui-bar a:nth-child(3) span:nth-child(2){
+    top: 28px;
+}
+
 
 .ranking-blue{
     content: '';
@@ -181,7 +200,6 @@
     font-weight: 400;
     text-indent: 110px;
 }
-
 
 .table-time-cell:after{
     content: "";
