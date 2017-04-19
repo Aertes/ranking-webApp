@@ -4,7 +4,7 @@
 /*侧边栏*/
 
 #offCanvasSideScroll ul>li:nth-child(3) a{
-    padding:  0 40px;
+    padding:  0 0 0 40px;
 }
 
 /*指标*/
