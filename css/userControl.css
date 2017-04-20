@@ -1,0 +1,135 @@
+@charset "utf-8";
+html,
+body {
+    background-color: #fff;
+}
+
+
+/*title*/
+
+.mui-icon-back:before,
+.mui-icon-left-nav:before {
+    color: #fff;
+}
+
+.mui-bar .mui-title {
+    color: #fff;
+}
+
+.icon-jiantou:before,
+.icon-zhongzhi01:before {
+    position: absolute;
+    right: 15px;
+    z-index: 20;
+    font-size: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+/*管理控制台*/
+
+.add {
+    margin-top: 20px;
+}
+
+.add .btn {
+    color: #fff;
+    background-color: #007aff;
+}
+
+.table {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.table table>thead>tr>th {
+    font-size: 14px;
+    font-weight: 400;
+    width: 20%;
+    border-top: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.table table>tbody>tr>td {
+    font-size: 12px;
+    text-align: center;
+    width: 20%;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 8px 0;
+}
+
+
+/*模态框 addUser*/
+
+.add_user {
+    height: 300px;
+    display: none;
+    z-index: 9999;
+    background-color: #fff;
+}
+
+.add_user .title {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+    background-color: #f3f3f3;
+    border-bottom: 1.5px solid #d0d0d0;
+}
+
+.add_user .concent form div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #c9c9c9;
+    padding: 10px 20px;
+    font-size: 14px;
+}
+
+.add_user .concent form div input {
+    width: 70%;
+    padding: 10px;
+    font-size: 14px;
+    height: 30px;
+}
+
+.add_user .concent form .message input {
+    border: 1px solid rgba(0, 0, 0, .2);
+}
+
+.add_user .concent form .submit {
+    border: none;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.add_user .concent form .submit div {
+    border: none;
+    position: relative;
+}
+
+.add_user .concent form .submit input {
+    padding: 10px 15px;
+    width: 80px;
+    text-align: left;
+    height: 40px;
+}
+
+.icon-jiantou:before {
+    position: absolute;
+    top: 50%;
+    right: 20%;
+    color: #fff;
+    z-index: 10;
+    transform: translate(-50%, -50%);
+}
+
+.note p {
+    font-size: 12px;
+}
+
+.icon-shanchu:before{
+    font-size: 18px;
+}

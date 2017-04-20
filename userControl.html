@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>上海软科360数据平台 - 上海软科教育信息咨询有限公司</title>
+    <link rel="shortcut icon" href="./images/icon/favion.png">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./libs/mui/mui.min.css">
+    <!--<link rel="stylesheet" href="./libs/mui/mui.picker.min.css">-->
+    <!--<link rel="stylesheet" href="./libs/bootstrap/bootstrap.min.css">-->
+    <!--<link rel="stylesheet" href="./libs/font-awesome-4.7.0/css/font-awesome.min.css">-->
+    <link rel="stylesheet" href="./libs/fonts/iconfont/iconfont.css">
+    <link rel="stylesheet" href="./css/comment.css">
+    <link rel="stylesheet" href="./css/userControl.css">
+
+</head>
+
+<body>
+
+    <div class="mui-inner-wrap " data-offcanvas="3">
+        <!--header-->
+        <header id="header" class="mui-bar mui-bar-nav">
+            <a href="javascript:;" class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+            <h1 class="mui-title">管理控制台</h1>
+        </header>
+        <!--concent-->
+        <div class="mui-content mui-scroll">
+            <!--帮助-->
+            <div class="help">
+                <a href="helpIndex.html" class="iconfont icon-wenhao">帮助</a>
+            </div>
+            <!--管理控制台-->
+            <div class="user">
+                <div class="add">
+                    <button type="button" class="btn">添加一个用户</button>
+                </div>
+                <div class="table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>序号</th>
+                                <th>姓名</th>
+                                <th>邮箱</th>
+                                <th>身份</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>北京理工大学</td>
+                                <td>gan@shanghairanking.com</td>
+                                <td>管理员</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>张克帆</td>
+                                <td>jwesdasd@163.com</td>
+                                <td>普通用户</td>
+                                <td>
+                                    <i class='alter iconfont icon-daohanglandingdananniu'></i>
+                                    <i class='delete iconfont icon-shanchu'></i>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!--新增一个用户-->
+        <div id="add_user" class="add_user">
+            <div class="title">
+                <h6>新增一个用户</h6>
+                <div class="close">x</div>
+            </div>
+            <div class="concent">
+                <form>
+                    <div class="type">
+                        姓名：
+                        <input type="text" name="username">
+                    </div>
+                    <div class="email">
+                        邮箱：
+                        <input type="email">
+                    </div>
+                    <div class="password">
+                        密码：
+                        <input type="text" password="password">
+                    </div>
+                    <div class="note">
+                        <p>注：初始密码只会显示一次并发送到您的邮箱！</p>
+                    </div>
+                    <div class="submit">
+                        <div class=" iconfont icon-jiantou">
+                            <input type="submit" value="提交">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script src="./libs/bootstrap/jquery.min.js"></script>
+    <!--<script src="./libs/bootstrap/bootstrap.min.js"></script>-->
+    <script src="./libs/mui/mui.js"></script>
+    <!--<script src="./libs/mui/mui.picker.min.js"></script>-->
+    <!--<script src="./js/comment.js"></script>-->
+    <script src="./js/userControl.js"></script>
+
+
+
+
+</body>
+
+</html>
