@@ -279,8 +279,7 @@
     border-radius: 10px;
 }
 
-#first-module .top,
-#first-module .bottom {
+#first-module .top{
     padding-top: 40px;
     display: flex;
 }
@@ -332,7 +331,7 @@
     height: 30px;
     background-color: #c97345;
     position: absolute;
-    top: -30px;
+    top: -38px;
     left: 0;
     border-radius: 5px;
     line-height: 30px;
@@ -360,18 +359,6 @@
     left: 50%;
     transform: translateX(-50%);
     border-radius: 50%;
-    background-color: #c97345;
-}
-
-.length::after {
-    content: '';
-    width: 25px;
-    height: 8px;
-    position: absolute;
-    top: 120%;
-    left: 50%;
-    transform: translateX(-50%);
-    border-radius: 5px;
     background-color: #c97345;
 }
 
