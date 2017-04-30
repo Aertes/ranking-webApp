@@ -10,10 +10,12 @@ $(function () {
     var boxWidth = box.offsetWidth;
     var init = ulWidth - boxWidth;
     var left;
+    console.log(init);
+    console.log(ul.offsetWidth);
 
     $('.overflow li').each(function () {
         var _this = $(this);
-        $(this).children('div:first-child').on('tap', function () {
+        $(this).children('div:first-child').on('click', function () {
             $(this).next().toggle(0, function () {
                 _this.siblings().children('.content').hide();
             })
@@ -30,16 +32,17 @@ $(function () {
 
     $('.click-right').on('tap', function () {
         left = init / 2 - currentX
-        if (left != 0 && left < init) {
+        if (left == 0 || left < init) {
             currentX -= 20
+            console.log(left);
             ul.style.transform = 'translateX(' + currentX + 'px)';
         }
     })
 
     //手势滑动
-    ul.addEventListener('touchstart', touchstartHandler);
-    ul.addEventListener('touchmove', touchmoveHandler);
-    ul.addEventListener('touchend', touchendHandler);
+    ul.addEventListener('touchstart',  touchstartHandler);
+    ul.addEventListener('touchmove',  touchmoveHandler);
+    ul.addEventListener('touchend',  touchendHandler);
 
     function touchstartHandler(e) {
         startX = e.touches[0].pageX;
@@ -61,7 +64,6 @@ $(function () {
             currentX = init / 2;
             ul.style.webkitTransform = 'translateX(' + currentX + 'px)';
         }
-
     }
 
 })

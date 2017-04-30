@@ -280,7 +280,8 @@
 }
 
 #first-module .top{
-    padding-top: 40px;
+    height: 80px;
+    line-height: 80px;
     display: flex;
 }
 
@@ -288,10 +289,6 @@
     color: #c97345;
 }
 
-#first-module .num {
-    display: flex;
-    align-items: center;
-}
 
 #first-module .num,
 .people {
@@ -299,31 +296,33 @@
     text-align: left;
     font-size: 14px;
     position: relative;
-    padding: 0 10px;
+    /*padding: 0 10px;*/
+    line-height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#first-module .num {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*position: relative;*/
+    /*padding: 0 40px 0 0;*/
+}
+
+#first-module .people p{
+    color: #434343;
 }
 
 #first-module .num i {
     display: inline-flex;
     background-color: #ccc;
     height: 6px;
-    width: 100%;
+    width: 80%;
     border-radius: 3px;
     position: relative;
 }
 
-#first-module .num em {
-    display: block;
-    width: 70px;
-    height: 30px;
-    background-color: #c97345;
-    position: absolute;
-    top: -37px;
-    left: 0;
-    border-radius: 5px;
-    line-height: 30px;
-    color: #fff;
-    text-align: center;
-}
 
 #first-module .top .num em {
     display: block;
@@ -335,6 +334,9 @@
     left: 0;
     border-radius: 5px;
     line-height: 30px;
+    padding: 0 5px;
+    color: #fff;
+    text-align: center;
 }
 
 .littler::before {
